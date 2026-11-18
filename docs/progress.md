@@ -5,7 +5,7 @@ promoted **213 STUBs** (195 exact, 18 reviewed near matches) and recovered one
 additional exact helper. No game runs were performed for these batches.
 
 Both 465-unit SP5 builds agree on all **2,721 measured scores and statuses**:
-**784 exact functions, 49 reviewed near matches and 1,888 STUB reconstructions**.
+**786 exact functions, 49 reviewed near matches and 1,886 STUB reconstructions**.
 All 619 previously implemented functions retain their raw accuracy or improve.
 Twenty-eight complete folded aliases, twelve dispatch inventories per build
 (including 1,321 scene pointers), 307 input-format records and 29 tooling/library
@@ -15,9 +15,9 @@ tests pass. Source STUBs without a separate matched report row remain unimplemen
 and **5,647 bodies**, for console, JSON, HTML and SVG coverage:
 
 ```text
-Implemented:  12.60%  (833 / 6612)
+Implemented:  12.63%  (835 / 6612)
 Accuracy:     99.80%
-Progress:     12.57%
+Progress:     12.60%
 ```
 
 The inventory includes linked libraries and compiler helpers; external imports
@@ -1903,7 +1903,7 @@ measure runtime completeness.
 | `0x004b9e40` | `ConstructSecondaryRenderOwner` | 36.20% | Work in progress |
 | `0x004ba100` | `GetSecondaryRenderOwnerSize` | 100.00% | Verified exact |
 | `0x004ba110` | `GetSecondaryRenderOwnerCategory` | 100.00% | Verified exact |
-| `0x004ba120` | `GetSecondaryRenderFollowMode` | 85.71% | Work in progress |
+| `0x004ba120` | `GetSecondaryRenderFollowMode` | 100.00% | Verified exact |
 | `0x004ba130` | `GetSecondaryRenderZero` | 100.00% | Verified exact |
 | `0x004ba140` | `DestroySecondaryRenderOwner` | 95.65% | Reviewed near match |
 | `0x004ba160` | `RemoveSecondaryRenderOwner` | 66.67% | Work in progress |
@@ -2609,7 +2609,7 @@ measure runtime completeness.
 | `0x004f54a0` | `BitmapImage::LoadTga` | 17.27% | Work in progress |
 | `0x004f59c0` | `BitmapImage::ReleaseStorage` | 95.24% | Reviewed near match |
 | `0x004f5a10` | `WriteBitmapTgaFile` | 30.77% | Work in progress |
-| `0x004f5d60` | `GetFoyerMeshUpdateService` | 100.00% | Work in progress |
+| `0x004f5d60` | `GetFoyerMeshUpdateService` | 100.00% | Verified exact |
 | `0x004f5da0` | `DestroyFoyerMeshUpdateService` | 100.00% | Verified exact |
 | `0x004f5dc0` | `OnFoyerMeshUpdateServiceExit` | 100.00% | Verified exact |
 | `0x004f5dd0` | `UpdateFoyerMeshAndUpload` | 4.46% | Work in progress |
