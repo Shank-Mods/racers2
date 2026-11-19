@@ -142,7 +142,7 @@ void CommentaryAudioStream::Stop()
 	}
 }
 
-// STUB: LEGORACERS2 0x004f2560
+// FUNCTION: LEGORACERS2 0x004f2560
 void CommentaryAudioStream::SetGain(LegoFloat p_gain)
 {
 	m_buffer->SetVolume((LONG) (((p_gain * 4.0f) - 4.0f) * 1000.0f));
