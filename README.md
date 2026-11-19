@@ -126,7 +126,7 @@ check requires 100% raw matches.
 The console, JSON, HTML and SVG use the tracked
 [`reccmp/function-inventory.csv`](reccmp/function-inventory.csv) for their total,
 including original functions with no source annotation. The current summary is
-**884 / 6,612 implemented (13.37%)**, **99.82% accuracy**, **13.35% progress**.
+**900 / 6,612 implemented (13.61%)**, **99.82% accuracy**, **13.59% progress**.
 Verified folded bodies contribute before the summary is printed. Known libraries
 are excluded from implemented comparisons with `--nolib`; they remain in the
 whole-binary denominator and can be compared explicitly. This inventory includes

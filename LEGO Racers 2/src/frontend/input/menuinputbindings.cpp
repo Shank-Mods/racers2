@@ -621,7 +621,7 @@ void MenuInputBindingWidget::RefreshRows()
 	}
 }
 
-// STUB: LEGORACERS2 0x00416700
+// FUNCTION: LEGORACERS2 0x00416700
 void MenuInputBindingWidget::SetActionRowSelected(LegoS32 p_index, LegoBool32 p_selected)
 {
 	GlobalOverlayRecord* row = m_actionRows[p_index];

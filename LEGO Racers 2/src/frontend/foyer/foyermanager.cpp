@@ -373,7 +373,7 @@ void __fastcall SetFoyerManagerMenuMode(GameObject* p_manager, void*)
 	StartFoyerSceneSelectionTransition((FoyerManager*) p_manager, 8);
 }
 
-// STUB: LEGORACERS2 0x0043aac0
+// FUNCTION: LEGORACERS2 0x0043aac0
 void __fastcall ApplyFoyerSceneOverlay(GameObject* p_manager, void*, LegoS32 p_overlay)
 {
 	FoyerManager* manager = (FoyerManager*) p_manager;

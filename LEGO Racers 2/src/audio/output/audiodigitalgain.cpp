@@ -20,7 +20,7 @@ void __fastcall GetDigitalMusicGain(AudioService* p_service, void*, LegoFloat* p
 	*p_first = value;
 }
 
-// STUB: LEGORACERS2 0x00503340
+// FUNCTION: LEGORACERS2 0x00503340
 LegoFloat __cdecl MapGameAudioGain(LegoFloat p_gain)
 {
 	if (!(p_gain > 0.1f)) {
@@ -29,5 +29,5 @@ LegoFloat __cdecl MapGameAudioGain(LegoFloat p_gain)
 	if (p_gain >= 0.95f) {
 		return 1.0f;
 	}
-	return log10((double) p_gain * 10.0);
+	return log10(p_gain * 10.0f);
 }

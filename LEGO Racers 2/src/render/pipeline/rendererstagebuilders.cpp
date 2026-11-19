@@ -205,7 +205,7 @@ LegoU32 __fastcall ApplyRendererTextureStagePlan(
 		result = PassThroughStageValidationResult(result);
 		if (result != D3D_OK) {
 			for (LegoS32 subrecord = 0; subrecord < (LegoS32) p_group->m_unk0xc0; subrecord++) {
-				ResetTextureStageCoordinateIndices(&p_group->m_records[subrecord], NULL);
+				ResetTextureStageMipFilters(&p_group->m_records[subrecord], NULL);
 			}
 			result = p_renderer->m_device->ValidateDevice(&passCount);
 			result = PassThroughStageValidationResult(result);

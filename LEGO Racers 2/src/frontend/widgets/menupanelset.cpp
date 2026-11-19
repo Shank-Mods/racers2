@@ -61,7 +61,7 @@ void MenuPanelSet::End()
 	}
 }
 
-// STUB: LEGORACERS2 0x00419680
+// FUNCTION: LEGORACERS2 0x00419680
 void MenuPanelSet::SetActive(LegoU32 p_active)
 {
 	if (m_resourceMode != 0 || p_active != 0) {

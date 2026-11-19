@@ -156,6 +156,9 @@ struct GameControllerDispatch {
 	LegoU32(__fastcall* m_size)(GameObject*, void*);
 };
 extern const GameControllerDispatch g_gameControllerDispatch;
-extern GameController& g_gameController;
+// Retail constructs the controller in place in static storage at 0x005543f8 and
+// addresses that storage directly; a reference global would add a pointer load.
+extern LegoU32 g_gameControllerStorage[];
+#define g_gameController (*(GameController*) g_gameControllerStorage)
 extern GameObjectTemplate g_gameControllerTemplate;
 #endif

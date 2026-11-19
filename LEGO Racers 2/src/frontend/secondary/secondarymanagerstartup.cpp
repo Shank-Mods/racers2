@@ -51,7 +51,7 @@ void __fastcall BeginSecondaryManagerFallback(SecondaryManager* p_manager, void*
 	}
 }
 
-// STUB: LEGORACERS2 0x0042a740
+// FUNCTION: LEGORACERS2 0x0042a740
 void SecondaryManager::RestoreStartupRendering()
 {
 	*(LegoU32*) ((LegoU8*) m_unk0x110 + 0x1c0) = 0;

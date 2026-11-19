@@ -112,13 +112,13 @@ LegoU32* InputController::GetCurrentInput()
 	return GetRecordedInput(m_recordedFrame);
 }
 
-// STUB: LEGORACERS2 0x004b7f20
+// FUNCTION: LEGORACERS2 0x004b7f20
 void InputController::RecordInputRange(const LegoU32* p_input, LegoU32 p_firstFrame, LegoU32 p_lastFrame)
 {
 	for (; p_firstFrame <= p_lastFrame; p_firstFrame++) {
 		((LegoU32*) m_recordedInput)[p_firstFrame & 0x3fff] = *p_input;
 	}
-	if (p_lastFrame > 0x3fff) {
+	if (p_lastFrame >= 0x4000) {
 		m_state = 0;
 	}
 }

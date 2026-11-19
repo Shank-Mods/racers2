@@ -29,7 +29,7 @@ struct TextureStageProfileIndexMapView {
 DECOMP_STATIC_ASSERT(offsetof(TextureStageProfileIndexMapView, m_highestIndex) == 0x28);
 
 HRESULT PassThroughStageValidationResult(HRESULT p_result);
-void __fastcall ResetTextureStageCoordinateIndices(RendererSubrecordGroup::Subrecord* p_group, void*);
+void __fastcall ResetTextureStageMipFilters(RendererSubrecordGroup::Subrecord* p_group, void*);
 
 RendererStageRecordLink* __fastcall InitializeTextureStageRecord(
 	RendererStageRecordLink* p_entry,

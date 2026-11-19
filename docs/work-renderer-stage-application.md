@@ -13,7 +13,7 @@ renderer validation path at `0x004e5f90`; it has not been game-tested.
 | `0x004dffa0` | 14 | GetInverseStageFactorColor |
 | `0x004e1950` | 5 | PassThroughStageValidationResult |
 | `0x004e1e20` | 59 | ApplyStagePlanSubrecord |
-| `0x004e2490` | 37 | ResetTextureStageCoordinateIndices |
+| `0x004e2490` | 37 | ResetTextureStageMipFilters |
 
 The execution algorithm from `0x004e2160` is currently an unannotated helper
 with an explicit renderer argument. Retail accesses the static renderer;

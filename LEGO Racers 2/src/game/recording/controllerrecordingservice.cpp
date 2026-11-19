@@ -1853,14 +1853,14 @@ void ControllerRecordingProviderMap::PruneExpiredEntries()
 	m_lock = 0;
 }
 
-// STUB: LEGORACERS2 0x004f3e70
+// FUNCTION: LEGORACERS2 0x004f3e70
 void ControllerRecordingMessageQueue::Initialize(LegoU32 p_capacity)
 {
 	LegoChar* allocationTag = "Network receive buffer";
 	LegoU8* buffer = (LegoU8*) GetMemoryHeap()->Allocate(p_capacity, allocationTag);
-	m_buffer = buffer;
-	m_read = buffer;
 	m_write = buffer;
+	m_read = buffer;
+	m_buffer = buffer;
 	m_end = buffer + p_capacity;
 	m_capacity = p_capacity;
 	m_queuedCount = 0;

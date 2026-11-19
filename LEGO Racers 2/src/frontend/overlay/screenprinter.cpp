@@ -103,7 +103,7 @@ LegoU32 ScreenPrinter::Update(LegoU32)
 	return 0;
 }
 
-// STUB: LEGORACERS2 0x0045f8d0
+// FUNCTION: LEGORACERS2 0x0045f8d0
 void ScreenPrinter::ApplyFont()
 {
 	BitmapFont* font = g_gameController.m_fontSet->m_fonts[0];
@@ -114,7 +114,7 @@ void ScreenPrinter::ApplyFont()
 	}
 }
 
-// STUB: LEGORACERS2 0x0045f900
+// FUNCTION: LEGORACERS2 0x0045f900
 void ScreenPrinter::SetText(const LegoChar* p_text, LegoU32 p_index)
 {
 	if (g_gameController.m_fontSet->m_fonts[0] != NULL) {

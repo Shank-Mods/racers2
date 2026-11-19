@@ -106,13 +106,14 @@ LegoU32 RendererTextureStageManager::ApplyStagePlanSubrecord(RendererDefaultReco
 	return ExecuteTextureStageSubrecord(renderer, &group->m_records[p_index], p_defaults);
 }
 
-// STUB: LEGORACERS2 0x004e2490
-void __fastcall ResetTextureStageCoordinateIndices(RendererSubrecordGroup::Subrecord* p_group, void*)
+// FUNCTION: LEGORACERS2 0x004e2490
+void __fastcall ResetTextureStageMipFilters(RendererSubrecordGroup::Subrecord* p_group, void*)
 {
 	RendererStageRecordLink* entry = (RendererStageRecordLink*) p_group->m_unk0x20;
 	for (; entry != NULL; entry = entry->m_next) {
-		if (entry->m_values[0] == 1 && entry->m_values[1] == D3DTSS_TEXCOORDINDEX) {
-			entry->m_values[2] = 1;
+		// Retail compares against stage state 18 (D3DTSS_MIPFILTER) and sets D3DTEXF_POINT.
+		if (entry->m_values[0] == 1 && entry->m_values[1] == D3DTSS_MIPFILTER) {
+			entry->m_values[2] = D3DTEXF_POINT;
 		}
 	}
 }

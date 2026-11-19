@@ -492,7 +492,7 @@ static LegoU32 __fastcall GetControllerTaskSourceCount(GameObject*, void*)
 	return GetGameControllerSession()->m_unk0x00 == 0 ? 1 : 2;
 }
 
-// STUB: LEGORACERS2 0x0045c370
+// FUNCTION: LEGORACERS2 0x0045c370
 static GameObject* __fastcall GetControllerTaskSceneChild(GameObject*, void*, LegoU32 p_index)
 {
 	LegoU32* children = (LegoU32*) ((LegoU8*) &g_gameController + 0xe4);

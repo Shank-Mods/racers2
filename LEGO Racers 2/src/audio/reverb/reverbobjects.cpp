@@ -304,7 +304,7 @@ GameObject* __fastcall ConstructReverbInit(GameObjectFactoryEntry*, void*, LegoU
 	return object;
 }
 
-// STUB: LEGORACERS2 0x0043dd60
+// FUNCTION: LEGORACERS2 0x0043dd60
 void __fastcall InitializeReverbSettingsObject(GameObject* p_object, void*)
 {
 	p_object->Initialize();

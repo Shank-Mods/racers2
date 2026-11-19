@@ -332,10 +332,10 @@ void __fastcall ResetMenuSelectionWidgets(MenuManager* p_menu, void*, LegoU32 p_
 	LayoutMenuOptionWidgets(p_menu, NULL, 1, p_menu->m_unk0x19c, GetMenuSelectedOption(p_menu), origin, size);
 }
 
-// STUB: LEGORACERS2 0x0041de40
+// FUNCTION: LEGORACERS2 0x0041de40
 LegoBool32 __fastcall CanMenuCancel(MenuManager* p_menu, void*)
 {
-	return p_menu->m_unk0x1e8 != 0 && (LegoS32) p_menu->m_unk0x198 > 1 &&
+	return p_menu->m_unk0x1e8 != 0 && (LegoS32) p_menu->m_unk0x198 >= 2 &&
 		   *(LegoU32*) ((LegoU8*) p_menu + 0x4c + p_menu->m_unk0x198 * 0x14) == 0;
 }
 
@@ -457,10 +457,10 @@ void __stdcall PlayMenuInteractionSound(LegoS32 p_sound)
 	sound->m_vtable->m_resetPlaybackState(sound, NULL);
 }
 
-// STUB: LEGORACERS2 0x00423020
+// FUNCTION: LEGORACERS2 0x00423020
 LegoBool32 __fastcall IsMenuOptionEnabled(MenuManager* p_menu, void*, LegoS32 p_option)
 {
-	if (p_option < 0 || p_option >= 6) {
+	if (p_option < 0 || p_option > 5) {
 		return FALSE;
 	}
 	GlobalOverlayRecord* record = (GlobalOverlayRecord*) p_menu->m_overlayRecords[p_option];

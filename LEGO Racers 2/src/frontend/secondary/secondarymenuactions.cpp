@@ -1091,7 +1091,7 @@ switchD_00420d7d_default:
 	return result;
 }
 
-// STUB: LEGORACERS2 0x004231d0
+// FUNCTION: LEGORACERS2 0x004231d0
 LegoS32 __fastcall GetMenuParentAction(MenuManager* p_menu, void*)
 {
 	LegoS32 depth = p_menu->m_unk0x198;
@@ -1099,7 +1099,7 @@ LegoS32 __fastcall GetMenuParentAction(MenuManager* p_menu, void*)
 		return -1;
 	}
 	LegoU8* stack = (LegoU8*) p_menu + depth * 0x14;
-	if (*(LegoU32*) (stack + 0x34) != *(LegoU32*) (stack + 0x48)) {
+	if (*(LegoU32*) (stack + 0x48) != *(LegoU32*) (stack + 0x34)) {
 		return -1;
 	}
 	return *(LegoS32*) (stack + 0x30);

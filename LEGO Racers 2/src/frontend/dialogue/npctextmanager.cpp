@@ -123,7 +123,7 @@ NpcTextManager::~NpcTextManager()
 {
 	m_vtable = &g_npcTextManagerDispatch.m_object;
 }
-// STUB: LEGORACERS2 0x0045fa60
+// FUNCTION: LEGORACERS2 0x0045fa60
 static void __fastcall InitializeNpcTextManager(GameObject* p_object, void*)
 {
 	p_object->Initialize();
