@@ -463,11 +463,11 @@ GameObject* __cdecl FindGameObjectByName(const LegoChar* p_name, LegoU32 p_unuse
 	return FindRegisteredGameObjectByName(GetGameManager(), NULL, p_name, p_unused, p_typeMask);
 }
 
-// STUB: LEGORACERS2 0x004a3a20
+// FUNCTION: LEGORACERS2 0x004a3a20
 LegoBool32 __fastcall IsGameObjectFlagSelected(const LegoU32* p_mask, void*, LegoU32 p_bitIndex)
 {
-	LegoU32 normalizedIndex = p_bitIndex & 0xff;
-	return (p_mask[normalizedIndex >> 5] & ((LegoU32) 1 << (normalizedIndex & 31))) != 0;
+	LegoS32 normalizedIndex = p_bitIndex & 0xff;
+	return (p_mask[(LegoU32) normalizedIndex >> 5] & ((LegoU32) 1 << (normalizedIndex % 32))) != 0;
 }
 
 // STUB: LEGORACERS2 0x004a6bb0

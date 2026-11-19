@@ -3565,7 +3565,7 @@ void SecondaryManager::UpdateSpecialMode(LegoU32 p_frameParameter)
 // STUB: LEGORACERS2 0x00428540
 void SecondaryManager::PrepareSavedGame()
 {
-	memcpy(&g_secondarySavedGame, g_gameControllerSettings, 0x7fb8);
+	memcpy(&g_secondarySavedGame, g_gameControllerSettings, offsetof(SecondarySavedGame, m_session));
 	memcpy(g_secondarySavedGame.m_session, (LegoU8*) g_gameController.m_unk0x8c + 0x1e34, 0x1e34);
 	g_secondarySavedGame.m_settingsChecksum =
 		ComputeSecondarySaveChecksum(this, NULL, (const LegoU8*) &g_secondarySavedGame, 0x7fb8);
@@ -3587,7 +3587,7 @@ LegoBool32 SecondaryManager::ValidateSavedGame()
 		ComputeSecondarySaveChecksum(this, NULL, (const LegoU8*) &g_secondarySavedGame, 0x7fb8)) {
 		return FALSE;
 	}
-	memcpy(g_gameControllerSettings, &g_secondarySavedGame, 0x7fb8);
+	memcpy(g_gameControllerSettings, &g_secondarySavedGame, offsetof(SecondarySavedGame, m_session));
 	if (g_secondarySavedGame.m_sessionChecksum != ComputeSecondarySaveChecksum(
 													  this,
 													  NULL,

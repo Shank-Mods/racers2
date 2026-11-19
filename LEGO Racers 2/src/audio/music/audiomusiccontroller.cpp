@@ -39,10 +39,11 @@ LegoU32 DigitalMusicController::StartPlayback(LegoU32, LegoU32)
 	return 1;
 }
 
-// STUB: LEGORACERS2 0x004f18c0
+// FUNCTION: LEGORACERS2 0x004f18c0
 LegoU32 DigitalMusicController::StopPlaybackIfActive()
 {
-	if (m_playing == 1) {
+	// Shared with the streaming thread, so retail rereads it from memory.
+	if (*(volatile LegoU32*) &m_playing == 1) {
 		if (m_playbackBuffer != NULL) {
 			m_playbackBuffer->Stop();
 		}

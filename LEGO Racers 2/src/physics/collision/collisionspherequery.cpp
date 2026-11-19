@@ -13,7 +13,7 @@ LegoU32 __fastcall QueryCollisionSphere(
 	InitializeCollisionQueryBoundsFromRadius(&bounds, NULL, p_center, p_radius);
 	LegoU32 result = p_index->m_dynamicIndex->CollectCandidates(&bounds, p_tags);
 	// Both temporary query constructors zero the SpatialIndexLink prefix;
-	// the retail destructor still attempts its ordinary detach operation.
-	((SpatialIndexLink*) &bounds)->Detach();
+	// retail still runs the link destructor, which detaches.
+	((SpatialIndexLink*) &bounds)->Destroy();
 	return result;
 }

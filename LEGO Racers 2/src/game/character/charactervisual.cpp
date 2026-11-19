@@ -50,11 +50,11 @@ void CharacterVisual::SetFaceVariant(LegoS32 p_variant)
 	m_faceTexture = texture;
 }
 
-// STUB: LEGORACERS2 0x0044f690
+// FUNCTION: LEGORACERS2 0x0044f690
 void CharacterVisual::SetFaceGroup(LegoS32 p_group)
 {
 	LegoS32 texture = ((BodypartManager*) g_gameController.m_bodypartManager)->GetFaceTexture(p_group, 0);
-	GetCharacterObjectModel(m_head)->RemapTextureIndices(m_faceTexture, (LegoS16) texture);
+	((CharacterModelBinding*) m_head->m_unk0x48)->m_model->RemapTextureIndices(m_faceTexture, (LegoS16) texture);
 	m_faceTexture = texture;
 	m_faceGroup = p_group;
 }

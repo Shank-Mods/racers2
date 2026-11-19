@@ -91,11 +91,11 @@ void ScreenPrinter::Remove()
 	GameObject::Remove();
 }
 
-// STUB: LEGORACERS2 0x0045f8a0
+// FUNCTION: LEGORACERS2 0x0045f8a0
 LegoU32 ScreenPrinter::Update(LegoU32)
 {
 	if (g_gameController.m_fontSet->m_fonts[0] == NULL) {
-		for (LegoU32 i = 0; i < 4; ++i) {
+		for (LegoS32 i = 0; i < 4; ++i) {
 			ClearText(i);
 		}
 		return 1;

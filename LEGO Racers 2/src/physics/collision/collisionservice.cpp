@@ -166,7 +166,7 @@ void __cdecl DetachCollisionProxy(CollisionProxy* p_proxy)
 // STUB: LEGORACERS2 0x004b9850
 void __cdecl AttachCollisionProxy(CollisionProxy* p_proxy)
 {
-	InitializeCollisionServices();
+	// Unlike its siblings, retail does not lazily initialize the services here.
 	AttachCollisionProxyFromService(g_collisionProxyService, NULL, p_proxy);
 }
 

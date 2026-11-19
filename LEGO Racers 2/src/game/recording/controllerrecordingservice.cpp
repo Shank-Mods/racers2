@@ -555,17 +555,14 @@ void ControllerRecordingService::Shutdown()
 	}
 }
 
-// STUB: LEGORACERS2 0x004b17e0
+// FUNCTION: LEGORACERS2 0x004b17e0
 ControllerRecordingRecord* ControllerRecordingService::AllocateRecord()
 {
 	if (m_recordCount >= (LegoS32) m_recordCapacity) {
 		return NULL;
 	}
 
-	ControllerRecordingRecord* record = &m_records[m_recordCount++];
-	record->m_inputValues[0] = 0;
-	*(LegoU32*) ((LegoU8*) record + 0x4c) = 0;
-	return record;
+	return &m_records[m_recordCount++];
 }
 
 // STUB: LEGORACERS2 0x004b1810

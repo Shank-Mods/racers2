@@ -140,10 +140,10 @@ LegoU32 __fastcall CountFoyerModeProgress(const LegoU32* p_flags, void*)
 	return HasFoyerModeProgress(p_flags, 0) + HasFoyerModeProgress(p_flags, 1) + HasFoyerModeProgress(p_flags, 2);
 }
 
-// STUB: LEGORACERS2 0x00410f50
+// FUNCTION: LEGORACERS2 0x00410f50
 LegoU32 __fastcall GetFoyerModeProgressValue(const LegoU32* p_values, void*, LegoU32 p_mode)
 {
-	return (p_values[0] >> ((p_mode * 5) & 31)) & 0xf;
+	return ((LegoS32) p_values[0] >> (p_mode * 5)) & 0xf;
 }
 
 // STUB: LEGORACERS2 0x00410f70

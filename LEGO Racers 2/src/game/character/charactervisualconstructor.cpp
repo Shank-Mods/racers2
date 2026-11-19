@@ -1109,28 +1109,28 @@ static CharBuffer24* GetFoyerDefaultBodypartName()
 	return (CharBuffer24*) g_foyerDefaultBodypartNameStorage;
 }
 
-// STUB: LEGORACERS2 0x0047b7b0
+// FUNCTION: LEGORACERS2 0x0047b7b0
 static void InitializeSparkyCharacterVisualTemplate()
 {
-	g_sparkyCharacterVisualTemplate.Initialize(0, 6, 0, 0, 0, GetFoyerDefaultBodypartName());
+	g_sparkyCharacterVisualTemplate.Initialize(0, 6, 0, 0, 0, (CharBuffer24*) g_foyerDefaultBodypartNameStorage);
 }
 
-// STUB: LEGORACERS2 0x0047b970
+// FUNCTION: LEGORACERS2 0x0047b970
 static void InitializeRigelCharacterVisualTemplate()
 {
-	g_rigelCharacterVisualTemplate.Initialize(0, 6, 0, 0, 0, GetFoyerDefaultBodypartName());
+	g_rigelCharacterVisualTemplate.Initialize(0, 6, 0, 0, 0, (CharBuffer24*) g_foyerDefaultBodypartNameStorage);
 }
 
-// STUB: LEGORACERS2 0x0047bac0
+// FUNCTION: LEGORACERS2 0x0047bac0
 static void InitializeRocketRacerCharacterVisualTemplate()
 {
-	g_rocketRacerCharacterVisualTemplate.Initialize(0, 6, 0, 0, 0, GetFoyerDefaultBodypartName());
+	g_rocketRacerCharacterVisualTemplate.Initialize(0, 6, 0, 0, 0, (CharBuffer24*) g_foyerDefaultBodypartNameStorage);
 }
 
-// STUB: LEGORACERS2 0x0047be50
+// FUNCTION: LEGORACERS2 0x0047be50
 static void InitializeIntroCharacterVisualTemplate()
 {
-	g_introCharacterVisualTemplate.Initialize(0, 6, 0, 0, 0, GetFoyerDefaultBodypartName());
+	g_introCharacterVisualTemplate.Initialize(0, 6, 0, 0, 0, (CharBuffer24*) g_foyerDefaultBodypartNameStorage);
 }
 
 // STUB: LEGORACERS2 0x00493440

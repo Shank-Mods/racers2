@@ -55,10 +55,11 @@ static void DestroyMemoryHeapAtExit()
 {
 }
 
-// STUB: LEGORACERS2 0x004a3f30
+// FUNCTION: LEGORACERS2 0x004a3f30
 void MemoryHeap::EnterOperation()
 {
-	if (m_entered == TRUE) {
+	// The guard is shared between threads, so retail rereads it from memory.
+	if (*(volatile LegoBool32*) &m_entered == TRUE) {
 		ReportFatalError("Thread overlap, make this wait till its ok");
 	}
 	m_entered = TRUE;
