@@ -1602,7 +1602,7 @@ void ControllerRecordingObjectMap::Initialize(LegoS32 p_capacity, LegoS32 p_firs
 	}
 }
 
-// STUB: LEGORACERS2 0x004f3930
+// FUNCTION: LEGORACERS2 0x004f3930
 void ControllerRecordingObjectMap::Shutdown()
 {
 	while (m_lock == 1) {
@@ -1610,7 +1610,8 @@ void ControllerRecordingObjectMap::Shutdown()
 	m_lock = 1;
 	FreeHeapMemory(m_entries);
 	m_entries = NULL;
-	GetMemoryHeap()->Free(m_allocation);
+	MemoryHeap* heap = GetMemoryHeap();
+	heap->Free(m_allocation);
 	m_allocation = NULL;
 	m_lock = 0;
 }

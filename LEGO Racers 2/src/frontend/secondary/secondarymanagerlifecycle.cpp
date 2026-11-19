@@ -714,7 +714,7 @@ static LegoU8 g_secondaryContentArchiveInitialized;
 
 static void OnSecondaryContentArchiveExit();
 
-// STUB: LEGORACERS2 0x004034e0
+// FUNCTION: LEGORACERS2 0x004034e0
 static SecondaryCarCollisionStore* __fastcall ConstructSecondaryCarCollisionStore(
 	SecondaryCarCollisionStore* p_store,
 	void*,
@@ -988,7 +988,7 @@ static LegoS32 __fastcall FindSecondaryBrickPath(SecondaryCarResourcePool* p_poo
 	return -1;
 }
 
-// STUB: LEGORACERS2 0x004048e0
+// FUNCTION: LEGORACERS2 0x004048e0
 static LegoU32 __fastcall IsSecondaryBrickLoaded(SecondaryCarResourcePool* p_pool, void*, LegoS32 p_index)
 {
 	if (p_index >= p_pool->m_entryCount) {
@@ -997,7 +997,7 @@ static LegoU32 __fastcall IsSecondaryBrickLoaded(SecondaryCarResourcePool* p_poo
 	return p_pool->m_entries[p_index].m_loaded;
 }
 
-// STUB: LEGORACERS2 0x00404920
+// FUNCTION: LEGORACERS2 0x00404920
 LegoFloat __fastcall GetSecondaryBrickScale(SecondaryCarResourcePool* p_pool, void*, LegoS32 p_index)
 {
 	if (p_index >= p_pool->m_entryCount) {
@@ -1006,7 +1006,7 @@ LegoFloat __fastcall GetSecondaryBrickScale(SecondaryCarResourcePool* p_pool, vo
 	return p_pool->m_entries[p_index].m_scale;
 }
 
-// STUB: LEGORACERS2 0x00404960
+// FUNCTION: LEGORACERS2 0x00404960
 LegoS32 __fastcall GetSecondaryBrickOrientation(SecondaryCarResourcePool* p_pool, void*, LegoS32 p_index)
 {
 	if (p_index >= p_pool->m_entryCount) {
@@ -1015,7 +1015,7 @@ LegoS32 __fastcall GetSecondaryBrickOrientation(SecondaryCarResourcePool* p_pool
 	return p_pool->m_entries[p_index].m_orientation;
 }
 
-// STUB: LEGORACERS2 0x004049a0
+// FUNCTION: LEGORACERS2 0x004049a0
 LegoFloat __fastcall GetSecondaryBrickOffset(SecondaryCarResourcePool* p_pool, void*, LegoS32 p_index)
 {
 	if (p_index >= p_pool->m_entryCount) {
@@ -1024,7 +1024,7 @@ LegoFloat __fastcall GetSecondaryBrickOffset(SecondaryCarResourcePool* p_pool, v
 	return p_pool->m_entries[p_index].m_offset;
 }
 
-// STUB: LEGORACERS2 0x004049e0
+// FUNCTION: LEGORACERS2 0x004049e0
 LegoU32 __fastcall GetSecondaryBrickWorldMask(SecondaryCarResourcePool* p_pool, void*, LegoS32 p_index)
 {
 	if (p_index >= p_pool->m_entryCount) {
@@ -4188,7 +4188,7 @@ static void __fastcall ReleaseSecondaryNpcPortraits(void* p_object, void*, LegoS
 	}
 }
 
-// STUB: LEGORACERS2 0x00435970
+// FUNCTION: LEGORACERS2 0x00435970
 static void __stdcall FormatSecondaryPortraitTexturePath(LegoChar* p_destination, LegoS32 p_index)
 {
 	sprintf(p_destination, "Game Data\\HUD\\Text box faces\\Player faces %d.tga", (p_index - 100) / 4 + 1);
