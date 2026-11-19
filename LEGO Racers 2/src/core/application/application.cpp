@@ -101,9 +101,9 @@ void Application::SaveDisplayConfig()
 	GetFileManager()->SetFlags(1, FALSE);
 }
 
-// Retail 0x0049b930: bare RET, folded with the heap exit callback in this build.
-// reccmp supports one original address per rebuilt address; the heap callback
-// retains that shared mapping, and this retail extent is inventory-only.
+// Retail 0x0049b930: bare RET. The linker folds it with the other empty exit
+// callbacks; reccmp/folded-functions.csv verifies the shared body.
+// FUNCTION: LEGORACERS2 0x0049b930 FOLDED
 static void OnSavedDisplayConfigExit()
 {
 }

@@ -72,6 +72,12 @@ static LegoBool32 __cdecl IntersectTerrainQuad(
 		   ) != FALSE;
 }
 
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x004d60d0 FOLDED
+void FUN_004d60d0()
+{
+}
+
 // FUNCTION: LEGORACERS2 0x004d60e0
 static LegoBool32 __cdecl VisitTerrainSegmentCell(LegoS32 p_column, LegoS32 p_row)
 {

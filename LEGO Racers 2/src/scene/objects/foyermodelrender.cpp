@@ -149,6 +149,13 @@ GameObject* __fastcall DestroyFoyerModelRenderObject(GameObject* p_object, void*
 	return p_object;
 }
 
+// Retail: ret 8. A virtual slot in three dispatch tables (0x005313ac, 0x00533a74,
+// 0x005364a0); the PS2 name map suggests cAISupervisor::SetAIObjectSleeping (low confidence).
+// FUNCTION: LEGORACERS2 0x00489970 FOLDED
+void __fastcall IgnoreAIObjectSleeping(void*, void*, LegoU32, LegoU32)
+{
+}
+
 // Retail: mov eax, dword ptr [esp + 4] ; mov dword ptr [ecx + 0x1c], eax ; ret 4
 // FUNCTION: LEGORACERS2 0x0048b0c0
 void __fastcall FUN_0048b0c0(void* p_this, void*, LegoU32 p_value)

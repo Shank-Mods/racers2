@@ -59,8 +59,9 @@ GameManager* GetGameManager()
 	return &g_gameManagerStorage;
 }
 
-// Retail no-op static destructor callback at 0x004a2e10; deliberately left
-// unannotated so it can fold with the canonical empty-return helper.
+// Retail no-op static destructor callback. The linker folds it with the other
+// empty exit callbacks; reccmp/folded-functions.csv verifies the shared body.
+// FUNCTION: LEGORACERS2 0x004a2e10 FOLDED
 static void GameManagerStaticDestructor()
 {
 }

@@ -77,6 +77,12 @@ static SurfaceManagerFactoryRegistration g_surfaceManagerFactoryRegistration;
 // GLOBAL: LEGORACERS2 0x0067a1cc
 GameObjectFactoryRegistry g_gameObjectFactoryRegistry;
 
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x004bd0c0 FOLDED
+void FUN_004bd0c0()
+{
+}
+
 // STUB: LEGORACERS2 0x004bd0d0
 void GameObjectFactoryRegistry::Register(GameObjectFactoryEntry* p_factory)
 {

@@ -248,6 +248,36 @@ void __fastcall UpdateControllerLoadingEqualizerBar(
 	cap->SetSize(capSize);
 }
 
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x00501de0 FOLDED
+void FUN_00501de0()
+{
+}
+
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x00501e00 FOLDED
+void FUN_00501e00()
+{
+}
+
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x00501e20 FOLDED
+void FUN_00501e20()
+{
+}
+
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x00501e40 FOLDED
+void FUN_00501e40()
+{
+}
+
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x00501e60 FOLDED
+void FUN_00501e60()
+{
+}
+
 // FUNCTION: LEGORACERS2 0x00502a10
 void __fastcall SetControllerSelectionProgressValue(void* p_storage, void*, LegoFloat p_value)
 {

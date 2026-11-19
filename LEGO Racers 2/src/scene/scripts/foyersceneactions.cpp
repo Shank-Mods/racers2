@@ -288,6 +288,12 @@ void __fastcall FUN_004814f0(void* p_this, void*)
 	*(LegoU32*) ((LegoU8*) p_this + 0x184) = 3;
 }
 
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x00485ac0 FOLDED
+void FUN_00485ac0()
+{
+}
+
 // STUB: LEGORACERS2 0x004d7460
 void __fastcall UpdateFoyerSceneTargetOscillation(void* p_target, void*)
 {

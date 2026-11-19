@@ -112,6 +112,54 @@ static void __cdecl TraverseCollisionGridRay(
 	);
 }
 
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x004f8e30 FOLDED
+void FUN_004f8e30()
+{
+}
+
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x004f8e50 FOLDED
+void FUN_004f8e50()
+{
+}
+
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x004f8e70 FOLDED
+void FUN_004f8e70()
+{
+}
+
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x004f8e90 FOLDED
+void FUN_004f8e90()
+{
+}
+
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x004f8eb0 FOLDED
+void FUN_004f8eb0()
+{
+}
+
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x004f8ed0 FOLDED
+void FUN_004f8ed0()
+{
+}
+
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x004f8ef0 FOLDED
+void FUN_004f8ef0()
+{
+}
+
+// Retail: bare RET, not referenced anywhere in the retail executable.
+// FUNCTION: LEGORACERS2 0x004f8f10 FOLDED
+void FUN_004f8f10()
+{
+}
+
 // FUNCTION: LEGORACERS2 0x00507e60
 LegoBool32 DynamicSpatialIndex::IntersectSegment(
 	const CollisionQueryBounds* p_bounds,

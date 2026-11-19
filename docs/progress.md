@@ -5,9 +5,9 @@ promoted **213 STUBs** (195 exact, 18 reviewed near matches) and recovered one
 additional exact helper. No game runs were performed for these batches.
 
 Both 465-unit SP5 builds agree on all **2,752 measured scores and statuses**:
-**881 exact functions, 48 reviewed near matches and 1,823 STUB reconstructions**.
+**900 exact functions, 48 reviewed near matches and 1,823 STUB reconstructions**.
 All 619 previously implemented functions retain their raw accuracy or improve.
-Twenty-eight complete folded aliases, twelve dispatch inventories per build
+Forty-seven complete folded aliases, twelve dispatch inventories per build
 (including 1,321 scene pointers), 307 input-format records and 29 tooling/library
 tests pass. Source STUBs without a separate matched report row remain unimplemented.
 
@@ -15,9 +15,9 @@ tests pass. Source STUBs without a separate matched report row remain unimplemen
 and **5,647 bodies**, for console, JSON, HTML and SVG coverage:
 
 ```text
-Implemented:  14.05%  (929 / 6612)
+Implemented:  14.34%  (948 / 6612)
 Accuracy:     99.83%
-Progress:     14.03%
+Progress:     14.31%
 ```
 
 The inventory includes linked libraries and compiler helpers; external imports
@@ -110,7 +110,7 @@ measure runtime completeness.
 | `0x00406ab0` | `ControllerStartupScene::ControllerStartupScene` | 51.85% | Work in progress |
 | `0x00406b00` | `DestroyControllerStartupScene` | 100.00% | Verified exact |
 | `0x00406b20` | `ControllerStartupScene::~ControllerStartupScene` | 50.00% | Work in progress |
-| `0x00406b30` | `UpdateControllerStartupScene` | 15.38% | Work in progress |
+| `0x00406b30` | `UpdateControllerStartupScene` | 41.03% | Work in progress |
 | `0x00406b80` | `CountDownControllerAttractMode` | 85.71% | Work in progress |
 | `0x00406bb0` | `UpdateControllerAttractNotice` | 23.78% | Work in progress |
 | `0x00406cd0` | `IsMenuPlayerAvailable` | 100.00% | Verified exact |
@@ -123,7 +123,7 @@ measure runtime completeness.
 | `0x00406f60` | `RegisterGameControllerExit` | 100.00% | Verified exact |
 | `0x00406f70` | `DestroyGameControllerAtExit` | 100.00% | Verified exact |
 | `0x00406f90` | `InitializeGameLocalizationPath` | 27.27% | Work in progress |
-| `0x00406fa0` | `GameController::GameController` | 21.43% | Work in progress |
+| `0x00406fa0` | `GameController::GameController` | 22.14% | Work in progress |
 | `0x004071a0` | `GameControllerScore::Initialize` | 100.00% | Verified exact |
 | `0x004071c0` | `GameControllerAllocationSize` | 100.00% | Verified exact |
 | `0x004071d0` | `DeleteGameController` | 100.00% | Verified exact |
@@ -425,7 +425,7 @@ measure runtime completeness.
 | `0x00420bd0` | `ReleaseMenuResolutionNames` | 100.00% | Verified exact |
 | `0x00420be0` | `ClearMenuManagerDisplay` | 52.31% | Work in progress |
 | `0x00420c80` | `GetInactiveMenuWidget` | 55.67% | Work in progress |
-| `0x00420d30` | `ApplyMenuConfirmAction` | 25.40% | Work in progress |
+| `0x00420d30` | `ApplyMenuConfirmAction` | 25.60% | Work in progress |
 | `0x00422620` | `CompleteSecondaryMenuAction` | 51.06% | Work in progress |
 | `0x00422710` | `UpdateMenuManagerCurrentAction` | 29.81% | Work in progress |
 | `0x00422b30` | `ProcessMenuWidgetsInput` | 31.11% | Work in progress |
@@ -1041,7 +1041,7 @@ measure runtime completeness.
 | `0x004608d0` | `HideSecondarySpriteSet` | 100.00% | Verified exact |
 | `0x00460900` | `ReleaseSecondarySpriteSet` | 38.96% | Work in progress |
 | `0x00460970` | `FindSecondarySprite` | 100.00% | Verified exact |
-| `0x004609e0` | `ConstructSecondarySelectionGrid` | 83.64% | Work in progress |
+| `0x004609e0` | `ConstructSecondarySelectionGrid` | 87.27% | Work in progress |
 | `0x00460a50` | `DestroySecondarySelectionGrid` | 40.00% | Work in progress |
 | `0x00460a60` | `InitializeSecondarySelectionGrid` | 78.43% | Work in progress |
 | `0x00460b10` | `DefineSecondarySelectionCategory` | 86.21% | Work in progress |
@@ -1065,7 +1065,7 @@ measure runtime completeness.
 | `0x00463880` | `LoadSecondarySelectionLabel` | 28.57% | Work in progress |
 | `0x00463900` | `ReleaseSecondarySelectionLabel` | 100.00% | Verified exact |
 | `0x004639a0` | `SetSecondarySelectionLabelFont` | 100.00% | Verified exact |
-| `0x00463ec0` | `ConstructSecondaryCharacterSelection` | 84.00% | Work in progress |
+| `0x00463ec0` | `ConstructSecondaryCharacterSelection` | 88.00% | Work in progress |
 | `0x00463f20` | `ReleaseSecondaryObject70` | 70.59% | Work in progress |
 | `0x00463f40` | `LoadSecondaryCharacterSelector` | 50.15% | Work in progress |
 | `0x00464240` | `UpdateSecondaryCharacterSelection` | 0.95% | Work in progress |
@@ -1086,7 +1086,7 @@ measure runtime completeness.
 | `0x00467520` | `InitializeSecondaryBuilderGridDimensions` | 100.00% | Verified exact |
 | `0x00467550` | `InitializeSecondaryBuilderCellDimensions` | 100.00% | Verified exact |
 | `0x00467760` | `InitializeCharacterSelectionPositionOffset` | 100.00% | Verified exact |
-| `0x00467af0` | `ConstructSecondaryCarSelection` | 63.49% | Work in progress |
+| `0x00467af0` | `ConstructSecondaryCarSelection` | 66.67% | Work in progress |
 | `0x00467b80` | `ReleaseSecondaryObject6c` | 70.59% | Work in progress |
 | `0x00467ba0` | `LoadSecondaryCarSelector` | 42.47% | Work in progress |
 | `0x00467da0` | `GetSecondaryBrickBuilderSize` | 100.00% | Verified exact |
@@ -1274,6 +1274,8 @@ measure runtime completeness.
 | `0x00480f90` | `InitializeFoyerSceneAction19` | 11.76% | Work in progress |
 | `0x00480fd0` | `InitializeFoyerSceneAction15` | 6.45% | Work in progress |
 | `0x004814f0` | `FUN_004814f0` | 100.00% | Verified exact |
+| `0x00485ac0` | `FUN_00485ac0` | 100.00% | Verified exact |
+| `0x00489970` | `IgnoreAIObjectSleeping` | 100.00% | Verified exact |
 | `0x0048b0c0` | `FUN_0048b0c0` | 100.00% | Verified exact |
 | `0x0048da40` | `DestroyFoyerLifecycleOwner` | 0.00% | Work in progress |
 | `0x0048e510` | `KillSphereSupervisorAllocationSize` | 100.00% | Verified exact |
@@ -1364,7 +1366,8 @@ measure runtime completeness.
 | `0x0049b340` | `SetControllerSceneProgressRange` | 0.00% | Work in progress |
 | `0x0049b4d0` | `?RemoveControllerSceneStackObjects@@YIXPAUControllerSceneStack@?%Z:\home\ilya\work\lr2_decomp\racers2\LEGO Racers 2\include\game/objects/gamemanager.h354913112@@PAX@Z` | 33.33% | Work in progress |
 | `0x0049b5d0` | `Application::LoadDisplayConfig` | 66.67% | Work in progress |
-| `0x0049b780` | `Application::SaveDisplayConfig` | 94.48% | Work in progress |
+| `0x0049b780` | `Application::SaveDisplayConfig` | 95.17% | Work in progress |
+| `0x0049b930` | `OnSavedDisplayConfigExit` | 100.00% | Verified exact |
 | `0x0049c460` | `FUN_0049c460` | 100.00% | Verified exact |
 | `0x004a2130` | `CharBuffer24::CharBuffer24(char const *)` | 100.00% | Verified exact |
 | `0x004a2170` | `CharBuffer24::CharBuffer24(void)` | 100.00% | Verified exact |
@@ -1396,6 +1399,7 @@ measure runtime completeness.
 | `0x004a2d20` | `FileManager::SeekCurrent` | 79.49% | Work in progress |
 | `0x004a2d80` | `FileManager::SetFlags` | 100.00% | Verified exact |
 | `0x004a2dd0` | `GetGameManager` | 93.33% | Work in progress |
+| `0x004a2e10` | `GameManagerStaticDestructor` | 100.00% | Verified exact |
 | `0x004a2e20` | `GameObject::GameObject` | 87.72% | Work in progress |
 | `0x004a2ed0` | `GameObject::~GameObject` | 72.34% | Work in progress |
 | `0x004a2f10` | `GameObject::Initialize` | 48.65% | Work in progress |
@@ -1980,6 +1984,7 @@ measure runtime completeness.
 | `0x004bcf20` | `ApplyFoyerModelRenderForces` | 100.00% | Verified exact |
 | `0x004bcf30` | `UpdateFoyerModelRenderRegion` | 27.27% | Work in progress |
 | `0x004bcf60` | `DrawFoyerModelRenderObject` | 55.17% | Work in progress |
+| `0x004bd0c0` | `FUN_004bd0c0` | 100.00% | Verified exact |
 | `0x004bd0d0` | `GameObjectFactoryRegistry::Register` | 76.60% | Work in progress |
 | `0x004bd150` | `GameObjectFactoryRegistry::Find` | 45.33% | Work in progress |
 | `0x004bd1b0` | `GameObjectFactoryRegistry::ConstructByClassName` | 84.00% | Work in progress |
@@ -2085,7 +2090,7 @@ measure runtime completeness.
 | `0x004c2b60` | `GetCharacterBodyHeadTransform` | 21.43% | Work in progress |
 | `0x004c2ef0` | `InitializeSecondaryLightTemplate` | 59.57% | Work in progress |
 | `0x004c3020` | `StopNativeGame` | 100.00% | Verified exact |
-| `0x004c3040` | `RunGameInstance` | 71.61% | Work in progress |
+| `0x004c3040` | `RunGameInstance` | 71.10% | Work in progress |
 | `0x004c32b0` | `FUN_004c32b0` | 100.00% | Verified exact |
 | `0x004c32c0` | `GameWindowProc` | 89.76% | Work in progress |
 | `0x004c33b0` | `FUN_004c33b0` | 100.00% | Verified exact |
@@ -2191,6 +2196,7 @@ measure runtime completeness.
 | `0x004d5be0` | `Vector3::Cross` | 17.02% | Work in progress |
 | `0x004d5cd0` | `BuildTerrainCellCorners` | 22.05% | Work in progress |
 | `0x004d6050` | `IntersectTerrainQuad` | 100.00% | Verified exact |
+| `0x004d60d0` | `FUN_004d60d0` | 100.00% | Verified exact |
 | `0x004d60e0` | `VisitTerrainSegmentCell` | 100.00% | Verified exact |
 | `0x004d6160` | `IntersectTerrainSurfaceSegment` | 91.78% | Work in progress |
 | `0x004d62b0` | `FoyerSceneEventStateObject::FoyerSceneEventStateObject` | 35.56% | Work in progress |
@@ -2344,7 +2350,7 @@ measure runtime completeness.
 | `0x004e5ea0` | `LinkTextureStageRecord` | 100.00% | Verified exact |
 | `0x004e5eb0` | `AddTextureStageSubrecords` | 42.86% | Work in progress |
 | `0x004e5f30` | `ApplyTextureStagePlanForManager` | 100.00% | Verified exact |
-| `0x004e5f90` | `ApplyRendererTextureStagePlan` | 41.52% | Work in progress |
+| `0x004e5f90` | `ApplyRendererTextureStagePlan` | 42.29% | Work in progress |
 | `0x004e6360` | `RendererTextureStageManager::CopySubrecordGroupCacheEntry` | 100.00% | Verified exact |
 | `0x004e6380` | `DisplayRenderer::SupportsDotProduct3` | 22.22% | Work in progress |
 | `0x004e6610` | `?CopyControllerSceneTypeMask@@YIIPAUControllerSceneMaskService@?%Z:\home\ilya\work\lr2_decomp\racers2\LEGO Racers 2\include\game/objects/gamemanager.h354913112@@PAXPBUCharBuffer24@@PAI@Z` | 100.00% | Verified exact |
@@ -2564,7 +2570,7 @@ measure runtime completeness.
 | `0x004f3100` | `ControllerRecordingService::HandleDirectPlayMessage` | 45.26% | Work in progress |
 | `0x004f3550` | `ControllerRecordingService::ProcessSpecialInputCommand` | 53.99% | Work in progress |
 | `0x004f3620` | `ControllerRecordingService::RecordPeerState` | 94.34% | Work in progress |
-| `0x004f3670` | `ControllerRecordingService::ProcessValue` | 49.65% | Work in progress |
+| `0x004f3670` | `ControllerRecordingService::ProcessValue` | 50.35% | Work in progress |
 | `0x004f37d0` | `ControllerRecordingService::GetProviderKeyValue` | 100.00% | Verified exact |
 | `0x004f37f0` | `ControllerRecordingService::RemoveProviderKey` | 100.00% | Verified exact |
 | `0x004f3820` | `ControllerRecordingObjectMap::Initialize` | 19.63% | Work in progress |
@@ -2617,7 +2623,7 @@ measure runtime completeness.
 | `0x004f4e40` | `CollisionServicePrepareQuery` | 100.00% | Verified exact |
 | `0x004f4e70` | `CollisionServiceQuerySphere` | 94.74% | Work in progress |
 | `0x004f4e90` | `CollisionServiceQuerySegment` | 94.74% | Work in progress |
-| `0x004f4eb0` | `CollisionServiceSweep` | 22.46% | Work in progress |
+| `0x004f4eb0` | `CollisionServiceSweep` | 24.60% | Work in progress |
 | `0x004f50e0` | `CollisionModelTransform::ResetIdentity` | 31.58% | Work in progress |
 | `0x004f5140` | `SpatialLinkRegistry::SpatialLinkRegistry` | 100.00% | Verified exact |
 | `0x004f5160` | `SpatialLinkRegistry::Insert` | 80.00% | Work in progress |
@@ -2660,6 +2666,14 @@ measure runtime completeness.
 | `0x004f8ab0` | `ClipTerrainGridSegment` | 33.21% | Work in progress |
 | `0x004f8c40` | `ClipTerrainGridBoundary` | 22.62% | Work in progress |
 | `0x004f8da0` | `TraverseCollisionGridRay` | 78.79% | Work in progress |
+| `0x004f8e30` | `FUN_004f8e30` | 100.00% | Verified exact |
+| `0x004f8e50` | `FUN_004f8e50` | 100.00% | Verified exact |
+| `0x004f8e70` | `FUN_004f8e70` | 100.00% | Verified exact |
+| `0x004f8e90` | `FUN_004f8e90` | 100.00% | Verified exact |
+| `0x004f8eb0` | `FUN_004f8eb0` | 100.00% | Verified exact |
+| `0x004f8ed0` | `FUN_004f8ed0` | 100.00% | Verified exact |
+| `0x004f8ef0` | `FUN_004f8ef0` | 100.00% | Verified exact |
+| `0x004f8f10` | `FUN_004f8f10` | 100.00% | Verified exact |
 | `0x004f90e0` | `GetSpatialGridShift` | 90.91% | Work in progress |
 | `0x004f96a0` | `TestCollisionGeometryPair` | 20.66% | Work in progress |
 | `0x004f97f0` | `TestCollisionGeometryAgainstSphere` | 13.30% | Work in progress |
@@ -2701,6 +2715,11 @@ measure runtime completeness.
 | `0x004fc530` | `ComputeContactSeparationWeights` | 100.00% | Verified exact |
 | `0x004fc580` | `SeparateContactBodies` | 71.08% | Work in progress |
 | `0x004fc680` | `SeparateContactFromStaticBody` | 32.81% | Work in progress |
+| `0x00501de0` | `FUN_00501de0` | 100.00% | Verified exact |
+| `0x00501e00` | `FUN_00501e00` | 100.00% | Verified exact |
+| `0x00501e20` | `FUN_00501e20` | 100.00% | Verified exact |
+| `0x00501e40` | `FUN_00501e40` | 100.00% | Verified exact |
+| `0x00501e60` | `FUN_00501e60` | 100.00% | Verified exact |
 | `0x00502a10` | `SetControllerSelectionProgressValue` | 100.00% | Verified exact |
 | `0x00502d10` | `ParseAiffAudioData` | 28.57% | Work in progress |
 | `0x00502f00` | `SwapBigEndianDword` | 8.33% | Work in progress |
@@ -2768,7 +2787,7 @@ measure runtime completeness.
 | `0x005084e0` | `SpatialGridCell::Remove` | 100.00% | Verified exact |
 | `0x00508500` | `StaticSpatialGrid::GetCell` | 100.00% | Verified exact |
 | `0x00508520` | `CollectGridCollisionCandidates` | 20.31% | Work in progress |
-| `0x00508690` | `StaticSpatialGrid::StaticSpatialGrid` | 71.07% | Work in progress |
+| `0x00508690` | `StaticSpatialGrid::StaticSpatialGrid` | 69.42% | Work in progress |
 | `0x00508740` | `StaticSpatialGrid::Insert` | 28.26% | Work in progress |
 | `0x00508840` | `StaticSpatialGrid::Remove` | 88.89% | Work in progress |
 | `0x00508890` | `StaticSpatialGrid::Update` | 100.00% | Verified exact |
