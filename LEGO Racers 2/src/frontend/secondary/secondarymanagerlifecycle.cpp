@@ -962,7 +962,7 @@ static void __fastcall AppendSecondaryBrickResource(
 	++p_pool->m_entryCount;
 }
 
-// STUB: LEGORACERS2 0x00404830
+// FUNCTION: LEGORACERS2 0x00404830
 const LegoChar* __fastcall GetSecondaryBrickPath(
 	SecondaryCarResourcePool* p_pool,
 	void*,
@@ -1573,10 +1573,13 @@ static LegoBool32 __fastcall FindSecondaryPinAnchor(
 	return FALSE;
 }
 
-// STUB: LEGORACERS2 0x00406dc0
+// Retail reads this 45-second timeout from read-only data at 0x0052f4bc.
+extern const LegoFloat g_secondaryInactivitySeconds;
+
+// FUNCTION: LEGORACERS2 0x00406dc0
 void __fastcall ResetSecondaryInactivityTimer(void* p_timer, void*)
 {
-	*(LegoFloat*) ((LegoU8*) p_timer + 0x60) = 45.0f;
+	*(LegoFloat*) ((LegoU8*) p_timer + 0x60) = g_secondaryInactivitySeconds;
 }
 
 // FUNCTION: LEGORACERS2 0x0040b020

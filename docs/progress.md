@@ -5,7 +5,7 @@ promoted **213 STUBs** (195 exact, 18 reviewed near matches) and recovered one
 additional exact helper. No game runs were performed for these batches.
 
 Both 465-unit SP5 builds agree on all **2,721 measured scores and statuses**:
-**827 exact functions, 49 reviewed near matches and 1,846 STUB reconstructions**.
+**832 exact functions, 49 reviewed near matches and 1,840 STUB reconstructions**.
 All 619 previously implemented functions retain their raw accuracy or improve.
 Twenty-eight complete folded aliases, twelve dispatch inventories per build
 (including 1,321 scene pointers), 307 input-format records and 29 tooling/library
@@ -15,9 +15,9 @@ tests pass. Source STUBs without a separate matched report row remain unimplemen
 and **5,647 bodies**, for console, JSON, HTML and SVG coverage:
 
 ```text
-Implemented:  13.25%  (876 / 6612)
+Implemented:  13.32%  (881 / 6612)
 Accuracy:     99.81%
-Progress:     13.22%
+Progress:     13.30%
 ```
 
 The inventory includes linked libraries and compiler helpers; external imports
@@ -25,7 +25,7 @@ and inlined functions are excluded. Discovery is not proven exhaustive. Known
 libraries stay excluded from implemented comparisons with `--nolib` while remaining
 in the whole-binary denominator. See [inventory evidence](research.md).
 
-Datacmp checks 507 globals and flags 27 variables: twenty-five mapped
+Datacmp checks 508 globals and flags 27 variables: twenty-five mapped
 callback tables (nine more were labelled for constructor/destructor matches) have ABI-bridge/folded-pointer identity differences covered
 by the complete passing slot inventories; two existing variables contain five
 verified duplicate-string aliases. These are documented comparison limits, not
@@ -78,7 +78,7 @@ measure runtime completeness.
 | `0x00404450` | `ParseSecondaryBrickLine` | 39.35% | Work in progress |
 | `0x004047a0` | `IsCollisionSweepPositionClear` | 100.00% | Verified exact |
 | `0x004047b0` | `AppendSecondaryBrickResource` | 74.19% | Work in progress |
-| `0x00404830` | `GetSecondaryBrickPath` | 95.00% | Work in progress |
+| `0x00404830` | `GetSecondaryBrickPath` | 100.00% | Verified exact |
 | `0x00404870` | `FindSecondaryBrickPath` | 100.00% | Verified exact |
 | `0x004048e0` | `IsSecondaryBrickLoaded` | 100.00% | Verified exact |
 | `0x00404920` | `GetSecondaryBrickScale` | 100.00% | Verified exact |
@@ -91,7 +91,7 @@ measure runtime completeness.
 | `0x00404f90` | `LoadSecondaryBuilderWorldMasks` | 90.20% | Work in progress |
 | `0x00404fd0` | `FindCarDisplayModelResource` | 100.00% | Verified exact |
 | `0x00404ff0` | `RotateSecondaryBrickModel` | 35.18% | Work in progress |
-| `0x00405330` | `AlignSecondaryBrickModel` | 12.47% | Work in progress |
+| `0x00405330` | `AlignSecondaryBrickModel` | 12.74% | Work in progress |
 | `0x00405820` | `CalculateSecondaryBrickBounds` | 44.62% | Work in progress |
 | `0x004059a0` | `ContainsSeatPositionTag` | 100.00% | Verified exact |
 | `0x00405a00` | `GetSecondaryPinVertexCount` | 60.66% | Work in progress |
@@ -114,9 +114,9 @@ measure runtime completeness.
 | `0x00406bb0` | `UpdateControllerAttractNotice` | 23.45% | Work in progress |
 | `0x00406cd0` | `IsMenuPlayerAvailable` | 100.00% | Verified exact |
 | `0x00406ce0` | `AdvanceControllerAttractMode` | 34.29% | Work in progress |
-| `0x00406d60` | `DisableSecondaryInactivityTimer` | 86.96% | Work in progress |
-| `0x00406d90` | `EnableSecondaryInactivityTimer` | 78.26% | Work in progress |
-| `0x00406dc0` | `ResetSecondaryInactivityTimer` | 40.00% | Work in progress |
+| `0x00406d60` | `DisableSecondaryInactivityTimer` | 100.00% | Verified exact |
+| `0x00406d90` | `EnableSecondaryInactivityTimer` | 83.33% | Work in progress |
+| `0x00406dc0` | `ResetSecondaryInactivityTimer` | 100.00% | Verified exact |
 | `0x00406ee0` | `InitializeGameControllerTemplate` | 57.63% | Work in progress |
 | `0x00406f50` | `ConstructGameController` | 27.27% | Work in progress |
 | `0x00406f60` | `RegisterGameControllerExit` | 100.00% | Verified exact |
@@ -787,7 +787,7 @@ measure runtime completeness.
 | `0x0043d750` | `ReverbManager::Reset` | 95.00% | Reviewed near match |
 | `0x0043d7b0` | `ReverbManager::Configure` | 89.47% | Work in progress |
 | `0x0043d830` | `ReverbManager::CameraHasNoVolume` | 100.00% | Verified exact |
-| `0x0043d870` | `ReverbManager::HasCameraMoved` | 77.19% | Work in progress |
+| `0x0043d870` | `ReverbManager::HasCameraMoved` | 80.70% | Work in progress |
 | `0x0043d8d0` | `ReverbManager::Update` | 28.22% | Work in progress |
 | `0x0043dad0` | `ReverbManager::SelectCameraVolume` | 70.18% | Work in progress |
 | `0x0043db30` | `ReverbManager::ResetCameraVolume` | 70.77% | Work in progress |
@@ -863,7 +863,7 @@ measure runtime completeness.
 | `0x0044f820` | `SynchronizeCharacterBody` | 29.37% | Work in progress |
 | `0x0044f920` | `SynchronizeCharacterHead` | 58.33% | Work in progress |
 | `0x0044f960` | `EnterCharacterDrivingMode` | 42.59% | Work in progress |
-| `0x0044fac0` | `UpdateCharacterDrivingAnimation` | 71.37% | Work in progress |
+| `0x0044fac0` | `UpdateCharacterDrivingAnimation` | 72.90% | Work in progress |
 | `0x0044fec0` | `EnterCharacterIdleMode` | 46.46% | Work in progress |
 | `0x00450070` | `UpdateCharacterIdleAnimation` | 34.18% | Work in progress |
 | `0x00450300` | `StartCharacterIdleAnimation` | 52.80% | Work in progress |
@@ -1695,7 +1695,7 @@ measure runtime completeness.
 | `0x004b0630` | `SetAudioSourceRecordValues0x98` | 100.00% | Verified exact |
 | `0x004b0650` | `SetAudioSourceRecordValues0xa0` | 100.00% | Verified exact |
 | `0x004b0670` | `SetAudioSourceRecordGains` | 50.00% | Work in progress |
-| `0x004b0700` | `SetAudioSourceRecordMaximumGain` | 55.56% | Work in progress |
+| `0x004b0700` | `SetAudioSourceRecordMaximumGain` | 61.11% | Work in progress |
 | `0x004b0750` | `ResetAudioSourcePlaybackState` | 100.00% | Verified exact |
 | `0x004b0780` | `ClearAudioSourceFlag` | 100.00% | Verified exact |
 | `0x004b0790` | `SetAudioSourceEnabled` | 100.00% | Verified exact |
@@ -2317,7 +2317,7 @@ measure runtime completeness.
 | `0x004e5e70` | `InitializeAndLinkTextureStageRecord` | 15.38% | Work in progress |
 | `0x004e5ea0` | `LinkTextureStageRecord` | 100.00% | Verified exact |
 | `0x004e5eb0` | `AddTextureStageSubrecords` | 42.86% | Work in progress |
-| `0x004e5f30` | `ApplyTextureStagePlanForManager` | 94.55% | Work in progress |
+| `0x004e5f30` | `ApplyTextureStagePlanForManager` | 100.00% | Verified exact |
 | `0x004e5f90` | `ApplyRendererTextureStagePlan` | 41.52% | Work in progress |
 | `0x004e6360` | `RendererTextureStageManager::CopySubrecordGroupCacheEntry` | 100.00% | Verified exact |
 | `0x004e6380` | `DisplayRenderer::SupportsDotProduct3` | 22.22% | Work in progress |
@@ -2509,7 +2509,7 @@ measure runtime completeness.
 | `0x004f19d0` | `DigitalMusicController::UpdatePlaybackBuffer` | 59.71% | Work in progress |
 | `0x004f1bc0` | `DigitalMusicController::StopAndReleasePlaybackBuffer` | 100.00% | Verified exact |
 | `0x004f1c00` | `RestoreDigitalMusicOutput` | 32.95% | Work in progress |
-| `0x004f1d40` | `SetDigitalMusicBufferGain` | 88.24% | Work in progress |
+| `0x004f1d40` | `SetDigitalMusicBufferGain` | 100.00% | Verified exact |
 | `0x004f1d70` | `DigitalMusicController::DecodeAdpcmBlock` | 13.11% | Work in progress |
 | `0x004f1fa0` | `DigitalMusicController::CopyDecodedSamples` | 33.13% | Work in progress |
 | `0x004f2070` | `DigitalMusicController::ReadFileBytes` | 75.36% | Work in progress |
@@ -2519,7 +2519,7 @@ measure runtime completeness.
 | `0x004f2270` | `CommentaryAudioStream::UpdateBuffer` | 39.82% | Work in progress |
 | `0x004f2450` | `CommentaryAudioStream::Play` | 23.88% | Work in progress |
 | `0x004f24e0` | `CommentaryAudioStream::Stop` | 67.39% | Work in progress |
-| `0x004f2560` | `CommentaryAudioStream::SetGain` | 86.67% | Work in progress |
+| `0x004f2560` | `CommentaryAudioStream::SetGain` | 100.00% | Work in progress |
 | `0x004f2590` | `CommentaryAudioStream::IsReading` | 100.00% | Verified exact |
 | `0x004f25a0` | `BeginAudioRead` | 78.16% | Work in progress |
 | `0x004f2610` | `WaitForAudioRead` | 100.00% | Verified exact |
@@ -2750,7 +2750,7 @@ measure runtime completeness.
 | `0x00508e10` | `ReleaseTriangleCandidates` | 60.00% | Work in progress |
 | `0x00508ee0` | `CollisionCompoundTriangles::RebuildBounds` | 17.88% | Work in progress |
 | `0x00509600` | `AppendSphereSphereContact` | 19.18% | Work in progress |
-| `0x00509760` | `IntersectRayWithCollisionSphere` | 60.53% | Work in progress |
+| `0x00509760` | `IntersectRayWithCollisionSphere` | 61.18% | Work in progress |
 | `0x00509a40` | `TransformCollisionSphereRecord` | 89.47% | Work in progress |
 | `0x0050a110` | `CollisionTriangleCandidates::AddRange` | 5.78% | Work in progress |
 | `0x0050a710` | `CollisionTriangleCandidates::Insert` | 19.54% | Work in progress |
