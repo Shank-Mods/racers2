@@ -1,0 +1,736 @@
+pc_address,pc_current_name,ps2_address,ps2_symbol,ps2_name,confidence,evidence
+0x004011b0,InitializeSecondaryBrickBuilder,0x002bdcf0,InitialiseObject__13cBrickManagerFv,BrickManager::InitialiseObject,high,shared-constants: lego brick array in brickmanager
+0x00401ee0,FUN_00401ee0,0x002bf110,ClearBrickManager__13cBrickManagerFv,BrickManager::ClearBrickManager,medium,"call-graph (round 2, 1 vote)"
+0x00402070,AllocateSecondaryBuilderGrid,0x002bf390,InitialiseGrid__13cBrickManagerFv,BrickManager::InitialiseGrid,high,shared-constants: Voxel array for brick builder collision
+0x004020c0,ClearSecondaryBuilderGrid,0x002bf3f0,ClearGrid__13cBrickManagerFv,BrickManager::ClearGrid,medium,"call-graph (round 1, 1 vote)"
+0x00403060,FUN_00403060,0x002c0c00,StoreOutCarCreationData__13cBrickManagerFi,BrickManager::StoreOutCarCreationData,high,shared-constants: Game Data\Car Builder\saved.ccd
+0x00403d50,MarkCarDisplayObjectForRemoval,0x002c1890,Deactivate__16cLegoBrickObjectFv,LegoBrickObject::Deactivate,medium,"call-graph (round 3, 1 vote)"
+0x00403fd0,CreateCarDisplayNameObject,0x002c1c00,CreateALegoBrick__15cLegoBrickUtilsFv,LegoBrickUtils::CreateALegoBrick,high,shared-constants: game data\Arctic\Objects\Models\cwheel.md2
+0x00404300,InitializeSecondaryCarResources,0x002c1ff0,InitialiseObject__17cLegoUniqueBlocksFv,LegoUniqueBlocks::InitialiseObject,high,shared-constants: temp buffer for ubnames
+0x00404450,ParseSecondaryBrickLine,0x002c2190,ParseUniqueBricksLine__17cLegoUniqueBlocksFRPcPcP26sUniqueBlockDataFromUBFilei,LegoUniqueBlocks::ParseUniqueBricksLine,high,shared-constants: CHASSIS
+0x00404e8e,FUN_00404e8e,0x002bc260,SetUniqueBlockMask__17cLegoUniqueBlocksFRC9sFileNamePii,LegoUniqueBlocks::SetUniqueBlockMask,high,shared-constants: temp buffer for Unique Blocks mask
+0x004059a0,ContainsSeatPositionTag,0x002bd3d0,FindStringInString__17cLegoUniqueBlocksFPcPc,LegoUniqueBlocks::FindStringInString,medium,"call-graph (round 1, 1 vote)"
+0x00405cf0,FindBuilderSeatPosition,0x002bd990,FindSeatPosition__17cLegoUniqueBlocksFiiR6Vectori,LegoUniqueBlocks::FindSeatPosition,medium,"call-graph (round 1, 1 vote)"
+0x00405ed0,GetSeatPositionVertexCount,0x002bdc30,UniqueSeatPosTextureExists__17cLegoUniqueBlocksFP12cRenderGroup,LegoUniqueBlocks::UniqueSeatPosTextureExists,high,shared-constants: SEAT_POS
+0x004060b0,UpdateBattleManager,0x002dabc0,UpdateObject__14cBattleManagerFf,BattleManager::UpdateObject,low,"call-graph (round 6, 1 vote)"
+0x00406710,FUN_00406710,0x002db360,UpdateBattleInfo__14cBattleManagerFv,BattleManager::UpdateBattleInfo,low,"call-graph (round 7, 1 vote)"
+0x00406810,FUN_00406810,0x002db4c0,CheckHumanRacersForButtonPress__14cBattleManagerFi,BattleManager::CheckHumanRacersForButtonPress,low,"call-graph (round 7, 1 vote)"
+0x00406880,FUN_00406880,0x002db580,EndBattle__14cBattleManagerFi,BattleManager::EndBattle,medium,"call-graph (round 5, 2 votes)"
+0x00406930,RestartSecondaryBattle,0x002db690,RestartBattle__14cBattleManagerFv,BattleManager::RestartBattle,low,"call-graph (round 4, 1 vote)"
+0x00406960,FinishSecondaryBattle,0x002db6e0,QuitBattle__14cBattleManagerFv,BattleManager::QuitBattle,low,"call-graph (round 4, 1 vote)"
+0x00406b30,UpdateControllerStartupScene,0x003511c0,UpdateObject__12cDemoManagerFf,DemoManager::UpdateObject,low,"call-graph (round 7, 1 vote)"
+0x00406b80,CountDownControllerAttractMode,0x00351240,StateCountdown__12cDemoManagerFf,DemoManager::StateCountdown,low,"call-graph (round 6, 1 vote)"
+0x00406bb0,UpdateControllerAttractNotice,0x00351280,StateActive__12cDemoManagerFf,DemoManager::StateActive,low,"call-graph (round 8, 1 vote)"
+0x00406cd0,IsMenuPlayerAvailable,0x00351400,StateMenu__12cDemoManagerFf,DemoManager::StateMenu,low,"call-graph (round 8, 1 vote)"
+0x00406ce0,AdvanceControllerAttractMode,0x00351410,StartDemoRace__12cDemoManagerFv,DemoManager::StartDemoRace,low,"call-graph (round 5, 1 vote)"
+0x00406d60,DisableSecondaryInactivityTimer,0x003514c0,Sleep__12cDemoManagerFv,DemoManager::Sleep,low,"call-graph (round 5, 1 vote)"
+0x00407250,GameController::Initialize,0x002b6110,InitialiseObject__12cGameManagerFv,GameManager::InitialiseObject,high,shared-constants: Battle Manager; Bodypart Manager; Foyer Manager; Menu Manager
+0x004082a0,GameController::Update,0x002b8290,UpdateObject__12cGameManagerFf,GameManager::UpdateObject,medium,"call-graph (round 1, 1 vote)"
+0x004086e0,FUN_004086e0,0x002b8740,ReinitialiseObjectsAndManagers__12cGameManagerFv,GameManager::ReinitialiseObjectsAndManagers,low,"call-graph (round 6, 1 vote)"
+0x00408710,PrepareControllerSelection,0x002b87a0,LoadWorld__12cGameManagerFv,GameManager::LoadWorld,medium,"call-graph (round 1, 2 votes)"
+0x00408850,ResetControllerSelection,0x002b8970,DestroyWorld__12cGameManagerFv,GameManager::DestroyWorld,low,"call-graph (round 6, 1 vote)"
+0x00408910,BuildControllerModeTemplate,0x002b8aa0,GetWorldName__12cGameManagerFi,GameManager::GetWorldName,high,shared-constants: Game Data\Saved Worlds\%s.wrl; carcraze
+0x00408bf0,ConfigureControllerSelectionLayout,0x002b8b80,CreateInGameManagers__12cGameManagerFff,GameManager::CreateInGameManagers,high,shared-constants: CollSFX Manager; Effects Manager; Weapons Manager
+0x004091a0,FUN_004091a0,0x002b9510,ResetInGameManagers__12cGameManagerFv,GameManager::ResetInGameManagers,low,"call-graph (round 7, 1 vote)"
+0x004091e0,RefreshControllerSelection,0x002b9580,DestroyInGameManagers__12cGameManagerFv,GameManager::DestroyInGameManagers,medium,"call-graph (round 6, 2 votes)"
+0x00409550,ResetControllerSelectionWidgets,0x002ba550,DestroyCameras__12cGameManagerFv,GameManager::DestroyCameras,low,"call-graph (round 7, 1 vote)"
+0x004095b0,PrepareControllerSceneChildren,0x002ba610,SetCamerasActive__12cGameManagerFv,GameManager::SetCamerasActive,low,"call-graph (round 5, 1 vote)"
+0x004095e0,PrepareFoyerControllerScene,0x002ba670,LoadFoyer__12cGameManagerFv,GameManager::LoadFoyer,medium,"call-graph (round 1, 1 vote)"
+0x00409880,ResetFoyerGameControllerState,0x002baa20,DestroyFoyer__12cGameManagerFv,GameManager::DestroyFoyer,medium,"call-graph (round 2, 1 vote)"
+0x00409950,PrepareSelectedGameModeScene,0x002bab30,LoadTrack__12cGameManagerFv,GameManager::LoadTrack,high,shared-constants: AI Supervisor Bonus; AI Supervisor Track %d; CP Supervisor Track %d; HUD Manager
+0x00409e50,FUN_00409e50,0x002bb2a0,DestroyTrack__12cGameManagerFv,GameManager::DestroyTrack,medium,"call-graph (round 6, 3 votes)"
+0x0040a150,FUN_0040a150,0x002bb660,SetHumanInputRecorded__12cGameManagerFP10cLegoRaceri,GameManager::SetHumanInputRecorded,low,"call-graph (round 7, 1 vote)"
+0x0040a170,LoadControllerSceneResources,0x002bb690,LoadEverPresentThings__12cGameManagerFi,GameManager::LoadEverPresentThings,medium,"call-graph (round 1, 1 vote)"
+0x0040a1d0,ReleaseControllerSceneResources,0x002bb720,DestroyEverPresentThings__12cGameManagerFi,GameManager::DestroyEverPresentThings,low,"call-graph (round 5, 1 vote)"
+0x0040a230,ApplyControllerFonts,0x002bb790,FixUpFonts__12cGameManagerFv,GameManager::FixUpFonts,medium,"call-graph (round 2, 1 vote)"
+0x0040a290,StartControllerMusic,0x002bb850,PlayMusic__12cGameManagerF10eMusicTypei,GameManager::PlayMusic,medium,"call-graph (round 1, 1 vote)"
+0x0040a3b0,StopControllerCdTrack,0x002bbac0,StopMusic__12cGameManagerFv,GameManager::StopMusic,medium,"call-graph (round 2, 1 vote)"
+0x0040a440,GameController::PlayStartupMovies,0x002bbb70,PlayBootVideos__12cGameManagerFv,GameManager::PlayBootVideos,low,"call-graph (round 5, 1 vote)"
+0x0040ad30,GameControllerSettings::SetPlayerName,0x00324ee0,SetPlayerName__9sGameDataFRC11sPlayerNamei,GameData::SetPlayerName,medium,"call-graph (round 2, 1 vote)"
+0x0040ad60,ConfigureControllerInputBindings,0x00324f50,MapController__23sLegoControllerMappingsFP11cController,LegoControllerMappings::MapController,low,"call-graph (round 14, 1 vote)"
+0x0040afc0,GetControllerTrackScore,0x00325370,GetBestLapTime__10cBestTimesFii,BestTimes::GetBestLapTime,medium,"call-graph (round 3, 1 vote)"
+0x0040b020,UnlockAllSecondaryWorlds,0x00325430,UnlockAll__14cTrackLockDataFv,TrackLockData::UnlockAll,low,"call-graph (round 13, 1 vote)"
+0x0040b040,UnlockAllSecondaryRewards,0x003254a0,UnlockAllBonuses__14cTrackLockDataFv,TrackLockData::UnlockAllBonuses,low,"call-graph (round 9, 1 vote)"
+0x0040b0a0,GameControllerSelection::UnlockWorld,0x003255c0,IsWorldUnlocked__14cTrackLockDataCFi,TrackLockData::IsWorldUnlocked,low,"call-graph (round 13, 1 vote)"
+0x0040b0f0,GameControllerSelection::IsTrackUnlocked,0x00278560,ClearString__12cScreenPrintFi,ScreenPrint::ClearString,low,"call-graph (round 1, 1 vote)"
+0x0040b140,IsFoyerModeUnlocked,0x00325660,HasWorldBeenVisited__14cTrackLockDataCFi,TrackLockData::HasWorldBeenVisited,medium,"call-graph (round 2, 1 vote)"
+0x0040b160,GameControllerSelection::UnlockReward,0x00325680,UnlockBonus__14cTrackLockDataFiii,TrackLockData::UnlockBonus,low,"call-graph (round 8, 1 vote)"
+0x0040b1b0,GameControllerSelection::HasReward,0x003256d0,IsBonusUnlocked__14cTrackLockDataCFii,TrackLockData::IsBonusUnlocked,low,"call-graph (round 8, 1 vote)"
+0x0040b1e0,FUN_0040b1e0,0x00325700,GetBonusUnlockOrder__14cTrackLockDataCFi,TrackLockData::GetBonusUnlockOrder,low,"call-graph (round 11, 1 vote)"
+0x0040b200,FUN_0040b200,0x00325720,SetBonusCompleted__14cTrackLockDataFii,TrackLockData::SetBonusCompleted,medium,"call-graph (round 2, 1 vote)"
+0x0040b220,FUN_0040b220,0x00325750,IsBonusCompleted__14cTrackLockDataCFii,TrackLockData::IsBonusCompleted,medium,"call-graph (round 2, 1 vote)"
+0x0040b250,MergeSecondarySelection,0x00325780,Merge__14cTrackLockDataFRC14cTrackLockData,TrackLockData::Merge,low,"call-graph (round 8, 1 vote)"
+0x0040b2c0,GameControllerSelection::UnlockDefaults,0x00325840,UnlockAllTracksForUnlockedWorlds__14cTrackLockDataFii,TrackLockData::UnlockAllTracksForUnlockedWorlds,low,"call-graph (round 8, 1 vote)"
+0x0040b350,UnlockAllSecondaryBonusFlags,0x00325950,UnlockAll__12cCarLockDataFv,CarLockData::UnlockAll,low,"call-graph (round 13, 1 vote)"
+0x0040b6a0,UpdateGamePauseObserver,0x002dba50,UpdatePauseMode__20cLegoPauseControllerFf,LegoPauseController::UpdatePauseMode,low,"call-graph (round 4, 1 vote)"
+0x0040ba30,FUN_0040ba30,0x002ab620,InitialiseObject__12cRaceManagerFv,RaceManager::InitialiseObject,high,shared-constants: Start of Race Manager
+0x0040baf0,FUN_0040baf0,0x002ab820,UpdateObject__12cRaceManagerFf,RaceManager::UpdateObject,medium,"call-graph (round 1, 1 vote)"
+0x0040e730,FUN_0040e730,0x002b2ce0,EndRace__12cRaceManagerFi,RaceManager::EndRace,medium,"call-graph (round 5, 2 votes)"
+0x0040e830,RestartSecondaryRace,0x002b2e60,RestartRace__12cRaceManagerFi,RaceManager::RestartRace,low,"call-graph (round 4, 1 vote)"
+0x0040e870,StartSecondarySessionRace,0x002b2ec0,NextRace__12cRaceManagerFiii,RaceManager::NextRace,low,"call-graph (round 4, 1 vote)"
+0x0040e8e0,FinishSecondaryRace,0x002b2fb0,QuitRace__12cRaceManagerFi,RaceManager::QuitRace,low,"call-graph (round 4, 1 vote)"
+0x0040e970,FUN_0040e970,0x002b3080,QuitRaceToBonus__12cRaceManagerFi,RaceManager::QuitRaceToBonus,low,"call-graph (round 6, 1 vote)"
+0x0040e9c0,FUN_0040e9c0,0x002b31b0,GetEndOfRaceScript__12cRaceManagerFi,RaceManager::GetEndOfRaceScript,high,shared-constants: boss_lose; boss_win; standard_win
+0x0040ea80,FUN_0040ea80,0x002b3310,StopRacersAndWeapons__12cRaceManagerFv,RaceManager::StopRacersAndWeapons,low,"call-graph (round 7, 1 vote)"
+0x0040eb00,FUN_0040eb00,0x002b33c0,SetCinematicsEnabled__12cRaceManagerFi,RaceManager::SetCinematicsEnabled,low,"call-graph (round 4, 1 vote)"
+0x0040f3c0,FUN_0040f3c0,0x002b3f50,InitialiseObject__19cStartLightsManagerFv,StartLightsManager::InitialiseObject,high,shared-constants: Game Data\Common\Effects\Common\Textures\flare01.tga; Start Light Source
+0x0040f7e0,FUN_0040f7e0,0x002b44b0,LoadStartSounds__19cStartLightsManagerFv,StartLightsManager::LoadStartSounds,high,shared-constants: Game Data\sounds\common\321.vag; Game Data\sounds\common\Go.vag
+0x0040fbc0,FUN_0040fbc0,0x002b49a0,Begin__19cStartLightsManagerFi,StartLightsManager::Begin,low,"call-graph (round 5, 1 vote)"
+0x00410280,FUN_00410280,0x002b4fd0,CalcCurrPossStartLinePower__19cStartLightsManagerFv,StartLightsManager::CalcCurrPossStartLinePower,low,"call-graph (round 5, 1 vote)"
+0x004103b0,FUN_004103b0,0x002b5210,InitialiseObject__12cStartOfRaceFv,StartOfRace::InitialiseObject,high,shared-constants: Start Lights Manager
+0x00410470,FUN_00410470,0x002b5500,UpdateObject__12cStartOfRaceFf,StartOfRace::UpdateObject,medium,"call-graph (round 1, 1 vote)"
+0x004107c0,FUN_004107c0,0x002b59a0,RestartTimersAndObjects__12cStartOfRaceFv,StartOfRace::RestartTimersAndObjects,low,"call-graph (round 5, 1 vote)"
+0x00410810,FUN_00410810,0x002b5a10,GetStartOfRaceScript__12cStartOfRaceFv,StartOfRace::GetStartOfRaceScript,high,shared-constants: boss_intro; demo_intro; standard_intro
+0x00410bf0,GetSecondarySessionCar,0x0034c160,GetCarCreationData__10sStoryDataFii,StoryData::GetCarCreationData,low,"call-graph (round 15, 1 vote)"
+0x00410c10,GetSecondarySessionCharacter,0x0034c190,GetCharacter__10sStoryDataFiRi,StoryData::GetCharacter,low,"call-graph (round 15, 1 vote)"
+0x00410f70,GetFoyerModeProgressFraction,0x0034c4b0,GetUpgradeValue__17cCarUpgradeAwardsCF15eCarUpgradeType,CarUpgradeAwards::GetUpgradeValue,low,"call-graph (round 14, 1 vote)"
+0x00411260,FUN_00411260,0x0034c970,GoldenBrickCollected__13cStoryManagerFP12cGoldenBrick,StoryManager::GoldenBrickCollected,low,"call-graph (round 9, 1 vote)"
+0x004112ca,FUN_004112ca,0x0034ca00,IsBonusVortexActive__13cStoryManagerFPC12cBonusVortex,StoryManager::IsBonusVortexActive,low,"call-graph (round 10, 1 vote)"
+0x004113e0,FUN_004113e0,0x0034cbc0,BonusVortexActivated__13cStoryManagerFPC12cBonusVortex,StoryManager::BonusVortexActivated,low,"call-graph (round 7, 1 vote)"
+0x004114a0,FUN_004114a0,0x0034ccc0,NotifyBonusGameWon__13cStoryManagerFv,StoryManager::NotifyBonusGameWon,medium,"call-graph (round 1, 1 vote)"
+0x00411690,ApplySecondarySessionData,0x0034d0c0,StartLoadedAdventure__13cStoryManagerFv,StoryManager::StartLoadedAdventure,medium,"call-graph (round 3, 1 vote)"
+0x004117a0,FUN_004117a0,0x0034d710,DoINeedToPlayTheCredits__13cStoryManagerCFv,StoryManager::DoINeedToPlayTheCredits,low,"call-graph (round 5, 1 vote)"
+0x004117f0,FinishSecondarySessionSelection,0x0034d7a0,NotifySecondariesHaveFinished__13cStoryManagerFv,StoryManager::NotifySecondariesHaveFinished,medium,"call-graph (round 2, 1 vote)"
+0x004119b0,FUN_004119b0,0x0034da60,PlayStoryContinuationScript__13cStoryManagerF12eStoryScript,StoryManager::PlayStoryContinuationScript,low,"call-graph (round 4, 1 vote)"
+0x00411a30,GetFoyerSceneIndex,0x0034db00,GetStartOfFoyerScript__13cStoryManagerFi,StoryManager::GetStartOfFoyerScript,medium,"call-graph (round 1, 1 vote)"
+0x00411cb0,GetFoyerSelectedObjectIndex,0x00295560,GoToRace__13cFoyerManagerFi,FoyerManager::GoToRace,low,"call-graph (round 1, 1 vote)"
+0x00411d40,SelectFoyerInputTarget,0x0034e060,GetFoyerTarget__13cStoryManagerFR12eStoryScriptRi,StoryManager::GetFoyerTarget,medium,"call-graph (round 2, 1 vote)"
+0x00411db0,ResetFoyerSceneState,0x0034e0c0,TeleportToWorld__13cStoryManagerFi,StoryManager::TeleportToWorld,medium,"call-graph (round 1, 1 vote)"
+0x00411e50,CompleteFoyerSessionTransition,0x0034e190,AtJumpPointNotTeleporting__13cStoryManagerFv,StoryManager::AtJumpPointNotTeleporting,medium,"call-graph (round 1, 1 vote)"
+0x00411eb0,ApplySecondarySessionCheat,0x0034e230,ActivateCheat__13cStoryManagerFi,StoryManager::ActivateCheat,low,"call-graph (round 11, 1 vote)"
+0x00412360,ReleaseSecondaryObject88,0x00317860,ShutDown__14cCircularThingFv,CircularThing::ShutDown,low,"call-graph (round 6, 1 vote)"
+0x004123b0,ReleaseSecondaryAuxiliaryResources,0x003178f0,End__14cCircularThingFv,CircularThing::End,low,"call-graph (round 5, 1 vote)"
+0x004123e0,CreateSecondaryWheelSprites,0x00317940,GrabOverlays__14cCircularThingFi,CircularThing::GrabOverlays,medium,"call-graph (round 6, 2 votes)"
+0x004126e0,ClearSecondaryManagerAuxiliaryResources,0x00317d50,ReturnOverlays__14cCircularThingFiii,CircularThing::ReturnOverlays,medium,"call-graph (round 3, 1 vote)"
+0x00412770,UpdateSecondaryAuxiliary,0x00317e50,Update__14cCircularThingFf,CircularThing::Update,low,"call-graph (round 4, 1 vote)"
+0x00412ca0,ProjectSecondaryWheelIcon,0x003184c0,CalcIconPos__14cCircularThingFfR6sPointRf,CircularThing::CalcIconPos,low,"call-graph (round 5, 1 vote)"
+0x00412dd0,SnapshotSecondaryWheelIcons,0x003186a0,SetUpFadeIcons__14cCircularThingF9eMenuType,CircularThing::SetUpFadeIcons,low,"call-graph (round 5, 1 vote)"
+0x00412f20,SetSecondaryManagerAuxiliaryEnabled,0x00318840,SwitchOnOff__14cCircularThingFi,CircularThing::SwitchOnOff,medium,"call-graph (round 2, 1 vote)"
+0x00412f70,CreateSecondaryWheelIcons,0x00318890,SetUpIconsForMenu__14cCircularThingF9eMenuType,CircularThing::SetUpIconsForMenu,low,"call-graph (round 5, 1 vote)"
+0x00415570,GetNpcTextBindingName,0x00329810,GetButtonString__17cSecondaryManagerFRC23sLegoControllerMappingsi,SecondaryManager::GetButtonString,low,"call-graph (round 7, 1 vote)"
+0x00417630,ResetSecondaryManagerModeStateAtEntry,0x00372520,Clear__18cLegoCheatDetectorFv,LegoCheatDetector::Clear,medium,"call-graph (round 2, 1 vote)"
+0x00417640,MergeSecondaryModeInput,0x00372530,Update__18cLegoCheatDetectorFP18cSecondaryControls,LegoCheatDetector::Update,medium,"call-graph (round 3, 1 vote)"
+0x00417700,AddSecondaryModeInput,0x00372660,StoreButtonPress__18cLegoCheatDetectorFii,LegoCheatDetector::StoreButtonPress,low,"call-graph (round 4, 1 vote)"
+0x00417790,CheckSecondaryInputSequences,0x003727a0,CheckForCheatsActivated__18cLegoCheatDetectorFv,LegoCheatDetector::CheckForCheatsActivated,low,"call-graph (round 5, 1 vote)"
+0x004178a0,ApplySecondaryInputSequence,0x00372990,ActivateCheat__18cLegoCheatDetectorF11eLegoCheats,LegoCheatDetector::ActivateCheat,medium,"call-graph (round 12, 2 votes)"
+0x00417e40,MenuPanel::Activate,0x00318c90,Begin__8cMenuBoxF12eMenuBoxModePv,MenuBox::Begin,low,"call-graph (round 5, 1 vote)"
+0x00417fd0,MenuPanel::AllocateSprites,0x00318e40,GrabOverlays__8cMenuBoxFii,MenuBox::GrabOverlays,medium,"call-graph (round 6, 2 votes)"
+0x004181c0,MenuPanel::ReleaseSprites,0x003190d0,ReturnOverlays__8cMenuBoxFv,MenuBox::ReturnOverlays,low,"call-graph (round 7, 1 vote)"
+0x00418260,MenuPanel::Deactivate,0x003199a0,ClearMenuBox__8cMenuBoxFv,MenuBox::ClearMenuBox,low,"call-graph (round 6, 1 vote)"
+0x00418280,MenuPanel::Update,0x00319190,Update__8cMenuBoxFf,MenuBox::Update,low,"call-graph (round 5, 1 vote)"
+0x004187f0,MenuPanel::UpdateClipping,0x00319780,SetClipWindow__8cMenuBoxFv,MenuBox::SetClipWindow,medium,"call-graph (round 6, 2 votes)"
+0x00418ba0,MenuPanel::UpdateSpriteGeometry,0x00319b80,SetUpMenuBoxOverlays__8cMenuBoxFiRC6sPointRC6sPointi,MenuBox::SetUpMenuBoxOverlays,low,"call-graph (round 6, 1 vote)"
+0x00418fd0,MenuPanel::QuerySelection,0x0031a050,GetNextMenuType__8cMenuBoxFRiRi,MenuBox::GetNextMenuType,low,"call-graph (round 6, 1 vote)"
+0x00419470,MenuPanelSet::Release,0x0031a620,ShutDown__15cMenuBoxManagerFv,MenuBoxManager::ShutDown,low,"call-graph (round 9, 1 vote)"
+0x004194c0,MenuPanelSet::Begin,0x0031a6a0,Begin__15cMenuBoxManagerF8eMBMMode,MenuBoxManager::Begin,medium,"call-graph (round 1, 1 vote)"
+0x004194f0,MenuPanelSet::End,0x0031a6f0,End__15cMenuBoxManagerFv,MenuBoxManager::End,low,"call-graph (round 7, 1 vote)"
+0x00419520,UpdateSecondaryPanels,0x0031a740,Update__15cMenuBoxManagerFf,MenuBoxManager::Update,low,"call-graph (round 4, 1 vote)"
+0x00419680,MenuPanelSet::SetActive,0x0031a9f0,SwitchOnOff__15cMenuBoxManagerFi,MenuBoxManager::SwitchOnOff,medium,"call-graph (round 2, 2 votes)"
+0x00419740,MenuWidgetBase::BeginState,0x002a7d50,Begin__9cMenuItemFv,MenuItem::Begin,low,"call-graph (round 6, 1 vote)"
+0x00419780,MenuWidgetBase::CreateChildSprites,0x002a7d90,SetUpArrowOverlays__9cMenuItemFRC6sPointfif,MenuItem::SetUpArrowOverlays,low,"call-graph (round 6, 1 vote)"
+0x00419a00,MenuWidgetBase::SetChildClipRectangle,0x002a8190,SetClipWindow__9cMenuItemFRC6sPointRC6sPoint,MenuItem::SetClipWindow,low,"call-graph (round 8, 1 vote)"
+0x0041c500,LoadMenuManagerResources,0x00296880,ModeInitialise__12cMenuManagerF9eMenuMode,MenuManager::ModeInitialise,medium,"call-graph (round 1, 1 vote)"
+0x0041c680,ReleaseMenuManagerResources,0x00296a80,ModeShutDown__12cMenuManagerF9eMenuMode,MenuManager::ModeShutDown,low,"call-graph (round 6, 1 vote)"
+0x0041c6d0,MenuManager::ApplyFonts,0x00296af0,FixUpFonts__12cMenuManagerFv,MenuManager::FixUpFonts,medium,"call-graph (round 3, 1 vote)"
+0x0041c730,DestroyMenuManagerWidgets,0x00296bd0,DestroyMenuItems__12cMenuManagerF9eMenuMode,MenuManager::DestroyMenuItems,low,"call-graph (round 7, 1 vote)"
+0x0041c810,DestroyCommonMenuWidgets,0x00296d80,DestroyUbiquitousMenuItems__12cMenuManagerFv,MenuManager::DestroyUbiquitousMenuItems,low,"call-graph (round 8, 1 vote)"
+0x0041cab0,DestroyFrontendMenuWidgets,0x002971a0,DestroySecondaryOnlyMenuItems__12cMenuManagerFv,MenuManager::DestroySecondaryOnlyMenuItems,low,"call-graph (round 8, 1 vote)"
+0x0041caf0,UpdateSecondaryMenuManager,0x00297210,UpdateMenu__12cMenuManagerFf16eMenuControllersP16sEdgeControlDataP18cSecondaryControls,MenuManager::UpdateMenu,medium,"call-graph (round 2, 1 vote)"
+0x0041d100,UpdateMenuTransition,0x00297a10,UpdateMenuFade__12cMenuManagerFf,MenuManager::UpdateMenuFade,medium,"call-graph (round 1, 1 vote)"
+0x0041d1e0,ResetMenuSelectionWidgets,0x00297b30,UpdateMenuTab__12cMenuManagerFi,MenuManager::UpdateMenuTab,medium,"call-graph (round 3, 1 vote)"
+0x0041d360,LayoutMenuOptionWidgets,0x00297cf0,SetUpMenuTab__12cMenuManagerFi9eMenuTypeiRC6sPointR6sPoint,MenuManager::SetUpMenuTab,low,"call-graph (round 4, 1 vote)"
+0x0041dcc0,PopSecondaryMenuActions,0x00298a20,PopMenu__12cMenuManagerFii,MenuManager::PopMenu,medium,"call-graph (round 3, 1 vote)"
+0x0041dd50,BeginMenuManagerMode,0x00298b00,StartMenu__12cMenuManagerF9eMenuType16eMenuControllers,MenuManager::StartMenu,medium,"call-graph (round 2, 1 vote)"
+0x0041de40,CanMenuCancel,0x00298bc0,CanCancelMenu__12cMenuManagerFv,MenuManager::CanCancelMenu,medium,"call-graph (round 3, 1 vote)"
+0x0041de70,BeginMenuTransition,0x00298c00,FinishMenu__12cMenuManagerFi,MenuManager::FinishMenu,medium,"call-graph (round 2, 1 vote)"
+0x0041dec0,BuildMenuManagerAction,0x00298ca0,CreateMenu__12cMenuManagerF9eMenuTypei,MenuManager::CreateMenu,high,shared-constants: 8fc2753d; SESSION1; SESSION2; SESSION3
+0x00420be0,ClearMenuManagerDisplay,0x0029bc60,RemoveMenu__12cMenuManagerFi,MenuManager::RemoveMenu,medium,"call-graph (round 2, 1 vote)"
+0x00420d30,ApplyMenuConfirmAction,0x0029be80,SelectMenuItem__12cMenuManagerFv,MenuManager::SelectMenuItem,medium,"call-graph (round 1, 1 vote)"
+0x00422710,UpdateMenuManagerCurrentAction,0x0029f640,SaveMenuData__12cMenuManagerFv,MenuManager::SaveMenuData,medium,"call-graph (round 3, 1 vote)"
+0x00422b30,ProcessMenuWidgetsInput,0x0029f930,UpdateLeftRightMenuItems__12cMenuManagerFRC16sEdgeControlDataRiRi,MenuManager::UpdateLeftRightMenuItems,medium,"call-graph (round 3, 1 vote)"
+0x00422c60,UpdateMenuInteractionWidgets,0x0029fb80,UpdateDynamicMenuOptions__12cMenuManagerFRC16sEdgeControlData,MenuManager::UpdateDynamicMenuOptions,medium,"call-graph (round 3, 1 vote)"
+0x00422fa0,SetMenuManagerWaitForInput,0x002a0040,SetWaitForKeyPress__12cMenuManagerFi,MenuManager::SetWaitForKeyPress,medium,"call-graph (round 3, 1 vote)"
+0x00423000,PlayMenuInteractionSound,0x002a00f0,PlayMenuSound__12cMenuManagerFi,MenuManager::PlayMenuSound,medium,"call-graph (round 3, 1 vote)"
+0x00423020,IsMenuOptionEnabled,0x002a0120,IsOptionValid__12cMenuManagerFi,MenuManager::IsOptionValid,medium,"call-graph (round 3, 1 vote)"
+0x004235a0,HighlightMenuOption,0x002a0790,HighlightItem__12cMenuManagerFii,MenuManager::HighlightItem,medium,"call-graph (round 3, 2 votes)"
+0x004236a0,MenuManager::SetPanelClipRectangle,0x002a0940,SetMenuClipWindow__12cMenuManagerFRC6sPointRC6sPoint,MenuManager::SetMenuClipWindow,low,"call-graph (round 7, 1 vote)"
+0x00423710,MenuManager::SetSecondaryPanelClipRectangle,0x002a0a20,SetTabClipWindow__12cMenuManagerFRC6sPointRC6sPoint,MenuManager::SetTabClipWindow,low,"call-graph (round 7, 1 vote)"
+0x00423a00,ReleaseSecondaryObject8c,0x00336b60,End__11cMessageBoxFv,MessageBox::End,medium,"call-graph (round 3, 1 vote)"
+0x00423a30,InitializeSecondaryMessage,0x00336740,Begin__11cMessageBoxFiRC6sPointf,MessageBox::Begin,low,"call-graph (round 7, 1 vote)"
+0x00423d00,MenuTextPair::SetClipRectangle,0x00336bb0,SetClipWindow__11cMessageBoxFRC6sPointRC6sPoint,MessageBox::SetClipWindow,low,"call-graph (round 7, 1 vote)"
+0x00423fd0,ReleaseSecondaryPointer,0x00333d00,End__13cMouseControlFv,MouseControl::End,low,"call-graph (round 5, 1 vote)"
+0x00424130,MenuNavigationState::GetPointerPosition,0x00333f00,GetCursorPosition__13cMouseControlCFR6sPoint,MouseControl::GetCursorPosition,medium,"call-graph (round 3, 2 votes)"
+0x00424160,MenuNavigationState::ReadDirectionInput,0x00333f40,SetCursorActive__13cMouseControlFi,MouseControl::SetCursorActive,medium,"call-graph (round 2, 1 vote)"
+0x004241a0,MenuNavigationState::IsRecordUnderPointer,0x00333fb0,IsCursorWithinStringBounds__13cMouseControlCFPC11cTextString,MouseControl::IsCursorWithinStringBounds,medium,"call-graph (round 3, 1 vote)"
+0x00424220,MenuNavigationState::IsSpriteUnderPointer,0x00334060,IsCursorWithinOverlayBounds__13cMouseControlCFPC8cOverlay,MouseControl::IsCursorWithinOverlayBounds,medium,"call-graph (round 3, 1 vote)"
+0x00426800,MenuBackground::~MenuBackground,0x00311780,ShutDown__27cSecondaryBackGroundManagerFv,SecondaryBackGroundManager::ShutDown,low,"call-graph (round 7, 1 vote)"
+0x00426a30,MenuBackground::Load,0x00311b60,Begin__27cSecondaryBackGroundManagerFv,SecondaryBackGroundManager::Begin,medium,"call-graph (round 1, 1 vote)"
+0x00426b60,MenuBackground::Release,0x00311d10,End__27cSecondaryBackGroundManagerFv,SecondaryBackGroundManager::End,low,"call-graph (round 5, 1 vote)"
+0x00426bb0,MenuBackground::SetMode,0x00311d90,SetMode__27cSecondaryBackGroundManagerFi,SecondaryBackGroundManager::SetMode,medium,"call-graph (round 2, 1 vote)"
+0x00426bd0,MenuBackground::Hide,0x00311dd0,ClearBackGround__27cSecondaryBackGroundManagerFv,SecondaryBackGroundManager::ClearBackGround,medium,"call-graph (round 3, 1 vote)"
+0x004270a0,SecondaryManager::Initialize,0x002a11b0,InitialiseObject__17cSecondaryManagerFv,SecondaryManager::InitialiseObject,high,shared-constants: LEGO RACERS 2; LEGO_RC2; Secondaries CCD Store
+0x00427480,SecondaryManager::Remove,0x002a1720,ShutDownObject__17cSecondaryManagerFv,SecondaryManager::ShutDownObject,low,"call-graph (round 7, 1 vote)"
+0x004276e0,LoadSecondaryManagerAudioResources,0x002a1bb0,LoadSounds__17cSecondaryManagerFi,SecondaryManager::LoadSounds,medium,"call-graph (round 2, 1 vote)"
+0x004278d0,ReleaseSecondaryManagerAudioResources,0x002a1e10,RemoveSounds__17cSecondaryManagerFv,SecondaryManager::RemoveSounds,low,"call-graph (round 6, 1 vote)"
+0x00427910,ApplySavedAudioLevels,0x002a1e90,SetSoundSettings__17cSecondaryManagerFv,SecondaryManager::SetSoundSettings,medium,"call-graph (round 3, 1 vote)"
+0x004279b0,SecondaryManager::BeginStartup,0x002a1f40,Begin__17cSecondaryManagerFv,SecondaryManager::Begin,low,"call-graph (round 4, 1 vote)"
+0x00427a00,SecondaryManager::Update,0x002a1fc0,UpdateObject__17cSecondaryManagerFf,SecondaryManager::UpdateObject,medium,"call-graph (round 2, 3 votes)"
+0x00427d90,EnterSecondaryManagerMode,0x002a2500,StartMenu__17cSecondaryManagerF9eMenuType,SecondaryManager::StartMenu,medium,"call-graph (round 1, 1 vote)"
+0x00427e90,FUN_00427e90,0x002a2610,IsYesNoSubMenuActive__17cSecondaryManagerFv,SecondaryManager::IsYesNoSubMenuActive,low,"call-graph (round 5, 1 vote)"
+0x00427ea0,FUN_00427ea0,0x002a2620,GetLastYesNoSubMenuResult__17cSecondaryManagerFv,SecondaryManager::GetLastYesNoSubMenuResult,low,"call-graph (round 5, 1 vote)"
+0x00427eb0,SecondaryManager::UpdateMenuMode,0x002a2630,UpdateMenu__17cSecondaryManagerFP16sEdgeControlDataf,SecondaryManager::UpdateMenu,medium,"call-graph (round 3, 2 votes)"
+0x00428650,PrepareSecondarySessionPlayers,0x002a4460,SetRaceData__17cSecondaryManagerFv,SecondaryManager::SetRaceData,medium,"call-graph (round 1, 1 vote)"
+0x00428c50,AssignSecondarySessionPlayers,0x002a4c70,ChooseCars__17cSecondaryManagerFv,SecondaryManager::ChooseCars,low,"call-graph (round 14, 1 vote)"
+0x00428e40,ChooseSecondarySessionCharacters,0x002a51c0,ChooseAIPlayers__17cSecondaryManagerFP14sCharacterInfoPi,SecondaryManager::ChooseAIPlayers,low,"call-graph (round 15, 1 vote)"
+0x00429060,FUN_00429060,0x002a5560,GetButtonPressed__17cSecondaryManagerFi,SecondaryManager::GetButtonPressed,low,"call-graph (round 4, 1 vote)"
+0x004290b0,AcquireMenuPreviewCamera,0x002a55f0,GetCamera3D__17cSecondaryManagerFRP7cCamera,SecondaryManager::GetCamera3D,medium,"call-graph (round 1, 1 vote)"
+0x00429180,AcquireMenuPreviewCharacter,0x002a5720,GetMiniFig__17cSecondaryManagerFRP12cLegoMiniFig,SecondaryManager::GetMiniFig,medium,"call-graph (round 3, 1 vote)"
+0x00429220,AcquireMenuPreviewAmbient,0x002a5800,GetAmbientLight__17cSecondaryManagerFRP13cAmbientLight,SecondaryManager::GetAmbientLight,medium,"call-graph (round 3, 1 vote)"
+0x004292a0,AcquireMenuPreviewLight,0x002a58a0,GetDirectionalLight__17cSecondaryManagerFRP17cDirectionalLight,SecondaryManager::GetDirectionalLight,medium,"call-graph (round 3, 1 vote)"
+0x004293d0,SecondaryManager::EnterSpecialMode,0x002a5d30,CheckMemCardSpace__17cSecondaryManagerFv,SecondaryManager::CheckMemCardSpace,low,"call-graph (round 4, 1 vote)"
+0x00429730,SecondaryManager::BeginCharacterSelection,0x002a5e90,StartCharacterBuilder__17cSecondaryManagerFi,SecondaryManager::StartCharacterBuilder,medium,"call-graph (round 2, 1 vote)"
+0x00429750,SecondaryManager::BeginCarSelection,0x002a5ec0,StartCarBuilder__17cSecondaryManagerFii,SecondaryManager::StartCarBuilder,medium,"call-graph (round 4, 2 votes)"
+0x00429790,SetSecondaryManagerMoviePath,0x002a5f10,SetVideoToPlay__17cSecondaryManagerFPCc,SecondaryManager::SetVideoToPlay,medium,"call-graph (round 2, 1 vote)"
+0x004297d0,SecondaryManager::LoadMenuResources,0x002a5f70,StartFrontEnd__17cSecondaryManagerFi,SecondaryManager::StartFrontEnd,medium,"call-graph (round 1, 5 votes)"
+0x0042a380,SecondaryManager::ReleaseMenuResources,0x002a7170,FinishFrontEnd__17cSecondaryManagerFi,SecondaryManager::FinishFrontEnd,low,"call-graph (round 4, 1 vote)"
+0x0042a550,SecondaryManager::LoadLocalizedMenuResources,0x002a7440,LoadLanguageStrings__17cSecondaryManagerFv,SecondaryManager::LoadLanguageStrings,high,shared-constants: Language strings store
+0x0042a660,SecondaryManager::ReleaseLocalizedMenuResources,0x002a7590,DestroyLanguageStrings__17cSecondaryManagerFv,SecondaryManager::DestroyLanguageStrings,low,"call-graph (round 5, 1 vote)"
+0x0042a6f0,BeginSecondaryManagerFallback,0x002a7650,LoadStuffNeededForCDCheck__17cSecondaryManagerFv,SecondaryManager::LoadStuffNeededForCDCheck,medium,"call-graph (round 3, 2 votes)"
+0x0042a740,SecondaryManager::RestoreStartupRendering,0x002a76d0,DestroyStuffNeededForCDCheck__17cSecondaryManagerFv,SecondaryManager::DestroyStuffNeededForCDCheck,low,"call-graph (round 6, 1 vote)"
+0x0042a770,SecondaryManager::ReturnToController,0x002a7710,StartTheRace__17cSecondaryManagerFi,SecondaryManager::StartTheRace,low,"call-graph (round 4, 1 vote)"
+0x0042a860,RequestDeferredWindowDestruction,0x002a7880,RequestExitGame__17cSecondaryManagerFv,SecondaryManager::RequestExitGame,low,"call-graph (round 4, 1 vote)"
+0x0042b200,SecondaryManagerMediaState::IsSlotEnabled,0x0032b740,IsControllerActive__18cSecondaryControlsFi,SecondaryControls::IsControllerActive,medium,"call-graph (round 8, 4 votes)"
+0x0042b220,SecondaryManagerMediaState::Refresh,0x0032b810,ReadSecondaryControllerData__18cSecondaryControlsFi,SecondaryControls::ReadSecondaryControllerData,medium,"call-graph (round 7, 2 votes)"
+0x0042b2b0,SecondaryManagerMediaState::GetSlot,0x0032b930,GetEdgeControlData__18cSecondaryControlsFi,SecondaryControls::GetEdgeControlData,medium,"call-graph (round 2, 1 vote)"
+0x0042b330,GetFoyerInputMask,0x0032b9b0,ReadButtons__18cSecondaryControlsFv,SecondaryControls::ReadButtons,medium,"call-graph (round 1, 1 vote)"
+0x0042b7c0,MenuCarPreviewSelector::Initialize,0x0031e0c0,Begin__10cCarSelectFiRC6sPointfiii,CarSelect::Begin,low,"call-graph (round 8, 1 vote)"
+0x0042bb00,MenuCarPreviewSelector::SetClipRectangle,0x0031e4e0,SetClipWindow__10cCarSelectFRC6sPointRC6sPoint,CarSelect::SetClipWindow,low,"call-graph (round 10, 1 vote)"
+0x0042bcb0,MenuCarPreviewSelector::InitializeLighting,0x0031e6d0,SetUpLights__10cCarSelectFv,CarSelect::SetUpLights,medium,"call-graph (round 7, 2 votes)"
+0x0042bf00,MenuCarPreviewSelector::ConfigureViewport,0x0031e9f0,SetUpViewPort__10cCarSelectFRC6sPointRC6sPoint,CarSelect::SetUpViewPort,low,"call-graph (round 9, 1 vote)"
+0x0042c510,MenuCharacterPreviewSelector::Initialize,0x0031ee20,Begin__14cMiniFigSelectFiRC6sPointfiii,MiniFigSelect::Begin,low,"call-graph (round 5, 1 vote)"
+0x0042c817,FUN_0042c817,0x0031f240,PickMiniFigParts__14cMiniFigSelectFi,MiniFigSelect::PickMiniFigParts,medium,"call-graph (round 5, 4 votes)"
+0x0042c880,MenuCharacterPreviewSelector::SetClipRectangle,0x0031f2c0,SetClipWindow__14cMiniFigSelectFRC6sPointRC6sPoint,MiniFigSelect::SetClipWindow,low,"call-graph (round 7, 1 vote)"
+0x0042ca50,MenuCharacterPreviewSelector::InitializeLighting,0x0031f4d0,SetUpLights__14cMiniFigSelectFv,MiniFigSelect::SetUpLights,low,"call-graph (round 6, 1 vote)"
+0x0042cca0,MenuCharacterPreviewSelector::ConfigureViewport,0x0031f7f0,SetUpViewPort__14cMiniFigSelectFRC6sPointRC6sPoint,MiniFigSelect::SetUpViewPort,low,"call-graph (round 6, 1 vote)"
+0x0042cef0,BitmapFontSet::Initialize,0x0035df40,LoadFonts__16cLegoFontManagerF13eLegoFontMode,LegoFontManager::LoadFonts,medium,"call-graph (round 2, 1 vote)"
+0x0042d020,BitmapFontSet::Release,0x0035e110,DestroyFonts__16cLegoFontManagerF13eLegoFontMode,LegoFontManager::DestroyFonts,low,"call-graph (round 6, 1 vote)"
+0x0042d270,FUN_0042d270,0x00337230,CalcMapParameters__11cHUDManagerFv,HUDManager::CalcMapParameters,high,shared-constants: cMapMarker; cMapMarker%d
+0x0042d9c0,FUN_0042d9c0,0x00336d40,InitialiseHUDPositions__13cHUDPositionsFv,HUDPositions::InitialiseHUDPositions,medium,"call-graph (round 1, 2 votes)"
+0x0042da00,FUN_0042da00,0x00336d80,GetHUDPosFileName__13cHUDPositionsFR9sFileName,HUDPositions::GetHUDPosFileName,high,shared-constants:  Italian;  Spanish;  Swedish; game data\HUD\Positions\HUD Positions%s%s.txt
+0x0042db40,FUN_0042db40,0x00336ef0,ReadHUDPositionsFromFile__13cHUDPositionsFRC9sFileName,HUDPositions::ReadHUDPositionsFromFile,high,shared-constants: HUD positions read-in
+0x0042e060,FUN_0042e060,0x00337d00,InitialiseObject__4cHUDFv,HUD::InitialiseObject,high,shared-constants: %s CPArrow; Game Data\sounds\front end\Powrspin.vag; Power spin; game data\HUD\3D arrow\3d arrow.md2
+0x0042f490,ConfigureFoyerSceneObjectForController,0x00339580,StartHUD__4cHUDFP10cLegoRacer,HUD::StartHUD,medium,"call-graph (round 2, 1 vote)"
+0x004302c0,SetFoyerSceneObjectLayer,0x0033a710,SetOverlayCameraType__4cHUDFi,HUD::SetOverlayCameraType,medium,"call-graph (round 3, 1 vote)"
+0x00430d20,FUN_00430d20,0x0033b5a0,SetRecordText__4cHUDFv,HUD::SetRecordText,low,"call-graph (round 5, 1 vote)"
+0x00431ef0,Vector3::Dot,0x0022d880,MovePosition__8cOverlayFRC6sPoint,Overlay::MovePosition,low,"call-graph (round 1, 1 vote)"
+0x00432eb0,FUN_00432eb0,0x0033e1c0,InitialiseObject__11cHUDManagerFv,HUDManager::InitialiseObject,medium,"call-graph (round 1, 2 votes)"
+0x00433050,PrepareFoyerSceneSelection,0x0033e4b0,GetHUDForRacer__11cHUDManagerFP10cLegoRacer,HUDManager::GetHUDForRacer,medium,"call-graph (round 1, 1 vote)"
+0x00433090,ResetFoyerSceneStateObjects,0x0033e520,ClearAllHUDs__11cHUDManagerFv,HUDManager::ClearAllHUDs,medium,"call-graph (round 2, 1 vote)"
+0x004330c0,SetFoyerMenuSceneActive,0x0033e5b0,SetHUDArrowEnabled__11cHUDManagerFP10cLegoRaceri,HUDManager::SetHUDArrowEnabled,medium,"call-graph (round 2, 1 vote)"
+0x004334c0,GlobalOverlayGlyphReplacementManagerView::Initialize,0x0033e9d0,Initialise__23cLegoSpecialCharManagerFv,LegoSpecialCharManager::Initialise,high,shared-constants: Special Char Icons; Special Char Strings
+0x00433680,GlobalOverlayGlyphReplacementManagerView::LoadIconTextures,0x0033ec10,LoadTextures__23cLegoSpecialCharManagerFv,LegoSpecialCharManager::LoadTextures,medium,"call-graph (round 2, 1 vote)"
+0x00433700,GlobalOverlayGlyphReplacementManagerView::ReleaseIconTextures,0x0033ece0,UnloadTextures__23cLegoSpecialCharManagerFv,LegoSpecialCharManager::UnloadTextures,low,"call-graph (round 4, 1 vote)"
+0x00433750,GlobalOverlayGlyphReplacementManagerView::SetPlayerName,0x0033ed90,SetPlayerName__23cLegoSpecialCharManagerFRC11sPlayerNamei,LegoSpecialCharManager::SetPlayerName,medium,"call-graph (round 1, 1 vote)"
+0x004338f0,InitializeControllerSelectionProgress,0x0036dee0,Begin__22cLoadingScreensManagerFi,LoadingScreensManager::Begin,medium,"call-graph (round 1, 1 vote)"
+0x00433c50,CreateControllerLoadingSprites,0x0036e3c0,InitialiseOverlays__22cLoadingScreensManagerFv,LoadingScreensManager::InitialiseOverlays,medium,"call-graph (round 2, 1 vote)"
+0x00434150,ReadSignedClockSeconds,0x00372720,GetCurrentTimeInSeconds__18cLegoCheatDetectorFv,LegoCheatDetector::GetCurrentTimeInSeconds,low,"call-graph (round 5, 1 vote)"
+0x004342a0,FUN_004342a0,0x00341040,LoadHUDTextures__22cOverlayTextureManagerFi,OverlayTextureManager::LoadHUDTextures,high,shared-constants: Game Data\Fonts\numbers1.tga; Game Data\Fonts\numbers2.tga; Game Data\Fonts\numbers3.tga; Game Data\HUD\Bonus Games\Map.tga
+0x00434bc0,LoadControllerHudTextures,0x00341bc0,LoadTextBoxTextures__22cOverlayTextureManagerFv,OverlayTextureManager::LoadTextBoxTextures,high,shared-constants: Game Data\HUD\Text Box\text box arrow.tga; Game Data\HUD\Text Box\text box.tga
+0x00434e30,ReleaseControllerHudTextures,0x00341d90,RemoveTextBoxTextures__22cOverlayTextureManagerFv,OverlayTextureManager::RemoveTextBoxTextures,low,"call-graph (round 6, 1 vote)"
+0x00434ed0,LoadSecondaryNpcPortraits,0x00341df0,LoadCharacterFaceTextures__22cOverlayTextureManagerFi,OverlayTextureManager::LoadCharacterFaceTextures,high,shared-constants: Game Data\HUD\Text box faces\face frame 01.tga; Game Data\HUD\Text box faces\face frame 02.tga; Game Data\HUD\Text box faces\face frame 03.tga; Game Data\HUD\Text box faces\face frame 04.tga
+0x00435970,FormatSecondaryPortraitTexturePath,0x00342a20,LoadPlayerFaceTextures__22cOverlayTextureManagerFPC14sCharacterInfo,OverlayTextureManager::LoadPlayerFaceTextures,high,shared-constants: Game Data\HUD\Text box faces\Player faces %d.tga
+0x00435bc0,ReleaseSecondaryControllerPreview,0x00342d70,RemovePlayerFaceTextures__22cOverlayTextureManagerFPC14sCharacterInfo,OverlayTextureManager::RemovePlayerFaceTextures,low,"call-graph (round 5, 1 vote)"
+0x00435c40,LoadControllerPauseMenuTextures,0x00342e60,LoadMenuTextures__22cOverlayTextureManagerFi,OverlayTextureManager::LoadMenuTextures,high,shared-constants: Game Data\Frontend\Ch Builder Bits\backspace.tga; Game Data\Frontend\Ch Builder bits\tick.tga; Game Data\Frontend\Frontend bits\Misc\Loading languages\Loading word %s.tga; Game Data\Frontend\Frontend bits\Misc\Slider Base.tga
+0x00436070,ReleaseControllerPauseMenuTextures,0x00343300,RemoveMenuTextures__22cOverlayTextureManagerFi,OverlayTextureManager::RemoveMenuTextures,low,"call-graph (round 7, 1 vote)"
+0x004360d0,LoadControllerBuilderTextures,0x003433a0,LoadMenuBoxTextures__22cOverlayTextureManagerFi,OverlayTextureManager::LoadMenuBoxTextures,high,shared-constants: Game Data\Frontend\Ch Builder Bits\ch bottom left.tga; Game Data\Frontend\Ch Builder Bits\ch bottom mid.tga; Game Data\Frontend\Ch Builder Bits\ch bottom right.tga; Game Data\Frontend\Ch Builder Bits\ch left.tga
+0x00436af0,ReleaseControllerBuilderTextures,0x00343e40,RemoveMenuBoxTextures__22cOverlayTextureManagerFi,OverlayTextureManager::RemoveMenuBoxTextures,low,"call-graph (round 8, 1 vote)"
+0x00436e10,LoadControllerBackgroundTextures,0x003440f0,LoadSecondaryBackGroundTextures__22cOverlayTextureManagerFv,OverlayTextureManager::LoadSecondaryBackGroundTextures,high,shared-constants: Game Data\Frontend\Background\%s\Back%s1.tga
+0x00436f20,ReleaseControllerBackgroundTextures,0x00344210,RemoveSecondaryBackGroundTextures__22cOverlayTextureManagerFv,OverlayTextureManager::RemoveSecondaryBackGroundTextures,low,"call-graph (round 6, 1 vote)"
+0x00436f50,LoadSecondaryAuxiliaryTextureRecords,0x00344280,LoadSecondaryCircularThingTextures__22cOverlayTextureManagerFv,OverlayTextureManager::LoadSecondaryCircularThingTextures,high,shared-constants: Game Data\Frontend\Frontend bits\Circular Thing\Exit Icon.tga; Game Data\Frontend\Frontend bits\Circular Thing\Mode Icon Adventure.tga; Game Data\Frontend\Frontend bits\Circular Thing\Mode Icon Arcade.tga; Game Data\Frontend\Frontend bits\Circular Thing\Mode Icon Battle.tga
+0x00437350,ReleaseSecondaryAuxiliaryModel,0x003446e0,RemoveSecondaryCircularThingTextures__22cOverlayTextureManagerFv,OverlayTextureManager::RemoveSecondaryCircularThingTextures,low,"call-graph (round 6, 1 vote)"
+0x00437380,InitializeSecondaryAuxiliaryModel,0x00344750,LoadMouseCursorTextures__22cOverlayTextureManagerFv,OverlayTextureManager::LoadMouseCursorTextures,high,shared-constants: Game Data\Frontend\Frontend bits\Misc\Cursors.tga
+0x00437400,ReleaseSecondaryModelResources,0x00344800,RemoveMouseCursorTextures__22cOverlayTextureManagerFv,OverlayTextureManager::RemoveMouseCursorTextures,low,"call-graph (round 5, 1 vote)"
+0x00437430,LoadControllerLoadingTextures,0x00344840,LoadLoadingScreenTextures__22cOverlayTextureManagerFi,OverlayTextureManager::LoadLoadingScreenTextures,high,shared-constants: Dino Valley; Frontend; Game Data\Frontend\Frontend bits\Loading Screens\Backgrounds\%s\Loading %s 01.tga; Game Data\Frontend\Frontend bits\Loading Screens\Loading bar %s.tga
+0x00437dc0,InitializeNestedNpcTextBox,0x0033f3f0,Begin__8cTextBoxFPUsRC6sPointRC6sPointi19eTextBoxJibberFlagsii,TextBox::Begin,low,"call-graph (round 4, 1 vote)"
+0x00438540,ClearTextBoxManagerResources,0x0033fcf0,End__8cTextBoxFv,TextBox::End,medium,"call-graph (round 2, 1 vote)"
+0x004385c0,WrapNpcTextLines,0x0033fdb0,SplitUpText__8cTextBoxFPUsRC6sPoint,TextBox::SplitUpText,low,"call-graph (round 5, 1 vote)"
+0x00438940,NormalizeNpcTextChunk,0x00340230,CopyOverText__8cTextBoxFPUsPUsiRiRi,TextBox::CopyOverText,low,"call-graph (round 4, 1 vote)"
+0x00438ac0,ExpandNpcTextInputBinding,0x00340470,CheckForButtonString__8cTextBoxFPCUsRPUs,TextBox::CheckForButtonString,low,"call-graph (round 6, 1 vote)"
+0x00438c90,ReleaseTextBoxManagerResource,0x00340690,EndJibber__8cTextBoxFv,TextBox::EndJibber,medium,"call-graph (round 3, 1 vote)"
+0x00438ec0,TextBoxManager::Initialize,0x00340ac0,InitialiseObject__15cTextBoxManagerFv,TextBoxManager::InitialiseObject,high,shared-constants: Text Box %d
+0x00438fd0,ConfigureNpcTextBox,0x00340d50,StartTextBox__15cTextBoxManagerFPUsRC6sPointRC6sPoint8eNPCType19eTextBoxJibberFlagsii,TextBoxManager::StartTextBox,medium,"call-graph (round 3, 1 vote)"
+0x00439030,ResetActiveTextBoxManager,0x00340db0,EndAllTextBoxes__15cTextBoxManagerFv,TextBoxManager::EndAllTextBoxes,low,"call-graph (round 7, 1 vote)"
+0x0043a480,FoyerManagerUpdate,0x00294dd0,UpdateObject__13cFoyerManagerFf,FoyerManager::UpdateObject,high,shared-constants: foyer_intro; world_completed
+0x0043aa60,ExitFoyerScene,0x002954b0,EndFoyer__13cFoyerManagerFv,FoyerManager::EndFoyer,medium,"call-graph (round 1, 1 vote)"
+0x0043aab0,SetFoyerManagerMenuMode,0x00295520,QuitFoyer__13cFoyerManagerFv,FoyerManager::QuitFoyer,low,"call-graph (round 4, 1 vote)"
+0x0043aac0,ApplyFoyerSceneOverlay,0x00295530,GoToWorld__13cFoyerManagerFi,FoyerManager::GoToWorld,medium,"call-graph (round 1, 1 vote)"
+0x0043aaf0,ApplyFoyerSceneSelection,0x00325610,IsTrackUnlocked__14cTrackLockDataCFii,TrackLockData::IsTrackUnlocked,low,"call-graph (round 1, 1 vote)"
+0x0043ab40,FUN_0043ab40,0x002955c0,GoToBonus__13cFoyerManagerFii,FoyerManager::GoToBonus,low,"call-graph (round 8, 1 vote)"
+0x0043ab70,StartFoyerSceneSelectionTransition,0x00295610,DoScreenFade__13cFoyerManagerF15eFoyerStateType,FoyerManager::DoScreenFade,low,"call-graph (round 9, 1 vote)"
+0x0043aba0,SetFoyerSceneTransition,0x00295640,FreezePlayers__13cFoyerManagerFi,FoyerManager::FreezePlayers,medium,"call-graph (round 1, 1 vote)"
+0x0043ac30,ResetFoyerInputMode,0x002956f0,SetTargetPos__13cFoyerManagerFi,FoyerManager::SetTargetPos,medium,"call-graph (round 1, 1 vote)"
+0x0043acb0,FUN_0043acb0,0x00295790,SetFoyerTargetTrigger__13cFoyerManagerFi,FoyerManager::SetFoyerTargetTrigger,medium,"call-graph (round 2, 1 vote)"
+0x0043ad10,FUN_0043ad10,0x00295820,SetFoyerTargetHotSpot__13cFoyerManagerF17eFoyerHotSpotType,FoyerManager::SetFoyerTargetHotSpot,medium,"call-graph (round 2, 1 vote)"
+0x0043aec0,ComposeFoyerSceneResourcePath,0x00295a70,GetJumpPointScriptFileName__13cFoyerManagerFR9sFileNameiii,FoyerManager::GetJumpPointScriptFileName,high,shared-constants: Game Data\scripts\%s\Jump Point\%s %s.txt
+0x0043afb0,FUN_0043afb0,0x00295ac0,NotifyScriptHasStarted__13cFoyerManagerFi,FoyerManager::NotifyScriptHasStarted,medium,"call-graph (round 3, 1 vote)"
+0x0043b000,RedirectFoyerSceneMode,0x00295b40,ActivateJumpPointScript__13cFoyerManagerFi,FoyerManager::ActivateJumpPointScript,medium,"call-graph (round 2, 1 vote)"
+0x0043b070,UpdateFoyerSceneSelection,0x00295c00,SetBossGate__13cFoyerManagerFv,FoyerManager::SetBossGate,high,shared-constants: boss_barrier; boss_barrier2
+0x0043b1f0,SetFoyerSceneParameter,0x00295e80,SetChallengePositions__13cFoyerManagerFi,FoyerManager::SetChallengePositions,high,shared-constants: intro2_sparkypos
+0x0043b4e0,FUN_0043b4e0,0x00351610,InitialiseObject__12cGoldenBrickFv,GoldenBrick::InitialiseObject,high,shared-constants: Golden brick dust particles; game data\arctic\textures\snowflakes\snowflake2.tga; game data\common\models\Pickups\gbshard_01.MD2
+0x0043c190,RestoreSecondaryBonusObject,0x00352830,GoldenBrickCollected__12cGoldenBrickFv,GoldenBrick::GoldenBrickCollected,low,"call-graph (round 10, 1 vote)"
+0x0043c330,GetFoyerObjectSelection,0x002963d0,CheckObjectActivation__13cFoyerHotSpotCFRC6Vector,FoyerHotSpot::CheckObjectActivation,medium,"call-graph (round 1, 1 vote)"
+0x0043c470,FUN_0043c470,0x00321480,MakeGameObj__16cRegisterMiniFigFiPv,RegisterMiniFig::MakeGameObj,low,"call-graph (round 17, 1 vote)"
+0x0043c9d0,FUN_0043c9d0,0x00369990,InitialiseObject__20cCollisionSFXManagerFv,CollisionSFXManager::InitialiseObject,high,shared-constants: Game Data\Sounds\impacts\%s.vag
+0x0043d830,ReverbManager::CameraHasNoVolume,0x00356930,IsOutsideAllAreas__18cReverbAreaManagerFP7cCamera,ReverbAreaManager::IsOutsideAllAreas,medium,"call-graph (round 1, 1 vote)"
+0x0043d8d0,ReverbManager::Update,0x00356980,UpdateObject__18cReverbAreaManagerFf,ReverbAreaManager::UpdateObject,low,"call-graph (round 4, 1 vote)"
+0x0043dbf0,ReverbManager::RecomputeCameraVolume,0x00356f80,SetReverbArea__18cReverbAreaManagerFiRC6Vector,ReverbAreaManager::SetReverbArea,medium,"call-graph (round 3, 1 vote)"
+0x0043dc40,ReverbManager::FindVolume,0x00357090,GetReverbArea__18cReverbAreaManagerFRC6Vector,ReverbAreaManager::GetReverbArea,medium,"call-graph (round 2, 1 vote)"
+0x0043e0e0,FUN_0043e0e0,0x003604b0,InitialiseObject__14cLegoBergRacerFv,LegoBergRacer::InitialiseObject,high,shared-constants: RUN_LOOP; cBergAIObject; game data\common\effects\shadow\mini_shadow.tga
+0x0043e770,FUN_0043e770,0x00360ee0,SetupFootsteps__14cLegoBergRacerFv,LegoBergRacer::SetupFootsteps,high,shared-constants: game data\sounds\footstep\grass07.vag
+0x0043eb40,FUN_0043eb40,0x002923e0,InitialiseObject__16cCarBrickManagerFv,CarBrickManager::InitialiseObject,high,shared-constants: LegoBrick; LegoBrick%d; array of GM ptrs for carbricks; game data\common\effects\shadow\fly_shadow.tga
+0x00440980,FUN_00440980,0x00281750,InitialiseObject__8cLegoCarFv,LegoCar::InitialiseObject,high,shared-constants: 0000c0bf; BrickLost; Car x Wheel x; ChassisBroken
+0x00443360,FUN_00443360,0x00284e40,CreateALegoCar__8cLegoCarFP10cLegoRacerPcRC6Vector,LegoCar::CreateALegoCar,high,shared-constants: cLegoCar; game data\objects\bricks\arctic\Chassis\arctic buggy chassis.MD2
+0x00445210,FUN_00445210,0x00287d50,ShutDownObject__16cCarShellManagerFv,CarShellManager::ShutDownObject,high,shared-constants: cCarShellManager Is Not Initialised.
+0x00445ef0,FUN_00445ef0,0x0032fee0,InitialiseObject__14cLegoMechRacerFv,LegoMechRacer::InitialiseObject,high,shared-constants: SUPERRUN_LOOP; cMechAIObject; game data\common\effects\shadow\mini_shadow.tga
+0x004472c0,FUN_004472c0,0x0032bb60,InitialiseObject__16cLegoNormalRacerFv,LegoNormalRacer::InitialiseObject,high,shared-constants: cBonusAIObject; cCarAIObject
+0x00447a00,SetFoyerControllerMenuLoop,0x0032c510,SetModeStanding__16cLegoNormalRacerFv,LegoNormalRacer::SetModeStanding,medium,"call-graph (round 5, 2 votes)"
+0x00448750,FUN_00448750,0x0028b3c0,OverlayGhostDataForFrame__14cRacerGhostCarFP10cLegoRacer,RacerGhostCar::OverlayGhostDataForFrame,low,"call-graph (round 10, 1 vote)"
+0x004487b0,SelectControllerSceneRecord,0x00288c20,CreateARacer__10cLegoRacerFi,LegoRacer::CreateARacer,high,shared-constants: Player %d
+0x00448980,FUN_00448980,0x00288e80,InitialiseObject__10cLegoRacerFv,LegoRacer::InitialiseObject,high,shared-constants: AI Supervisor Battle; AI Supervisor Bonus; AI Supervisor Explore; AI Supervisor Foyer
+0x00448fc0,FUN_00448fc0,0x00289650,UpdateObject__10cLegoRacerFf,LegoRacer::UpdateObject,low,"call-graph (round 9, 1 vote)"
+0x00449640,SetNetworkRacerState,0x00289f10,SetRacerControl__10cLegoRacerFi,LegoRacer::SetRacerControl,medium,"call-graph (round 7, 2 votes)"
+0x004496a0,ApplyFoyerSceneStateMode,0x00289fa0,FreezePlayer__10cLegoRacerFi,LegoRacer::FreezePlayer,medium,"call-graph (round 2, 2 votes)"
+0x004496d0,ApplyFoyerControllerSceneAction,0x0028a010,ChangeCurrentMobile__10cLegoRacerFP14cGeneralMobileP14cGeneralMobile,LegoRacer::ChangeCurrentMobile,low,"call-graph (round 6, 1 vote)"
+0x00449730,FUN_00449730,0x0028a090,StartSequenceInitiated__10cLegoRacerFv,LegoRacer::StartSequenceInitiated,low,"call-graph (round 5, 1 vote)"
+0x00449750,UpdateControllerFollowCamera,0x0028a0c0,ProcessNormalRacerCamera__10cLegoRacerFP7cCameraRiff,LegoRacer::ProcessNormalRacerCamera,high,shared-constants: 00000042; 0000c041; 0ad723bc; 3baa2a3f
+0x0044a1b0,FUN_0044a1b0,0x0028ad60,ProcessMessage__10cLegoRacerFR8String24Pv,LegoRacer::ProcessMessage,low,"call-graph (round 8, 1 vote)"
+0x0044a4c0,SuspendFoyerControllerAction,0x0028b220,BeginCutScene__10cLegoRacerFv,LegoRacer::BeginCutScene,medium,"call-graph (round 2, 1 vote)"
+0x0044a4f0,GetCharacterControllerInput,0x0028b250,GetControlData__10cLegoRacerFi,LegoRacer::GetControlData,medium,"call-graph (round 5, 2 votes)"
+0x0044a550,SetFoyerControllerActive,0x0028b2b0,SetIgnoreControllerInputs__10cLegoRacerFi,LegoRacer::SetIgnoreControllerInputs,medium,"call-graph (round 1, 2 votes)"
+0x0044a5f0,FUN_0044a5f0,0x0028b580,GenerateGhostDataForFrame__14cRacerGhostCarFv,RacerGhostCar::GenerateGhostDataForFrame,low,"call-graph (round 10, 1 vote)"
+0x0044a710,FUN_0044a710,0x0028b650,GhostLapChecker__14cRacerGhostCarFi,RacerGhostCar::GhostLapChecker,low,"call-graph (round 10, 1 vote)"
+0x0044a780,FUN_0044a780,0x0028c0c0,UpdateShield__10cLegoRacerFv,LegoRacer::UpdateShield,low,"call-graph (round 10, 1 vote)"
+0x0044a920,FUN_0044a920,0x0028b910,LoadSounds__10cLegoRacerFv,LegoRacer::LoadSounds,high,shared-constants: RacerSoundCarBonus; RacerSoundCheckPoint; RacerSoundFinalLap; RacerSoundGoldenBrick
+0x0044abd0,SetControllerMenuMode,0x0028bdc0,PlaySound__10cLegoRacerCFQ210cLegoRacer12eRacerSounds,LegoRacer::PlaySound,high,shared-constants: 33332340; 3333b33f; 66666640; 9a997940
+0x0044aec0,FUN_0044aec0,0x00352a20,Update__11cMagnaTrackFv,MagnaTrack::Update,low,"call-graph (round 10, 1 vote)"
+0x0044cbe0,FUN_0044cbe0,0x0028ac90,CheckRage__10cLegoRacerFf,LegoRacer::CheckRage,low,"call-graph (round 10, 1 vote)"
+0x0044cd00,BodypartManagerInitialize,0x0028c470,InitialiseObject__16cBodypartManagerFv,BodypartManager::InitialiseObject,high,shared-constants:  face.TGA;  legs.TGA;  torso.TGA; Ramahead names
+0x0044d8c0,BodypartManager::GetTorsoTexture,0x0028cdb0,GetTorsoTextureID__16cBodypartManagerFii,BodypartManager::GetTorsoTextureID,low,"call-graph (round 4, 1 vote)"
+0x0044d920,BodypartManager::GetLegTexture,0x0028ce20,GetLegTextureID__16cBodypartManagerFi,BodypartManager::GetLegTextureID,low,"call-graph (round 4, 1 vote)"
+0x0044d940,BodypartManager::GetFaceTexture,0x0028ce40,GetFaceTextureID__16cBodypartManagerFii,BodypartManager::GetFaceTextureID,medium,"call-graph (round 4, 2 votes)"
+0x0044da70,BodypartManager::GetLoadedHeadModel,0x0028ce70,GetHeadModel__16cBodypartManagerFi,BodypartManager::GetHeadModel,low,"call-graph (round 4, 1 vote)"
+0x0044db00,BodypartManager::FindHeadModel,0x0028cf20,GetHeadID__16cBodypartManagerFPcRi,BodypartManager::GetHeadID,low,"call-graph (round 17, 1 vote)"
+0x0044dcf0,BodypartManager::FindTorsoTexture,0x0028d140,GetTorsoID__16cBodypartManagerFPcRi,BodypartManager::GetTorsoID,high,shared-constants: %s torso
+0x0044dec0,BodypartManager::FindLegTexture,0x0028ceb0,GetSmallerName__FPcR9sFileName,GetSmallerName,low,"call-graph (round 17, 1 vote)"
+0x0044df70,FindNamedCharacterBodyparts,0x0028d440,GetCharacterInfo__16cBodypartManagerFPcR14sCharacterInfo,BodypartManager::GetCharacterInfo,low,"call-graph (round 16, 1 vote)"
+0x0044e290,ReleaseSecondaryCharacterResources,0x0028da20,TrashAllTheThingsThatNeedTrashing__16cBodypartManagerFv,BodypartManager::TrashAllTheThingsThatNeedTrashing,low,"call-graph (round 5, 1 vote)"
+0x0044ec50,InitializeCharacterVisual,0x0028deb0,InitialiseObject__12cLegoMiniFigFv,LegoMiniFig::InitialiseObject,high,shared-constants: 00008c42; 0000e03f; game data\Aliens\alien bodies\textures\default body.tga; game data\characters\bodies\textures\default grey legs.tga
+0x0044f570,CharacterVisual::SetHeadModel,0x0028ebb0,PickHead__12cLegoMiniFigFi,LegoMiniFig::PickHead,medium,"call-graph (round 3, 2 votes)"
+0x0044f5d0,CharacterVisual::SetTorsoTexture,0x0028ec40,PickTorso__12cLegoMiniFigFii,LegoMiniFig::PickTorso,medium,"call-graph (round 3, 2 votes)"
+0x0044f610,CharacterVisual::SetLegTexture,0x0028eca0,PickLegs__12cLegoMiniFigFi,LegoMiniFig::PickLegs,medium,"call-graph (round 3, 2 votes)"
+0x0044f650,CharacterVisual::SetFaceVariant,0x0028ed00,PickExpression__12cLegoMiniFigFi,LegoMiniFig::PickExpression,medium,"call-graph (round 3, 2 votes)"
+0x0044f690,CharacterVisual::SetFaceGroup,0x0028ed60,PickFace__12cLegoMiniFigFi,LegoMiniFig::PickFace,medium,"call-graph (round 3, 2 votes)"
+0x0044f6e0,SetCharacterVisualMode,0x0028edd0,ChangeMiniFigMode__12cLegoMiniFigFi,LegoMiniFig::ChangeMiniFigMode,medium,"call-graph (round 1, 1 vote)"
+0x0044f960,EnterCharacterDrivingMode,0x0028f210,ModeInitDriving__12cLegoMiniFigFv,LegoMiniFig::ModeInitDriving,high,shared-constants: CRASH_FRONT; CRASH_REAR; DRIVE_CENTRE; DRIVE_LEFT
+0x0044fec0,EnterCharacterIdleMode,0x00290340,ModeInitOnFoot__12cLegoMiniFigFv,LegoMiniFig::ModeInitOnFoot,medium,"call-graph (round 2, 1 vote)"
+0x004503e0,EnterCharacterSelectionMode,0x0028fa10,ModeInitBuilder__12cLegoMiniFigFv,LegoMiniFig::ModeInitBuilder,medium,"call-graph (round 2, 1 vote)"
+0x00450c30,CharacterVisual::EnterIdlePreviewMode,0x00290130,ModeInitCarBuilder__12cLegoMiniFigFv,LegoMiniFig::ModeInitCarBuilder,medium,"call-graph (round 2, 1 vote)"
+0x00450e70,InitializeCharacterVisualFootstepAudio,0x00290fb0,SetupLegodudeFootsteps__12cLegoMiniFigFv,LegoMiniFig::SetupLegodudeFootsteps,high,shared-constants: game data\sounds\footstep\grass04.vag; game data\sounds\footstep\grass05.vag
+0x00451d60,FUN_00451d60,0x00355780,InitialiseObject__15cThrusterMobileFv,ThrusterMobile::InitialiseObject,high,shared-constants: FLAREPOS01; THRUSTERPOS01; THRUSTERPOS02
+0x00452b30,RegisterCharacterBodyContact,0x0034b810,PreventCollisionImpulse__15cWalkerSkeletonFP14cCollisionInfo,WalkerSkeleton::PreventCollisionImpulse,medium,"call-graph (round 1, 1 vote)"
+0x0045b3d0,InitializeFoyerSceneAudioTarget,0x0027be50,InitialiseObject__16cCinematicCameraFv,CinematicCamera::InitialiseObject,high,shared-constants: cine_spline%i; cine_track%i
+0x0045ba20,GetControllerTaskManager,0x00278cb0,Instance__18cCinematicDirectorFv,CinematicDirector::Instance,medium,"call-graph (round 2, 2 votes)"
+0x0045ba70,ResetControllerTaskOverlayState,0x00278e20,Delete__18cCinematicDirectorFv,CinematicDirector::Delete,low,"call-graph (round 7, 1 vote)"
+0x0045bc10,SetControllerTaskActionStatus,0x002791d0,SetViewportState__18cCinematicDirectorFii,CinematicDirector::SetViewportState,medium,"call-graph (round 3, 1 vote)"
+0x0045bca0,SetControllerTaskManagerModeValue,0x00279380,SetViewportReplaySpeed__18cCinematicDirectorFif,CinematicDirector::SetViewportReplaySpeed,medium,"call-graph (round 3, 1 vote)"
+0x0045bcc0,SetControllerTaskActionRecord,0x002793a0,SetViewportShot__18cCinematicDirectorFiR14sCinematicShot,CinematicDirector::SetViewportShot,low,"call-graph (round 6, 1 vote)"
+0x0045c210,GetControllerTaskActionStatus,0x00279d50,GetViewportState__18cCinematicDirectorCFi,CinematicDirector::GetViewportState,medium,"call-graph (round 2, 2 votes)"
+0x0045cf70,UpdateSceneTargetDistance,0x0027ab50,UpdateShotObjectStatic__18cCinematicOperatorFf,CinematicOperator::UpdateShotObjectStatic,medium,"call-graph (round 3, 1 vote)"
+0x0045f8d0,ScreenPrinter::ApplyFont,0x002784f0,FixUpFonts__12cScreenPrintFv,ScreenPrint::FixUpFonts,medium,"call-graph (round 3, 1 vote)"
+0x0045f900,ScreenPrinter::SetText,0x0022ec50,SetText__11cTextStringFPUcif,TextString::SetText,low,"call-graph (round 1, 1 vote)"
+0x0045f950,PrintCharacterContactStatus,0x002785a0,PrintSpec__12cScreenPrintFiPce,ScreenPrint::PrintSpec,high,shared-constants: TempString too small in ScreenPrinter()
+0x0045fad0,SetNpcTextManagerFade,0x00277590,SetTimerSpeed__15cNPCTextManagerFf,NPCTextManager::SetTimerSpeed,medium,"call-graph (round 3, 1 vote)"
+0x0045faf0,FUN_0045faf0,0x002740b0,MoveRight__14cScrollingMenuFv,ScrollingMenu::MoveRight,medium,"call-graph (round 2, 1 vote)"
+0x0045feb0,SetNpcTextManagerTextByName,0x00277a70,StartNPCText__15cNPCTextManagerF8eNPCTypeRC8String24fi,NPCTextManager::StartNPCText,low,"call-graph (round 4, 1 vote)"
+0x0045ffb0,SetNpcTextManagerText,0x00277be0,StartNPCText__15cNPCTextManagerF8eNPCTypeifi,NPCTextManager::StartNPCText,medium,"call-graph (round 2, 1 vote)"
+0x00460070,ClearFoyerNpcText,0x00277d00,RemoveNPCText__15cNPCTextManagerFv,NPCTextManager::RemoveNPCText,medium,"call-graph (round 1, 1 vote)"
+0x00460190,InitializeSecondaryVoiceResources,0x00277eb0,LoadNPCs__15cNPCTextManagerFi,NPCTextManager::LoadNPCs,high,shared-constants: Game Data\Sounds\Voices\%s%d.vag; Game Data\Sounds\Voices\%s0%d.vag
+0x004603e0,ReleaseSecondaryVoiceResources,0x00278150,DestroyNPCs__15cNPCTextManagerFi,NPCTextManager::DestroyNPCs,low,"call-graph (round 5, 1 vote)"
+0x004608a0,ShowSecondarySpriteSet,0x00272c70,Show__21cStaticOverlayManagerFv,StaticOverlayManager::Show,medium,"call-graph (round 2, 1 vote)"
+0x00460900,ReleaseSecondarySpriteSet,0x00272d30,Destroy__21cStaticOverlayManagerFv,StaticOverlayManager::Destroy,low,"call-graph (round 6, 1 vote)"
+0x00460a60,InitializeSecondarySelectionGrid,0x00272ea0,BeginBuild__14cScrollingMenuFv,ScrollingMenu::BeginBuild,high,shared-constants: Memory for cScrollingMenu
+0x00460cd0,FinalizeSecondarySelectionGrid,0x00273220,EndBuild__14cScrollingMenuFv,ScrollingMenu::EndBuild,high,shared-constants: 2506813e; icon_background
+0x00460e20,FUN_00460e20,0x002733e0,Show__14cScrollingMenuFii,ScrollingMenu::Show,medium,"call-graph (round 2, 1 vote)"
+0x00460fd0,FUN_00460fd0,0x00273740,SetUpCamera__14cScrollingMenuFv,ScrollingMenu::SetUpCamera,low,"call-graph (round 9, 1 vote)"
+0x004611c0,FUN_004611c0,0x00273ab0,HideText__14cScrollingMenuFv,ScrollingMenu::HideText,low,"call-graph (round 4, 1 vote)"
+0x00461230,FUN_00461230,0x00273b50,HideIcons__14cScrollingMenuFv,ScrollingMenu::HideIcons,low,"call-graph (round 4, 1 vote)"
+0x004612a0,ReleaseSecondarySelectionGrid,0x00273c00,Destroy__14cScrollingMenuFv,ScrollingMenu::Destroy,low,"call-graph (round 6, 1 vote)"
+0x00461410,FUN_00461410,0x002742f0,MoveUp__14cScrollingMenuFv,ScrollingMenu::MoveUp,medium,"call-graph (round 2, 1 vote)"
+0x004615a0,FUN_004615a0,0x002775a0,StartNPCText__15cNPCTextManagerF8eNPCType12eNPCTextTypefi,NPCTextManager::StartNPCText,medium,"call-graph (round 3, 1 vote)"
+0x00461740,FUN_00461740,0x00273e70,MoveLeft__14cScrollingMenuFv,ScrollingMenu::MoveLeft,medium,"call-graph (round 2, 1 vote)"
+0x004618d0,FUN_004618d0,0x00274510,MoveDown__14cScrollingMenuFi,ScrollingMenu::MoveDown,low,"call-graph (round 6, 1 vote)"
+0x00461aa0,FUN_00461aa0,0x002747a0,MakeSureCurrentItemIsEnabled__14cScrollingMenuFv,ScrollingMenu::MakeSureCurrentItemIsEnabled,low,"call-graph (round 7, 1 vote)"
+0x00461b10,GetBuilderSelectedAction,0x00274890,GetCurrentSelection__14cScrollingMenuFR18sScrollingMenuItem,ScrollingMenu::GetCurrentSelection,medium,"call-graph (round 2, 3 votes)"
+0x00461b80,FUN_00461b80,0x00274900,SetDefaultSelection__14cScrollingMenuFiii,ScrollingMenu::SetDefaultSelection,medium,"call-graph (round 3, 1 vote)"
+0x00461be0,FUN_00461be0,0x002749b0,SetCurrList__14cScrollingMenuFii,ScrollingMenu::SetCurrList,low,"call-graph (round 4, 1 vote)"
+0x00461c20,FUN_00461c20,0x002749f0,SetItemEnabled__14cScrollingMenuFiiii,ScrollingMenu::SetItemEnabled,low,"call-graph (round 4, 1 vote)"
+0x00461cc0,FUN_00461cc0,0x00274ac0,CheckMouseActivation__14cScrollingMenuFP13cMouseControl,ScrollingMenu::CheckMouseActivation,medium,"call-graph (round 2, 1 vote)"
+0x00461de0,FUN_00461de0,0x00274c40,Update__14cScrollingMenuFf,ScrollingMenu::Update,medium,"call-graph (round 2, 1 vote)"
+0x00462310,FUN_00462310,0x00275200,FindTierItemWithId__14cScrollingMenuFiii,ScrollingMenu::FindTierItemWithId,low,"call-graph (round 4, 1 vote)"
+0x004624c0,InitializeSelectionGridModels,0x00275430,InitIconObjects__14cScrollingMenuFv,ScrollingMenu::InitIconObjects,high,shared-constants: Game Data\Objects\bricks\square\1X1 red.MD2
+0x004639d0,FUN_004639d0,0x00277180,SetText__20cScrollingTextStringFiif,ScrollingTextString::SetText,low,"call-graph (round 5, 1 vote)"
+0x00463a60,FUN_00463a60,0x00277240,RepeatString__20cScrollingTextStringFPUsif,ScrollingTextString::RepeatString,low,"call-graph (round 6, 1 vote)"
+0x00463f40,LoadSecondaryCharacterSelector,0x00270d60,Initialise__24cCharacterBuilderManagerFP5cFont,CharacterBuilderManager::Initialise,high,shared-constants: Game Data\Frontend\Ch Builder Bits\red_peg_tile.tga
+0x00464240,UpdateSecondaryCharacterSelection,0x002710f0,Update__24cCharacterBuilderManagerFfP18cSecondaryControls,CharacterBuilderManager::Update,medium,"call-graph (round 1, 1 vote)"
+0x004644d0,BeginSecondaryCharacterSelection,0x002714b0,Begin__24cCharacterBuilderManagerFi,CharacterBuilderManager::Begin,medium,"call-graph (round 1, 1 vote)"
+0x004647c0,ReleaseSecondaryCharacterSelector,0x00271810,Destroy__24cCharacterBuilderManagerFv,CharacterBuilderManager::Destroy,low,"call-graph (round 5, 1 vote)"
+0x004648c0,FUN_004648c0,0x00271950,SetUpMiniFig__24cCharacterBuilderManagerFv,CharacterBuilderManager::SetUpMiniFig,medium,"call-graph (round 2, 1 vote)"
+0x00464aa0,FUN_00464aa0,0x00271b80,SetUpLights__24cCharacterBuilderManagerFv,CharacterBuilderManager::SetUpLights,medium,"call-graph (round 2, 1 vote)"
+0x00464c20,FUN_00464c20,0x00271d90,SetUpCamera__24cCharacterBuilderManagerFv,CharacterBuilderManager::SetUpCamera,high,shared-constants: 560ead3e; 7b14ae3e; ae47613d
+0x00464d70,FUN_00464d70,0x00272040,DrawPartOverlays__24cCharacterBuilderManagerFf,CharacterBuilderManager::DrawPartOverlays,medium,"call-graph (round 1, 1 vote)"
+0x00464ff0,FUN_00464ff0,0x00272320,ClipOverlayToViewport__24cCharacterBuilderManagerFP8cOverlay,CharacterBuilderManager::ClipOverlayToViewport,high,shared-constants: 3333133f; 560ead3e; 8fc2153f
+0x00465210,FUN_00465210,0x002725a0,InitScrollingState__24cCharacterBuilderManagerFif,CharacterBuilderManager::InitScrollingState,medium,"call-graph (round 2, 1 vote)"
+0x00465240,FUN_00465240,0x002725c0,SelectBodyPart__24cCharacterBuilderManagerFR18sScrollingMenuItem,CharacterBuilderManager::SelectBodyPart,high,shared-constants: CB_FINISHED; CB_TORSO
+0x004653b0,FUN_004653b0,0x00272860,ApplyBodyPart__24cCharacterBuilderManagerFR18sScrollingMenuItem,CharacterBuilderManager::ApplyBodyPart,medium,"call-graph (round 2, 1 vote)"
+0x00467ba0,LoadSecondaryCarSelector,0x0026d3b0,Initialise__18cCarBuilderManagerFP5cFonti,CarBuilderManager::Initialise,high,shared-constants: Game Data\Frontend\Ch Builder Bits\blue_peg_tile.tga
+0x00467de0,LoadSecondaryWheelModels,0x0026d7c0,LoadWheelModels__18cCarBuilderManagerFv,CarBuilderManager::LoadWheelModels,high,shared-constants: Stored wheel models for car builder
+0x00467eb0,FUN_00467eb0,0x0026d890,LoadPreBuiltCars__18cCarBuilderManagerFv,CarBuilderManager::LoadPreBuiltCars,low,"call-graph (round 4, 1 vote)"
+0x00467ff0,BeginSecondaryCarSelection,0x0026da20,Begin__18cCarBuilderManagerFiii,CarBuilderManager::Begin,medium,"call-graph (round 3, 2 votes)"
+0x00468350,UpdateSecondaryCarSelection,0x0026de50,Update__18cCarBuilderManagerFfP18cSecondaryControls,CarBuilderManager::Update,medium,"call-graph (round 1, 1 vote)"
+0x00468e30,FinishSecondaryCarSelection,0x0026ed10,End__18cCarBuilderManagerFv,CarBuilderManager::End,medium,"call-graph (round 3, 1 vote)"
+0x00468ee0,ReleaseSecondaryCarSelector,0x0026ee40,Destroy__18cCarBuilderManagerFv,CarBuilderManager::Destroy,low,"call-graph (round 5, 1 vote)"
+0x00469630,FUN_00469630,0x0026f9c0,GoBackToScrollingMenu__18cCarBuilderManagerFv,CarBuilderManager::GoBackToScrollingMenu,low,"call-graph (round 5, 1 vote)"
+0x004696e0,FUN_004696e0,0x0026fac0,DisableMenuItems__18cCarBuilderManagerFv,CarBuilderManager::DisableMenuItems,medium,"call-graph (round 4, 2 votes)"
+0x004697a0,FUN_004697a0,0x0026fc00,SetUpMiniFig__18cCarBuilderManagerFv,CarBuilderManager::SetUpMiniFig,low,"call-graph (round 4, 1 vote)"
+0x00469920,FUN_00469920,0x0026fdb0,SetUpLights__18cCarBuilderManagerFv,CarBuilderManager::SetUpLights,low,"call-graph (round 4, 1 vote)"
+0x00469aa0,FUN_00469aa0,0x0026ffc0,SetUpCameras__18cCarBuilderManagerFv,CarBuilderManager::SetUpCameras,low,"call-graph (round 4, 1 vote)"
+0x00469c50,FUN_00469c50,0x00270450,UpdateCameras__18cCarBuilderManagerFf,CarBuilderManager::UpdateCameras,low,"call-graph (round 5, 1 vote)"
+0x00469fc0,FUN_00469fc0,0x002708a0,SetBricksLeftText__18cCarBuilderManagerFv,CarBuilderManager::SetBricksLeftText,low,"call-graph (round 4, 1 vote)"
+0x0046a2e0,InitializeCarDisplay,0x00321610,Initialise__11cCarDisplayFv,CarDisplay::Initialise,high,shared-constants: lego brick array in Car Display in car builder
+0x0046b470,FUN_0046b470,0x002f1180,Initialise__10cWorldRainFv,WorldRain::Initialise,high,shared-constants: Game Data\sounds\common\weather\thund_02.vag; Game Data\sounds\common\weather\thund_03.vag; Game Data\sounds\common\weather\thund_04.vag; NON C OBJECT
+0x0046c360,FUN_0046c360,0x002f2680,Update__10cWorldRainFv,WorldRain::Update,high,shared-constants: 52b87e3f; 8988083c; 8988883d; a69b443c
+0x0046d9e0,FUN_0046d9e0,0x0026b3c0,Initialise__10cWorldSnowFv,WorldSnow::Initialise,high,shared-constants: Snow particles; game data\arctic\textures\snowflakes\snowflake1.tga; game data\arctic\textures\snowflakes\snowflake2.tga
+0x0046ebc0,FUN_0046ebc0,0x002f4470,InitialiseObject__9cSunFlareFv,SunFlare::InitialiseObject,high,shared-constants: game data\common\effects\common\textures\flares\big_flare.tga; game data\common\effects\common\textures\flares\sml_flare.tga; game data\common\effects\common\textures\flares\sml_flare2.tga; game data\common\effects\common\textures\flares\sml_flare3.tga
+0x0046f740,FUN_0046f740,0x0036c8a0,InitialiseObject__15cBoulderSpitterFv,BoulderSpitter::InitialiseObject,high,shared-constants: game data\common\effects\explosions\models\rock2.md2
+0x00470740,FUN_00470740,0x003001a0,Initialise__16cEffectDustPuffsFv,EffectDustPuffs::Initialise,high,"shared-constants: Line : %d\nFile : ""%s""\nERROR : ""%s""\n\n; Object Already Initialised; game data\common\textures\Smoke\smoke001.tga"
+0x004707b0,FUN_004707b0,0x00300260,IsInitialised__16cEffectDustPuffsCFv,EffectDustPuffs::IsInitialised,medium,"call-graph (round 1, 1 vote)"
+0x00470ce0,FUN_00470ce0,0x002cf870,InitialiseObject__15cEffectsManagerFv,EffectsManager::InitialiseObject,medium,"call-graph (round 1, 1 vote)"
+0x00473250,FUN_00473250,0x002ef080,Initialise__17cExplosionManagerFv,ExplosionManager::Initialise,high,shared-constants: 00007a43; Explosion Boulder %d; Explosion Object; Game Data\sounds\common\lavashot.vag
+0x00474330,FUN_00474330,0x00347b80,Initialise__9cFireWorkFv,FireWork::Initialise,high,shared-constants: Explode1; Explode2; Game Data\sounds\Firework\bang02.vag; Game Data\sounds\Firework\bang03.vag
+0x00474db0,FUN_00474db0,0x00348ae0,Update__9cFireWorkFv,FireWork::Update,high,shared-constants: 6f12033a; 8fc2c53f; 9a99793f; ec51383d
+0x00475c90,FUN_00475c90,0x0035a230,Initialise__18cEffectFlameTrailsFv,EffectFlameTrails::Initialise,high,shared-constants: game data\common\textures\rageflame_01.tga
+0x00476040,FUN_00476040,0x0035a5e0,Reset__18cEffectFlameTrailsFv,EffectFlameTrails::Reset,low,"call-graph (round 8, 1 vote)"
+0x00477550,FUN_00477550,0x0032dfe0,Initialise__13cGeyserObjectFv,GeyserObject::Initialise,high,shared-constants: game data\common\textures\geyser01.tga; game data\common\textures\geyser02.tga; game data\common\textures\geyser03.tga; game data\common\textures\geyser04.tga
+0x00477e70,FUN_00477e70,0x0032ec50,GetParticles__13cGeyserObjectFRC6Vector5cBGRAf,GeyserObject::GetParticles,high,shared-constants: Not enough Particals to generate the Geyser effect\r\n
+0x00478bf0,SecondaryFxState::EnsureSprite,0x0022df80,GetOverlay__15cOverlayManagerFRC13sOverlayProps,OverlayManager::GetOverlay,low,"call-graph (round 3, 1 vote)"
+0x00478dd0,SecondaryFxState::SetMode,0x00344de0,ScreenFade__18cEffectScreenFadesFif,EffectScreenFades::ScreenFade,medium,"call-graph (round 2, 1 vote)"
+0x00479540,FUN_00479540,0x0036d300,UpdateObject__14cShootingStarsFf,ShootingStars::UpdateObject,high,shared-constants: 00004045; 00007a43; 0000c044; 00409c44
+0x0047a3f0,FUN_0047a3f0,0x002fae20,Initialise__16cEffectSkidmarksFv,EffectSkidmarks::Initialise,high,shared-constants: Game Data\Common\Effects\Common\Textures\Roadmarks\Skidmark1.tga; Game Data\Common\Textures\CorkScrew_Furrow_01.tga; Game Data\Common\Textures\CorkScrew_Furrow_02.tga; Game Data\Common\Textures\Ice_Cracks\IceCracks.tga
+0x0047a6d0,FUN_0047a6d0,0x002fb1d0,Shutdown__16cEffectSkidmarksFv,EffectSkidmarks::Shutdown,high,shared-constants: Skidmark Effect already shut down.
+0x0047a9e0,FUN_0047a9e0,0x002da060,Initialise__15cEffectSparklesFv,EffectSparkles::Initialise,high,shared-constants: game data\common\effects\common\textures\star.tga
+0x0047b610,AcquireFoyerAsset,0x003451a0,NewActor__13cActorFactoryFi,ActorFactory::NewActor,medium,"call-graph (round 1, 2 votes)"
+0x0047b7d0,LoadSparkyFoyerAsset,0x00345460,NewSparky__13cActorFactoryFv,ActorFactory::NewSparky,medium,"call-graph (round 2, 1 vote)"
+0x0047b8f0,LoadDefaultSizeFoyerAsset,0x00345580,NewBossMech__13cActorFactoryFv,ActorFactory::NewBossMech,medium,"call-graph (round 2, 1 vote)"
+0x0047b990,LoadRigelFoyerAsset,0x00345640,NewAlienQueen__13cActorFactoryFv,ActorFactory::NewAlienQueen,medium,"call-graph (round 2, 1 vote)"
+0x0047bae0,LoadRocketRacerFoyerAsset,0x00345750,NewRocketRacer__13cActorFactoryFv,ActorFactory::NewRocketRacer,high,shared-constants: rocket racer
+0x0047bdf0,LoadPlayerFoyerAsset,0x00345880,NewBerg__13cActorFactoryFv,ActorFactory::NewBerg,medium,"call-graph (round 2, 1 vote)"
+0x0047be70,LoadIntroFoyerAsset,0x00345910,NewSanister__13cActorFactoryFv,ActorFactory::NewSanister,high,shared-constants: sam sanister
+0x0047c090,InitializeFoyerSceneEventState,0x002ea610,Initialise__12cScriptActorFv,ScriptActor::Initialise,medium,"call-graph (round 2, 1 vote)"
+0x0047c260,SetFoyerSceneEventTarget,0x002ea8e0,SetSkeleton__12cScriptActorFP9cSkeleton,ScriptActor::SetSkeleton,medium,"call-graph (round 2, 1 vote)"
+0x0047c280,FUN_0047c280,0x002ea900,StartScript__12cScriptActorFv,ScriptActor::StartScript,medium,"call-graph (round 3, 1 vote)"
+0x0047c3d0,UpdateFoyerSceneEntry,0x002eab20,Update__12cScriptActorFf,ScriptActor::Update,low,"call-graph (round 6, 1 vote)"
+0x0047ca00,FUN_0047ca00,0x002eb460,SetupPodiumActor__12cScriptActorFv,ScriptActor::SetupPodiumActor,low,"call-graph (round 4, 1 vote)"
+0x0047cd00,ParseFoyerSceneResourceEvents,0x002dbd60,Build__10cEventListFv,EventList::Build,high,shared-constants: cEventList::Build - temp mem buffer
+0x0047e360,GetControllerSceneObject,0x002d9930,Instance__15cTriggerManagerFv,TriggerManager::Instance,medium,"call-graph (round 2, 1 vote)"
+0x0047e3b0,ResetControllerInputState,0x002d99f0,Delete__15cTriggerManagerFv,TriggerManager::Delete,low,"call-graph (round 7, 1 vote)"
+0x0047e770,SetFoyerSceneInputAnimationState,0x002d9fa0,SetFFEffectEnabled__15cTriggerManagerFi,TriggerManager::SetFFEffectEnabled,low,"call-graph (round 6, 1 vote)"
+0x0047e7c0,FUN_0047e7c0,0x002da040,SetFFSoundPitch__15cTriggerManagerFf,TriggerManager::SetFFSoundPitch,medium,"call-graph (round 3, 1 vote)"
+0x0047ea80,FUN_0047ea80,0x002d6400,UpdateObject__14cScriptTriggerFf,ScriptTrigger::UpdateObject,low,"call-graph (round 6, 1 vote)"
+0x0047ec70,FUN_0047ec70,0x002d6640,Activate__14cScriptTriggerFv,ScriptTrigger::Activate,low,"call-graph (round 5, 1 vote)"
+0x0047f0b0,FoyerSceneResourceInitialize,0x002d6ab0,InitialiseObject__10cEventListFv,EventList::InitialiseObject,medium,"call-graph (round 1, 1 vote)"
+0x0047f420,FoyerSceneResourceUpdate,0x002d70c0,UpdateObject__10cEventListFf,EventList::UpdateObject,medium,"call-graph (round 3, 1 vote)"
+0x0047f4b0,UpdateFoyerSceneTransition,0x002d7170,ProcessStateActive__10cEventListFf,EventList::ProcessStateActive,low,"call-graph (round 4, 1 vote)"
+0x0047f630,UpdateFoyerSceneFade,0x002d7360,ProcessStateYesNo__10cEventListFf,EventList::ProcessStateYesNo,low,"call-graph (round 4, 1 vote)"
+0x0047f6a0,UpdateFoyerSceneHold,0x002d73f0,ProcessStateSparkyMenu__10cEventListFf,EventList::ProcessStateSparkyMenu,low,"call-graph (round 4, 1 vote)"
+0x0047f730,DispatchDueFoyerSceneActions,0x002d7470,ExecutePendingEvents__10cEventListFv,EventList::ExecutePendingEvents,medium,"call-graph (round 5, 2 votes)"
+0x0047f990,FindFoyerSceneResource,0x002d78e0,GetEventList__10cEventListFPCc,EventList::GetEventList,medium,"call-graph (round 1, 4 votes)"
+0x0047fa00,LoadFoyerScene,0x002d7970,Activate__10cEventListFP10cLegoRaceri,EventList::Activate,medium,"call-graph (round 1, 2 votes)"
+0x0047fb70,CompleteFoyerSceneTransition,0x002d7bc0,DeActivate__10cEventListFv,EventList::DeActivate,medium,"call-graph (round 3, 1 vote)"
+0x0047fd10,ActivateFoyerSceneEvents,0x002d7ec0,Start__10cEventListFv,EventList::Start,medium,"call-graph (round 2, 1 vote)"
+0x0047fe00,UpdateFoyerSceneEvents,0x002d8080,UpdateActors__10cEventListFf,EventList::UpdateActors,medium,"call-graph (round 5, 3 votes)"
+0x0047fe60,UpdateFoyerSceneInputMode,0x002d8120,ProcessFastForward__10cEventListFRf,EventList::ProcessFastForward,low,"call-graph (round 5, 1 vote)"
+0x0047ff90,SetFoyerSceneAnimationMode,0x002d82a0,SetSpeed__10cEventListFf,EventList::SetSpeed,medium,"call-graph (round 2, 1 vote)"
+0x004801a0,GetFoyerSceneEventObject,0x002d8530,GetActorSkeleton__10cEventListCFi,EventList::GetActorSkeleton,low,"call-graph (round 6, 1 vote)"
+0x004801c0,IsFoyerSceneTransitionComplete,0x002d8560,IsRunning__10cEventListCFv,EventList::IsRunning,medium,"call-graph (round 1, 1 vote)"
+0x00480540,UpdateFoyerSceneTaskSourceAction,0x002d8a80,Execute__15cCinematicEventFv,CinematicEvent::Execute,low,"call-graph (round 5, 1 vote)"
+0x00481410,FUN_00481410,0x002e7c50,InitialiseObject__11cLegoWeaponFv,LegoWeapon::InitialiseObject,medium,"call-graph (round 1, 1 vote)"
+0x00481450,FUN_00481450,0x002e7cd0,SleepWeaponCollision__11cLegoWeaponFv,LegoWeapon::SleepWeaponCollision,medium,"call-graph (round 2, 1 vote)"
+0x004819f0,FUN_004819f0,0x00322510,InitialiseObject__17cWeaponBloodhoundFv,WeaponBloodhound::InitialiseObject,high,shared-constants: 295c8f3e; Game Data\sounds\weapons\bhhit.vag; Game Data\sounds\weapons\csfire.vag; Game Data\sounds\weapons\loops\bhfirelp.vag
+0x00483b00,FUN_00483b00,0x0031b590,InitialiseObject__16cWeaponCorkScrewFv,WeaponCorkScrew::InitialiseObject,high,shared-constants: Game Data\sounds\weapons\bhhit.vag; Game Data\sounds\weapons\csfire.vag; Game Data\sounds\weapons\loops\CSDrill.vag; Game Data\sounds\weapons\loops\CSfly.vag
+0x00485d40,FUN_00485d40,0x003631e0,InitialiseObject__16cWeaponIcespikesFv,WeaponIcespikes::InitialiseObject,high,shared-constants: 9a991940; game data\arctic\textures\icecrystal.tga
+0x00486c60,FUN_00486c60,0x002de300,InitialiseObject__14cWeaponNemesisFv,WeaponNemesis::InitialiseObject,high,shared-constants: Game Data\sounds\common\looped\cavewind.vag; Game Data\sounds\weapons\ncharge.vag; Game Data\sounds\weapons\ndissap.vag; Game Data\sounds\weapons\ndrop.vag
+0x004889f0,FUN_004889f0,0x00361380,InitialiseObject__15cWeaponOilslickFv,WeaponOilslick::InitialiseObject,high,shared-constants: game data\common\effects\common\textures\oilslick.tga
+0x00489280,FUN_00489280,0x002e0a80,InitialiseObject__13cWeaponPickupFv,WeaponPickup::InitialiseObject,high,shared-constants: Game Data\sounds\common\weppick.vag
+0x00489970,FUN_00489970,0x002c40d0,SetAIObjectSleeping__13cAISupervisorFP14cGeneralMobilei,AISupervisor::SetAIObjectSleeping,low,"call-graph (round 2, 1 vote)"
+0x00489ae0,FUN_00489ae0,0x002e5840,InitialiseObject__16cWeaponShockwaveFv,WeaponShockwave::InitialiseObject,high,shared-constants: Game Data\sounds\weapons\swcharge.vag; Game Data\sounds\weapons\swfire.vag; Game Data\sounds\weapons\swrumble.vag; SWCharge
+0x0048a730,FUN_0048a730,0x002e6920,Initialise__14cShockwaveRingFv,ShockwaveRing::Initialise,high,shared-constants: Game Data\Common\Effects\Common\Textures\shockwave\shock0001.tga
+0x0048b850,FUN_0048b850,0x002fb8a0,InitialiseObject__13cWeaponSlizerFv,WeaponSlizer::InitialiseObject,medium,"call-graph (round 1, 1 vote)"
+0x0048d310,FUN_0048d310,0x002fd4f0,LoadSounds__13cWeaponSlizerFv,WeaponSlizer::LoadSounds,high,shared-constants: SL_BOUNCE; SL_EXPLODE
+0x0048dbd0,FUN_0048dbd0,0x00354ab0,InitialiseObject__14cWeaponStealthFv,WeaponStealth::InitialiseObject,high,shared-constants: Game Data\sounds\weapons\Ststeal.vag; Game Data\sounds\weapons\loops\Stealth.vag; Stealth Loop; Stealth Steal
+0x0048e570,FUN_0048e570,0x00300bc0,InitialiseObject__18cWeaponThunderBallFv,WeaponThunderBall::InitialiseObject,high,shared-constants: Game Data\sounds\weapons\loops\tbcharge.vag; Game Data\sounds\weapons\tbdrop.vag; Game Data\sounds\weapons\tbfire.vag; game data\common\skybox\default sky box.tga
+0x0048fe90,FUN_0048fe90,0x002e1690,InitialiseObject__15cWeaponsManagerFv,WeaponsManager::InitialiseObject,medium,"call-graph (round 1, 1 vote)"
+0x00490130,FindActiveControllerTaskTarget,0x002e1ae0,DoesRacerHaveAWeapon__15cWeaponsManagerFP10cLegoRacer,WeaponsManager::DoesRacerHaveAWeapon,low,"call-graph (round 9, 1 vote)"
+0x00490290,FUN_00490290,0x002e1c80,CreateAllWeaponsForThisGame__15cWeaponsManagerFv,WeaponsManager::CreateAllWeaponsForThisGame,high,shared-constants: CorkScrew
+0x004907f0,FUN_004907f0,0x002e2470,DeActivateAllWeapons__15cWeaponsManagerFv,WeaponsManager::DeActivateAllWeapons,medium,"call-graph (round 6, 2 votes)"
+0x00490830,FUN_00490830,0x002e24f0,Initialise__25cWeaponPickupBandRendererFv,WeaponPickupBandRenderer::Initialise,high,shared-constants: game data\common\textures\pickup band.tga; game data\common\textures\pickup shell.tga
+0x004911e0,FUN_004911e0,0x002e32d0,Initialise__20cBonusPickupRendererFv,BonusPickupRenderer::Initialise,high,shared-constants: game data\common\textures\bonus game pickup.tga
+0x00491a60,FUN_00491a60,0x002f8220,InitialiseObject__16cLegoStomperMechFv,LegoStomperMech::InitialiseObject,high,shared-constants: game data\common\effects\shadow\mini_shadow.tga; game data\sounds\mars\bluemech\foot.vag; game data\sounds\mars\bluemech\pressure.vag; game data\sounds\mars\bluemech\turner.vag
+0x004937f0,HostMenuNetworkSession,0x00304000,StartServer__15cNetworkControlFv,NetworkControl::StartServer,high,shared-constants: TESTNAME; xxx's Game
+0x00493930,LeaveMenuNetworkBrowser,0x00303e70,ClearNetPlayerData__15cNetworkControlFv,NetworkControl::ClearNetPlayerData,low,"call-graph (round 8, 1 vote)"
+0x00493a40,UpdateNetworkAppLayer,0x003043f0,UpdateObject__15cNetworkControlFf,NetworkControl::UpdateObject,low,"call-graph (round 6, 1 vote)"
+0x00493c40,UpdateNetworkHost,0x003046b0,ProcessServer__15cNetworkControlFf,NetworkControl::ProcessServer,low,"call-graph (round 6, 1 vote)"
+0x00493dd0,UpdateNetworkClient,0x003048c0,ProcessClient__15cNetworkControlFf,NetworkControl::ProcessClient,medium,"call-graph (round 5, 2 votes)"
+0x00494420,BeginNetworkGame,0x003050d0,ServerStartingRace__15cNetworkControlFv,NetworkControl::ServerStartingRace,low,"call-graph (round 7, 1 vote)"
+0x00494670,ProcessNetworkMessages,0x003054e0,MaintainPlayerData__15cNetworkControlFf,NetworkControl::MaintainPlayerData,low,"call-graph (round 7, 1 vote)"
+0x004949a0,PrepareNetworkGame,0x00305990,CheckDataIsPresent__15cNetworkControlFf,NetworkControl::CheckDataIsPresent,low,"call-graph (round 7, 1 vote)"
+0x00494a50,ConfigureNetworkGame,0x00305b10,LoadingComplete__15cNetworkControlFv,NetworkControl::LoadingComplete,low,"call-graph (round 7, 1 vote)"
+0x00494ae0,FinishNetworkGame,0x00305bb0,BroadcastSyncPulse__15cNetworkControlFv,NetworkControl::BroadcastSyncPulse,low,"call-graph (round 7, 1 vote)"
+0x00494b20,InitializeNetworkLocalPlayer,0x00305c00,GetMyDataFromGameManager__15cNetworkControlFv,NetworkControl::GetMyDataFromGameManager,high,shared-constants: Server thinks there are %d laps
+0x00494d10,FUN_00494d10,0x00305e30,NetworkRacerFinished__15cNetworkControlFi,NetworkControl::NetworkRacerFinished,low,"call-graph (round 7, 1 vote)"
+0x00494d80,FUN_00494d80,0x00305ef0,CanEndRace__15cNetworkControlFv,NetworkControl::CanEndRace,low,"call-graph (round 7, 1 vote)"
+0x00494de0,SendSecondaryNetworkRestart,0x00305f70,ThatsItManGameOverManGameOver__15cNetworkControlFv,NetworkControl::ThatsItManGameOverManGameOver,low,"call-graph (round 4, 1 vote)"
+0x00494e20,SendSecondaryNetworkNextRace,0x00305fc0,LetsGoNextRaceDriverTypePeople__15cNetworkControlFv,NetworkControl::LetsGoNextRaceDriverTypePeople,low,"call-graph (round 4, 1 vote)"
+0x00494e60,SendSecondaryNetworkContinue,0x00306010,IQuiteEnjoyedThatSoLetsDoItAgain__15cNetworkControlFv,NetworkControl::IQuiteEnjoyedThatSoLetsDoItAgain,low,"call-graph (round 4, 1 vote)"
+0x004952b0,UpdateNetworkChat,0x003064c0,Update__12cChatHandlerFv,ChatHandler::Update,low,"call-graph (round 7, 1 vote)"
+0x00495360,AllocateNetworkPayloadKey,0x00306600,GetTracker__14cPacketTrackerFv,PacketTracker::GetTracker,medium,"call-graph (round 5, 3 votes)"
+0x00495390,PruneNetworkPayloadKeys,0x00306640,UpdateTrackers__14cPacketTrackerFv,PacketTracker::UpdateTrackers,low,"call-graph (round 7, 1 vote)"
+0x004957d0,FUN_004957d0,0x003129d0,StateActive__16cArcticBonusGameFf,ArcticBonusGame::StateActive,high,shared-constants: 00000841; 0000f040; 0000fa43; BONUS_ARC1
+0x00496760,FUN_00496760,0x00313b30,InitialiseObject__17cBonusGameManagerFv,BonusGameManager::InitialiseObject,high,shared-constants: BONUS_GUARD; BONUS_SCORE; TIMER_WARN; game data\sounds\common\checkpt.vag
+0x00496e10,FUN_00496e10,0x003142d0,UpdateObject__17cBonusGameManagerFf,BonusGameManager::UpdateObject,medium,"call-graph (round 1, 1 vote)"
+0x00496f00,FUN_00496f00,0x00314390,Begin__17cBonusGameManagerFi,BonusGameManager::Begin,high,shared-constants: bonus_intro_1; bonus_intro_2
+0x00497090,FUN_00497090,0x00314510,Restart__17cBonusGameManagerFv,BonusGameManager::Restart,low,"call-graph (round 6, 1 vote)"
+0x004971d0,FUN_004971d0,0x00314680,QuitBonus__17cBonusGameManagerFi,BonusGameManager::QuitBonus,low,"call-graph (round 5, 1 vote)"
+0x00497280,RequestSecondaryNetworkExit,0x00314760,NotifyBonusHasBeenAwarded__17cBonusGameManagerFv,BonusGameManager::NotifyBonusHasBeenAwarded,low,"call-graph (round 4, 1 vote)"
+0x004972a0,FUN_004972a0,0x00314780,StateIntro__17cBonusGameManagerFf,BonusGameManager::StateIntro,low,"call-graph (round 5, 1 vote)"
+0x004978b0,FUN_004978b0,0x00314f80,StateEndPause__17cBonusGameManagerFf,BonusGameManager::StateEndPause,high,shared-constants: bonus_lose; bonus_win
+0x004979d0,FUN_004979d0,0x003150e0,StateOutro__17cBonusGameManagerFf,BonusGameManager::StateOutro,low,"call-graph (round 5, 1 vote)"
+0x00497a50,FUN_00497a50,0x00315180,StatePostAwardMenu__17cBonusGameManagerFf,BonusGameManager::StatePostAwardMenu,low,"call-graph (round 5, 1 vote)"
+0x00497f50,FUN_00497f50,0x003157e0,LoadTextures__17cBonusGameManagerFv,BonusGameManager::LoadTextures,high,shared-constants: Game Data\HUD\Bonus Games\arrow.tga; Game Data\HUD\Bonus Games\pickup.tga; Game Data\HUD\Bonus Games\target.tga
+0x00498270,GetSecondaryWorldRacerCount,0x002f8180,SetOptions__9cRendererFiii,Renderer::SetOptions,low,"call-graph (round 14, 1 vote)"
+0x00498720,FUN_00498720,0x00316340,StateActive__15cSandyBonusGameFf,SandyBonusGame::StateActive,medium,"call-graph (round 1, 1 vote)"
+0x004988d0,FUN_004988d0,0x00316500,StateDrivingSolo__15cSandyBonusGameFf,SandyBonusGame::StateDrivingSolo,low,"call-graph (round 4, 1 vote)"
+0x00498a70,FUN_00498a70,0x00316700,StateDrivingWithPassenger__15cSandyBonusGameFf,SandyBonusGame::StateDrivingWithPassenger,high,shared-constants: 00007a43; dropoff%i
+0x00498c80,FUN_00498c80,0x00316ac0,LoadPickups__15cSandyBonusGameFv,SandyBonusGame::LoadPickups,high,shared-constants: pickup%i; target%i
+0x00498fe0,FUN_00498fe0,0x00316da0,PutThePassengerInTheTaxi__15cSandyBonusGameFv,SandyBonusGame::PutThePassengerInTheTaxi,medium,"call-graph (round 1, 1 vote)"
+0x00499140,FUN_00499140,0x00316fa0,MakeThePassengerStandUpAgain__15cSandyBonusGameFv,SandyBonusGame::MakeThePassengerStandUpAgain,low,"call-graph (round 5, 1 vote)"
+0x0049a760,GetApplication,0x0026a120,GetApp__12cApplicationFv,Application::GetApp,medium,"call-graph (round 1, 4 votes)"
+0x0049a7a0,ResetApplicationAtExit,0x0026a250,GetAppName__22cLegoRacer2ApplicationCFv,LegoRacer2Application::GetAppName,high,shared-constants: LEGO Racers 2
+0x0049adc0,GetProfilerConfiguration,0x0026a2d0,TimeBar_UserFunc_SetParams__FRfRiR9sFileName,TimeBar_UserFunc_SetParams,high,shared-constants: game data\fonts\print_font.tga
+0x0049ae80,FUN_0049ae80,0x0026a450,InitialiseObject__10cLegoWorldFv,LegoWorld::InitialiseObject,high,shared-constants: Loading world %s; cObject Pointer List; cObject Pointer sorted List; ceLayerManager
+0x004a21f0,WinFile::Open,0x00200d00,OpenFile__5cFileFPCc14FileAccessTypePi,File::OpenFile,medium,"call-graph (round 1, 1 vote)"
+0x004a2290,WinFile::Read,0x00200e00,Read__5cFileFPvii,File::Read,medium,"call-graph (round 1, 1 vote)"
+0x004a2360,CharBuffer128::CharBuffer128,0x00201140,GetFileName__14sDirectoryNameFR9sFileNamePCc,DirectoryName::GetFileName,medium,"call-graph (round 1, 1 vote)"
+0x004a2500,GetFileManager,0x00201190,GetFileCat__8cFileCatFv,FileCat::GetFileCat,medium,"call-graph (round 2, 2 votes)"
+0x004a25c0,FileManager::Initialize,0x00201360,Initialise__8cFileCatFi,FileCat::Initialise,high,shared-constants: cFileCat: File entry list; cFileCat: Unique file list; offset misaligned
+0x004a2810,FileManager::TrackOpen,0x00201880,RegisterFileForReading__8cFileCatFPCcP5cFile,FileCat::RegisterFileForReading,high,shared-constants: cFileCat: File transfer buffer; cFileCat: Too many files
+0x004a2a30,FileManager::FindArchiveEntry,0x00201ca0,OpenReleaseFile__8cFileCatFPCcRiP5cFile,FileCat::OpenReleaseFile,medium,"call-graph (round 2, 1 vote)"
+0x004a2ba0,FileManager::Read,0x00201ea0,ReadData__8cFileCatFP5cFilePvii,FileCat::ReadData,medium,"call-graph (round 2, 1 vote)"
+0x004a2c60,FileManager::Exists,0x00202020,FileExists__8cFileCatFPCc,FileCat::FileExists,medium,"call-graph (round 3, 1 vote)"
+0x004a2dd0,GetGameManager,0x00215d20,GetpObjList__11cObjectListFv,ObjectList::GetpObjList,low,"call-graph (round 7, 1 vote)"
+0x004a2f10,GameObject::Initialize,0x00216220,InitialiseObject__7cObjectFv,Object::InitialiseObject,medium,"call-graph (round 1, 1 vote)"
+0x004a2fe0,GameObject::Remove,0x00216380,ShutDownObject__7cObjectFv,Object::ShutDownObject,low,"call-graph (round 4, 1 vote)"
+0x004a3040,GameObject::SetParent,0x00216420,LinkToParent__7cObjectFP7cObjecti,Object::LinkToParent,medium,"call-graph (round 2, 1 vote)"
+0x004a3170,GameManager::ResizeObjectRegistry,0x00216630,ReallocList__11cObjectListFi,ObjectList::ReallocList,high,shared-constants: Main Object List; Main collidable List; Main physical List
+0x004a33d0,GameManager::SortObjectsByParent,0x00216970,EnsureHeirarchyOrder__11cObjectListFv,ObjectList::EnsureHeirarchyOrder,high,shared-constants: failed to find the parent object in the list!
+0x004a35f0,FUN_004a35f0,0x00216c20,ReInitialiseAllObjects__11cObjectListFv,ObjectList::ReInitialiseAllObjects,low,"call-graph (round 7, 1 vote)"
+0x004a3810,SimulationScheduler::Reset,0x00216f00,ResetTimer__23cGameLoopTimeControllerFi,GameLoopTimeController::ResetTimer,medium,"call-graph (round 1, 1 vote)"
+0x004a3840,SimulationScheduler::NeedsSimulationStep,0x0021d940,PollInputDevices__17cControlInterfaceFi,ControlInterface::PollInputDevices,low,"call-graph (round 9, 1 vote)"
+0x004a3aa0,AdvanceGameFrame,0x00217490,AppMainLoop__Fv,AppMainLoop,high,shared-constants: Move All Time; Total Time; Update All Time; Update Sound Time
+0x004a3ed0,GetMemoryHeap,0x002000c0,GetMemorySys__13cMemorySystemFv,MemorySystem::GetMemorySys,medium,"call-graph (round 1, 8 votes)"
+0x004a4050,MemoryHeap::Allocate,0x002002c0,GetMemory__13cMemorySystemFUiPc,MemorySystem::GetMemory,medium,"call-graph (round 1, 7 votes)"
+0x004a40d0,MemoryHeap::AllocateFromEnd,0x002003c0,GetMemoryHigh__13cMemorySystemFUiPc,MemorySystem::GetMemoryHigh,medium,"call-graph (round 1, 1 vote)"
+0x004a4150,MemoryHeap::Free,0x002004b0,FreeMemory__13cMemorySystemFPv,MemorySystem::FreeMemory,medium,"call-graph (round 1, 2 votes)"
+0x004a4570,WinFile::OpenPath,0x00202650,OpenFileForReading__5cFileFPCc,File::OpenFileForReading,medium,"call-graph (round 2, 1 vote)"
+0x004a4620,WinFile::CreateAlways,0x00202710,OpenFileForWriting__5cFileFPCc,File::OpenFileForWriting,medium,"call-graph (round 2, 1 vote)"
+0x004a46a0,WinFile::OpenOrCreate,0x002027d0,OpenFileForAll__5cFileFPCc,File::OpenFileForAll,medium,"call-graph (round 2, 1 vote)"
+0x004a4740,WinFile::SeekBounded,0x00202e30,Seek__5cFileFi,File::Seek,medium,"call-graph (round 3, 1 vote)"
+0x004a47b0,WinFile::OpenAppend,0x00202890,OpenFileForAppending__5cFileFPCc,File::OpenFileForAppending,medium,"call-graph (round 2, 1 vote)"
+0x004a4c80,Vector3::Normalize,0x002e3b80,Normalise__6VectorFv,Vector::Normalise,medium,"call-graph (round 1, 2 votes)"
+0x004a5380,PackedQuaternion::Pack,0x00364ff0,SetShieldAnimator__12cGameManagerFP13cRenderObjectf,GameManager::SetShieldAnimator,low,"call-graph (round 11, 1 vote)"
+0x004a5850,Quaternion::LookAt,0x002e4bb0,CreateLineOfSightOri__10QuaternionFRC6VectorRC6VectorRC6Vectori,Quaternion::CreateLineOfSightOri,medium,"call-graph (round 2, 1 vote)"
+0x004a5910,Quaternion::FromDirection,0x002e4cb0,CreateDirectionOri__10QuaternionFRC6VectorR6Vectori,Quaternion::CreateDirectionOri,medium,"call-graph (round 3, 1 vote)"
+0x004a5e10,BuildSineTable,0x002e52a0,InitSineTable__FPfi,InitSineTable,medium,"call-graph (round 3, 1 vote)"
+0x004a6190,ResetGameObjectInitializationValue,0x00214550,ResetPhysicsValues__14cMobilePhysicsFv,MobilePhysics::ResetPhysicsValues,low,"call-graph (round 8, 1 vote)"
+0x004a61d0,ResetPhysicalLifecycleState,0x00214590,InitMobilePhysics__14cMobilePhysicsFP7cObject,MobilePhysics::InitMobilePhysics,medium,"call-graph (round 3, 1 vote)"
+0x004a6440,GetCharacterContactMaterial,0x00214810,GetSurfaceProps__12cAtomPhysicsFv,AtomPhysics::GetSurfaceProps,medium,"call-graph (round 2, 1 vote)"
+0x004a6bb0,SetLifecycleParent,0x002152d0,LinkToParentPhysics__14cMobilePhysicsFP12cAtomPhysicsi,MobilePhysics::LinkToParentPhysics,medium,"call-graph (round 3, 1 vote)"
+0x004a7d40,LoadModelResource,0x0020a860,Read__6cModelFPCciii,Model::Read,high,shared-constants: Regenerate Collision for Model %s.
+0x004a8140,ReadModelResourceGeometry,0x0020ae70,ReadModel__6cModelFPCcR5cFileii,Model::ReadModel,high,shared-constants: Temporary model bitmap indices; Temporary model bitmaps; Temporary vertex buffer
+0x004a95b0,ModelResource::RemapTextureIndices,0x0020cb40,ReplaceTexture__6cModelFii,Model::ReplaceTexture,medium,"call-graph (round 4, 5 votes)"
+0x004a9630,ConfigureModelShadow,0x0020cbf0,SetShadowable__6cModelFiPCci,Model::SetShadowable,medium,"call-graph (round 1, 1 vote)"
+0x004a9710,ModelResourceReferences::Allocate,0x0020cd90,Initialise__15cModelResourcesFii,ModelResources::Initialise,high,shared-constants: Model resources
+0x004a9880,InitializeGameObjectModelBinding,0x0020cfc0,Initialise__13cRenderObjectFv,RenderObject::Initialise,medium,"call-graph (round 3, 1 vote)"
+0x004aa8e0,GameManager::RenderFrame,0x00218e40,RenderAllObjects__11cObjectListFf,ObjectList::RenderAllObjects,high,shared-constants: Begin Rendering; Finish Rendering; Rendering Time
+0x004ab2a0,ReportFatalError,0x00202390,Fatal__FPCce,Fatal,high,shared-constants: TempString too small in Fatal()
+0x004ab310,FUN_004ab310,0x002022c0,WriteErrorMessage__FPCci,WriteErrorMessage,medium,"call-graph (round 1, 1 vote)"
+0x004ab3b0,PrintDiagnostic,0x00202430,MyPrintf__FPCce,MyPrintf,high,shared-constants: TempString too small in MyPrintf()
+0x004af2f0,GetAudioService,0x002ce190,GetSoundSystem__15cSoundInterfaceFi,SoundInterface::GetSoundSystem,medium,"call-graph (round 1, 2 votes)"
+0x004b2960,GetSystemClock,0x002074b0,gpTimer__Fv,gpTimer,medium,"call-graph (round 2, 1 vote)"
+0x004b2e00,GlobalOverlaySprite::Release,0x0022d770,Free__8cOverlayFv,Overlay::Free,medium,"call-graph (round 4, 2 votes)"
+0x004b2e20,GlobalOverlaySprite::SetVisible,0x0022d790,SetVisibility__8cOverlayFi,Overlay::SetVisibility,medium,"call-graph (round 1, 2 votes)"
+0x004b2e40,GlobalOverlaySprite::SetPosition,0x0022d7d0,SetPosition__8cOverlayFRC6sPoint,Overlay::SetPosition,medium,"call-graph (round 2, 2 votes)"
+0x004b2f30,GlobalOverlaySprite::SetSize,0x0022d8d0,SetSize__8cOverlayFRC6sPoint,Overlay::SetSize,medium,"call-graph (round 1, 2 votes)"
+0x004b2fb0,GlobalOverlaySprite::GetSize,0x0022d9c0,GetSize__8cOverlayFR6sPoint,Overlay::GetSize,low,"call-graph (round 6, 1 vote)"
+0x004b2fd0,GlobalOverlaySprite::GetRectangle,0x0022d9f0,GetOverlayBounds__8cOverlayCFR6sPointR6sPoint,Overlay::GetOverlayBounds,low,"call-graph (round 4, 1 vote)"
+0x004b3000,GlobalOverlaySprite::SetTextureRegion,0x0022da20,SetTexture__8cOverlayFRC10cTextureUVRC10cTextureUVi,Overlay::SetTexture,medium,"call-graph (round 1, 1 vote)"
+0x004b3030,GlobalOverlaySprite::SetTexture,0x0022da60,SetTexturePage__8cOverlayFi,Overlay::SetTexturePage,medium,"call-graph (round 1, 1 vote)"
+0x004b3040,GlobalOverlaySprite::SetColor,0x0022da70,SetColour__8cOverlayFRC5cBGRA,Overlay::SetColour,medium,"call-graph (round 1, 2 votes)"
+0x004b3050,GlobalOverlaySprite::SetAlpha,0x0022daa0,SetAlpha__8cOverlayFUc,Overlay::SetAlpha,medium,"call-graph (round 3, 1 vote)"
+0x004b3090,GlobalOverlaySprite::SetClipRectangle,0x0022db10,SetClipWindow__8cOverlayFRC6sPointRC6sPoint,Overlay::SetClipWindow,low,"call-graph (round 8, 1 vote)"
+0x004b3470,GlobalOverlayManager::AllocateRecord,0x0022e170,GetTextString__15cOverlayManagerFRC16sTextStringPropsi,OverlayManager::GetTextString,low,"call-graph (round 4, 1 vote)"
+0x004b34b0,GlobalOverlayManager::MoveRecord,0x0022e1f0,UpdateTextStringLists__15cOverlayManagerFPC11cTextStringii,OverlayManager::UpdateTextStringLists,medium,"call-graph (round 5, 2 votes)"
+0x004b3530,SetGlobalOverlayRecordListCount,0x0022e2c0,SetNumLayersOnTop__15cOverlayManagerFi,OverlayManager::SetNumLayersOnTop,low,"call-graph (round 5, 1 vote)"
+0x004b38b0,GlobalOverlayManager::SetGlyphReplacementManager,0x0022e860,RegisterSpecialCharManager__15cOverlayManagerFP19cSpecialCharManager,OverlayManager::RegisterSpecialCharManager,medium,"call-graph (round 1, 1 vote)"
+0x004b38c0,GlobalOverlayRecord::InitializeFromParameters,0x0022e870,ReInitialise__11cTextStringFiRC16sTextStringProps,TextString::ReInitialise,low,"call-graph (round 5, 1 vote)"
+0x004b3920,GlobalOverlayRecord::Release,0x0022e940,Free__11cTextStringFv,TextString::Free,medium,"call-graph (round 3, 1 vote)"
+0x004b3950,SetSelectionGridTextVisible,0x0022e960,SetVisibility__11cTextStringFi,TextString::SetVisibility,medium,"call-graph (round 1, 1 vote)"
+0x004b3980,GlobalOverlayRecord::InitializeText,0x0022e9a0,SetText__11cTextStringFPUsif,TextString::SetText,medium,"call-graph (round 2, 1 vote)"
+0x004b3b10,GlobalOverlayRecord::InitializeTextByIndex,0x0022ebd0,SetText__11cTextStringFiif,TextString::SetText,medium,"call-graph (round 2, 1 vote)"
+0x004b3bb0,GlobalOverlayRecord::AppendText,0x0022ec80,CatText__11cTextStringFPUsi,TextString::CatText,low,"call-graph (round 7, 1 vote)"
+0x004b3d40,GlobalOverlayRecord::SetPosition,0x0022ee80,SetPosition__11cTextStringFRC6sPointi,TextString::SetPosition,medium,"call-graph (round 2, 1 vote)"
+0x004b3df0,GlobalOverlayRecord::SetColor,0x0022ef60,SetColour__11cTextStringFRC5cBGRA,TextString::SetColour,medium,"call-graph (round 4, 2 votes)"
+0x004b3e10,GlobalOverlayRecord::SetList,0x0022efa0,SetLayer__11cTextStringFi,TextString::SetLayer,low,"call-graph (round 4, 1 vote)"
+0x004b3e40,GlobalOverlayRecord::SetFont,0x0022eff0,SetFont__11cTextStringFR5cFont,TextString::SetFont,medium,"call-graph (round 4, 2 votes)"
+0x004b3e50,GlobalOverlayRecord::SetScale,0x0022f000,SetScale__11cTextStringFf,TextString::SetScale,low,"call-graph (round 4, 1 vote)"
+0x004b3ee0,GlobalOverlayRecord::SetClipRectangle,0x0022f110,SetClipWindow__11cTextStringFRC6sPointRC6sPoint,TextString::SetClipWindow,medium,"call-graph (round 8, 3 votes)"
+0x004b3f30,GlobalOverlayRecord::GetRectangle,0x0022f170,GetStringBounds__11cTextStringCFR6sPointR6sPoint,TextString::GetStringBounds,low,"call-graph (round 4, 1 vote)"
+0x004b44e0,MeasureGlobalOverlayText,0x0022f990,CalcStringWidth__11cTextStringFv,TextString::CalcStringWidth,low,"call-graph (round 7, 1 vote)"
+0x004b4a60,FUN_004b4a60,0x00325570,UnlockWorld__14cTrackLockDataFi,TrackLockData::UnlockWorld,low,"call-graph (round 13, 1 vote)"
+0x004b4b30,FUN_004b4b30,0x00315bf0,GetNumberOfRacers__17cBonusGameManagerFi,BonusGameManager::GetNumberOfRacers,low,"call-graph (round 14, 1 vote)"
+0x004b4f20,FUN_004b4f20,0x002c2c40,InitialiseObject__8cKillBoxFv,KillBox::InitialiseObject,high,shared-constants: KillBox Vis Mesh vertices
+0x004b5860,FUN_004b5860,0x002c35b0,InitialiseObject__7cAIQuadFv,AIQuad::InitialiseObject,medium,"call-graph (round 1, 1 vote)"
+0x004b5a60,FUN_004b5a60,0x002c3840,MakeModel__7cAIQuadFv,AIQuad::MakeModel,high,shared-constants: Game Data\Editor Only\Common\Textures\AI.tga; cSourceVertexBuffer
+0x004b61b0,FUN_004b61b0,0x002c4070,ChangeRegisteredObject__13cAISupervisorFP14cGeneralMobileP14cGeneralMobile,AISupervisor::ChangeRegisteredObject,low,"call-graph (round 7, 1 vote)"
+0x004b61f0,FUN_004b61f0,0x002c40e0,GetAIObject__13cAISupervisorFP14cGeneralMobile,AISupervisor::GetAIObject,low,"call-graph (round 6, 1 vote)"
+0x004b6930,FUN_004b6930,0x002c4a80,FindWhereIAm__13cAISupervisorFPP10cAISectionPiRC6Vector,AISupervisor::FindWhereIAm,low,"call-graph (round 10, 1 vote)"
+0x004b75c0,LocalizedStringTable::Load,0x002e82a0,Initialise__27cLocalisationStringsManagerFRC9sFileNamePCci,LocalisationStringsManager::Initialise,high,shared-constants: Localisation - File extension array space; Localisation strings buffer; Localisation strings order lookup
+0x004b78c0,LocalizedStringTable::GetString,0x002e8670,GetString__27cLocalisationStringsManagerFiRPUs,LocalisationStringsManager::GetString,medium,"call-graph (round 1, 1 vote)"
+0x004b7c50,InputControllerManager::InitializeTiming,0x0021c980,Initialise__17cControlInterfaceFUiUi,ControlInterface::Initialise,medium,"call-graph (round 2, 1 vote)"
+0x004b7c70,InputControllerManager::ResetRecording,0x0021c9a0,Restart__17cControlInterfaceFi,ControlInterface::Restart,medium,"call-graph (round 2, 1 vote)"
+0x004b7da0,InputController::AppendBinding,0x0021cac0,AddNewMapping__11cControllerFRC17cControllerMapper,Controller::AddNewMapping,low,"call-graph (round 15, 1 vote)"
+0x004b8250,InputControllerManager::GetControllerInputForOwner,0x0021d140,ReadController__17cControlInterfaceFP7cObjectR12cControlDataii,ControlInterface::ReadController,low,"call-graph (round 8, 1 vote)"
+0x004b8520,InputControllerManager::GetElapsedTime,0x0021d5f0,GetTime__17cControlInterfaceFR16cPhysicsTimeInfo,ControlInterface::GetTime,low,"call-graph (round 8, 1 vote)"
+0x004b8570,InputControllerManager::GetCurrentFrame,0x0021d8d0,GetRealTimeInputFrame__17cControlInterfaceFv,ControlInterface::GetRealTimeInputFrame,low,"call-graph (round 7, 1 vote)"
+0x004b92b0,DecodeSecondaryManagerMediaSlot,0x0021f260,CalculateEdgeValues__16sEdgeControlDataFR12cControlData,EdgeControlData::CalculateEdgeValues,low,"call-graph (round 9, 1 vote)"
+0x004b9370,MergeSecondaryMediaSlot,0x0021f390,MergeControlData__16sEdgeControlDataFRC16sEdgeControlData,EdgeControlData::MergeControlData,medium,"call-graph (round 2, 1 vote)"
+0x004b9850,AttachCollisionProxy,0x00228ef0,EnableCollisions__16cCollisionSystemFP16cCollisionObject,CollisionSystem::EnableCollisions,medium,"call-graph (round 2, 1 vote)"
+0x004b99b0,GetGameRandomState,0x00219d90,GetRandomWrapper__14cRandomWrapperFv,RandomWrapper::GetRandomWrapper,medium,"call-graph (round 1, 1 vote)"
+0x004ba3b0,UpdateGameObjectRenderGeometry,0x002082c0,SetCameraActive__7cCameraFv,Camera::SetCameraActive,medium,"call-graph (round 1, 1 vote)"
+0x004ba810,SetGameObjectViewport,0x002086e0,SetDimensions__7cCameraF5cRect,Camera::SetDimensions,medium,"call-graph (round 1, 1 vote)"
+0x004bb120,SetGameObjectLookAt,0x00209450,PointAtThereFromHere__7cCameraFRC6VectorRC6VectorRC6Vector,Camera::PointAtThereFromHere,medium,"call-graph (round 1, 1 vote)"
+0x004bb780,RequestSecondaryPauseLeave,0x002da650,UnpauseGame__10cPauseModeFi,PauseMode::UnpauseGame,low,"call-graph (round 4, 1 vote)"
+0x004bb9b0,AdvancePauseOverlays,0x002daa60,UpdatePauseMode__20cPauseModeControllerFf,PauseModeController::UpdatePauseMode,low,"call-graph (round 5, 1 vote)"
+0x004bc020,FUN_004bc020,0x00264a20,InitialiseObject__21cCheckPointSupervisorFv,CheckPointSupervisor::InitialiseObject,high,shared-constants: Lap Timer Manager
+0x004bc690,FUN_004bc690,0x00265340,ChangeRegisteredObject__21cCheckPointSupervisorFP14cGeneralMobileP14cGeneralMobile,CheckPointSupervisor::ChangeRegisteredObject,low,"call-graph (round 7, 1 vote)"
+0x004bced0,InitializeFoyerModelRenderObject,0x003039a0,InitialiseObject__14cGeneralMobileFv,GeneralMobile::InitialiseObject,medium,"call-graph (round 2, 1 vote)"
+0x004bd1b0,GameObjectFactoryRegistry::ConstructByClassName,0x00230ec0,ObjectFactory__14cClassRegisterFRC8String24iPvi,ClassRegister::ObjectFactory,high,shared-constants: Unknown object class name '%s'
+0x004bd480,FoyerSceneCirclePool::AddObject,0x002c6080,RegisterRenderer__16cParticleManagerFP15cEffectRenderer,ParticleManager::RegisterRenderer,medium,"call-graph (round 1, 1 vote)"
+0x004bd4f0,FoyerSceneCirclePool::AllocateRecord,0x002c6120,GetParticle__16cParticleManagerFv,ParticleManager::GetParticle,medium,"call-graph (round 1, 1 vote)"
+0x004bd590,FoyerSceneCirclePool::FreeRecord,0x002c6200,FreeParticle__16cParticleManagerFP9cParticle,ParticleManager::FreeParticle,medium,"call-graph (round 3, 2 votes)"
+0x004be050,FUN_004be050,0x002f71b0,LoadMaterial__9cRendererFRC11cShadePropsi,Renderer::LoadMaterial,medium,"call-graph (round 1, 1 vote)"
+0x004be0a0,DisplayRenderer::InitializeResources,0x002f7200,InitialiseGeneric__9cRendererFv,Renderer::InitialiseGeneric,high,shared-constants: Animated materials; Animated textures; Elements in a cSimpleList; Material animators
+0x004be650,EnsureSharedShadowGeometry,0x002f79c0,InitialiseProjectedShadows__9cRendererFv,Renderer::InitialiseProjectedShadows,high,shared-constants: game data\common\effects\shadow\shadow.tga
+0x004bed30,GameLightProperties::SetEnabled,0x00223050,SwitchLight__6cLightFUi,Light::SwitchLight,medium,"call-graph (round 3, 1 vote)"
+0x004bedb0,GameAmbientLight::ApplyToRenderer,0x00223080,SetLightInfo__13cAmbientLightFv,AmbientLight::SetLightInfo,medium,"call-graph (round 3, 1 vote)"
+0x004bef60,GameDirectionalLight::UpdateRendererLight,0x002231d0,SetLightInfo__17cDirectionalLightFv,DirectionalLight::SetLightInfo,medium,"call-graph (round 3, 1 vote)"
+0x004bfb50,DisplayRenderer::FindOrCreateTextureRecord,0x0020f1f0,CreateMultiFrameTexture__9cRendererFPCci,Renderer::CreateMultiFrameTexture,medium,"call-graph (round 2, 1 vote)"
+0x004bfd70,RendererTextureRecord::Load,0x0020dff0,Load__8cTextureFv,Texture::Load,high,shared-constants: DEFAULT SKY BOX.TGA
+0x004c00c0,RendererResourceCacheEntry::LoadAnimation,0x0020e6c0,Load__18cMultiFrameTextureFv,MultiFrameTexture::Load,high,shared-constants: Temporary IFL file
+0x004c0770,DisplayRenderer::AcquireAuxiliaryResource,0x0020ed60,LoadMaterial__9cRendererFRC14cMaterialPropsi,Renderer::LoadMaterial,medium,"call-graph (round 2, 1 vote)"
+0x004c09a0,DisplayRenderer::FindOrAllocateTextureResource,0x0020f3a0,GetTextureBind__9cRendererFP12cBaseTexture,Renderer::GetTextureBind,medium,"call-graph (round 2, 1 vote)"
+0x004c0a60,DisplayRenderer::AddTextureReference,0x00200f60,FileExists__FPCc,FileExists,medium,"call-graph (round 2, 1 vote)"
+0x004c0b70,DisplayRenderer::CreateTextureResource,0x0020f400,LoadTexture__9cRendererFPCc8eMapTypeiii,Renderer::LoadTexture,medium,"call-graph (round 1, 6 votes)"
+0x004c0ee0,DisplayRenderer::ReleaseTextureResourceReference,0x0020fb80,UnloadTexture__9cRendererFii,Renderer::UnloadTexture,low,"call-graph (round 4, 1 vote)"
+0x004c11e0,RendererAuxiliaryResourceRecord::InitializeMaterial,0x002102a0,Convert__14cMaterialPropsF11cShadeProps,MaterialProps::Convert,medium,"call-graph (round 2, 1 vote)"
+0x004c1a10,FUN_004c1a10,0x00263c70,InitialiseObject__16cLapTimerManagerFv,LapTimerManager::InitialiseObject,high,shared-constants: Lap Timer %d; LapTimesMemStore
+0x004c1e10,GameAnimatedObject::SetFrozen,0x0021f6d0,SetSkeletonDisplayOff__9cSkeletonFi,Skeleton::SetSkeletonDisplayOff,medium,"call-graph (round 2, 1 vote)"
+0x004c1f50,FoyerTemplateInstance::Initialize,0x0021f9e0,InitialiseObject__9cSkeletonFv,Skeleton::InitialiseObject,high,shared-constants: skeleton buffer space
+0x004c26e0,GameAnimatedObject::SetAnimationTransformEnabled,0x00220240,HeadOverride__9cSkeletonFi,Skeleton::HeadOverride,low,"call-graph (round 4, 1 vote)"
+0x004c3540,BitmapFont::Load,0x0022fd00,Load__5cFontFiPcPUcii,Font::Load,high,shared-constants: Temp Font Bitmap
+0x004c3e30,BitmapFont::GetTextAdvance,0x00230c40,GetCharacterWidth__5cFontFPUsRiRf,Font::GetCharacterWidth,medium,"call-graph (round 6, 2 votes)"
+0x004c4200,Terrain::ProjectToSurface,0x003107b0,GetSupportPoint__9cTerrain2FRC6VectorR6VectorR6Vector,Terrain2::GetSupportPoint,medium,"call-graph (round 2, 1 vote)"
+0x004c4eb0,GlobalOverlayGlyphReplacementManagerView::RegisterIcon,0x002e5350,AddSpecialCharIcon__19cSpecialCharManagerFP16sSpecialCharIcon,SpecialCharManager::AddSpecialCharIcon,medium,"call-graph (round 1, 1 vote)"
+0x004c4ed0,GlobalOverlayGlyphReplacementManagerView::SetIconTexture,0x002e5370,SetNewSpecialCharIconTexture__19cSpecialCharManagerFiR12cTextureRect,SpecialCharManager::SetNewSpecialCharIconTexture,medium,"call-graph (round 3, 1 vote)"
+0x004c4ef0,GlobalOverlayGlyphReplacementManagerView::GetIconTexture,0x002e53b0,GetSpecialCharIconTextureIndex__19cSpecialCharManagerFi,SpecialCharManager::GetSpecialCharIconTextureIndex,low,"call-graph (round 5, 1 vote)"
+0x004c4f00,GlobalOverlayGlyphReplacementManagerView::RegisterString,0x002e53d0,AddSpecialCharString__19cSpecialCharManagerFP18sSpecialCharString,SpecialCharManager::AddSpecialCharString,medium,"call-graph (round 1, 1 vote)"
+0x004c4f70,HasGlobalOverlayGlyphReplacement,0x002e5400,IsCharASpecialCharIcon__19cSpecialCharManagerFPUsRi,SpecialCharManager::IsCharASpecialCharIcon,low,"call-graph (round 5, 1 vote)"
+0x004c5030,MeasureGlobalOverlayGlyphReplacement,0x002e5560,GetSpecialCharIconWidth__19cSpecialCharManagerFPUsRiP5cFont,SpecialCharManager::GetSpecialCharIconWidth,low,"call-graph (round 7, 1 vote)"
+0x004c5090,GetGlobalOverlayGlyphReplacementAdvance,0x002e5610,GetSpecialCharIconWidth__19cSpecialCharManagerFiP5cFont,SpecialCharManager::GetSpecialCharIconWidth,low,"call-graph (round 8, 1 vote)"
+0x004c50b0,FindOverlayGlyphSequence,0x002e5640,GetSpecialCharIconIndex__19cSpecialCharManagerFPUsRi,SpecialCharManager::GetSpecialCharIconIndex,medium,"call-graph (round 3, 1 vote)"
+0x004c5100,GlobalOverlayGlyphReplacementManagerView::GetIconKeyword,0x002e56d0,GetSpecialCharIconCode__19cSpecialCharManagerFi,SpecialCharManager::GetSpecialCharIconCode,low,"call-graph (round 8, 1 vote)"
+0x004c5110,ExpandOverlayGlyphSequence,0x002e56e0,IsCharASpecialCharString__19cSpecialCharManagerFPUsRiRPUs,SpecialCharManager::IsCharASpecialCharString,medium,"call-graph (round 3, 1 vote)"
+0x004c5230,FoyerAnimationController::Initialize,0x002d0d40,InitialiseObject__11cAnimMasterFv,AnimMaster::InitialiseObject,high,shared-constants: QSpace for anim master
+0x004c53a0,FoyerAnimationController::LoadTracks,0x002d0f40,SetupAllAnimsInSkeleton__11cAnimMasterFv,AnimMaster::SetupAllAnimsInSkeleton,high,shared-constants: ANIMMASTER buffer
+0x004c5560,FindFoyerAnimationTrack,0x002d11a0,FindAnimationID__11cAnimMasterFPci,AnimMaster::FindAnimationID,medium,"call-graph (round 1, 1 vote)"
+0x004c55f0,StartFoyerAnimation,0x002d1280,InitAnimIntoSlot__11cAnimMasterFPci,AnimMaster::InitAnimIntoSlot,medium,"call-graph (round 1, 1 vote)"
+0x004c5640,ApplyFoyerAnimationTrack,0x002d1370,InitAnimIDIntoSlot__11cAnimMasterFii,AnimMaster::InitAnimIDIntoSlot,medium,"call-graph (round 1, 1 vote)"
+0x004c56a0,SetFoyerAnimationLayerValues,0x002d13d0,SetManualParameters__11cAnimMasterFifff,AnimMaster::SetManualParameters,medium,"call-graph (round 1, 1 vote)"
+0x004c56e0,SetFoyerAnimationLayerValueReordered,0x002d1410,SetAnimBlend__11cAnimMasterFfi,AnimMaster::SetAnimBlend,low,"call-graph (round 4, 1 vote)"
+0x004c5bb0,GenerateModelShadowData,0x00265fb0,ProduceShadowInfo__6cModelFiPCc,Model::ProduceShadowInfo,low,shared-constants: Shadow edge info; Shadow face info; Temp shadow edges; Temp shadow faces
+0x004c6c90,ReleaseModelShadowData,0x00267600,DeleteShadowInfo__6cModelFv,Model::DeleteShadowInfo,low,"call-graph (round 2, 1 vote)"
+0x004c6e80,ReadModelShadowChunk,0x00267a60,ReadShadowInfo__6cModelFR5cFileUii,Model::ReadShadowInfo,low,"call-graph (round 1, 1 vote)"
+0x004c84c0,FUN_004c84c0,0x00306df0,InitialiseObject__9cTerrain2Fv,Terrain2::InitialiseObject,high,shared-constants: 1a6fe440; Alpha%i.tga; DRILLER_ROCK.TGA; HeightMap.tga
+0x004c8fe0,FUN_004c8fe0,0x00307ac0,ShutDownObject__9cTerrain2Fv,Terrain2::ShutDownObject,high,shared-constants: Terrain should have a collision shell.
+0x004c9260,FUN_004c9260,0x00307e00,CalcSurfaceNormal__9cTerrain2FR6Vectorii,Terrain2::CalcSurfaceNormal,high,shared-constants: Negative y?
+0x004c95b0,FUN_004c95b0,0x003082a0,CreateGridInfo__9cTerrain2FPPUc,Terrain2::CreateGridInfo,high,shared-constants: Mip0 sHMapPoint Data; Texture ordering for terrain
+0x004c9fa0,FUN_004c9fa0,0x00308c00,CreateMip4Accels__9cTerrain2FP5cFile,Terrain2::CreateMip4Accels,high,shared-constants: Temp Mip4Accel PrimBuffer; Temporary file Mip4 data; TerrainMipped.tga; Wrong amount of indices allocated
+0x004ca630,FUN_004ca630,0x00309580,GetVertexPos__9cTerrain2FiiUsR6Vector,Terrain2::GetVertexPos,medium,"call-graph (round 1, 1 vote)"
+0x004ca6a0,FUN_004ca6a0,0x00309620,CreateMipLevels__9cTerrain2Fv,Terrain2::CreateMipLevels,high,shared-constants: MipX sHMapPoint Data
+0x004ca850,FUN_004ca850,0x00309890,GetGridInfo__9cTerrain2Fii,Terrain2::GetGridInfo,medium,"call-graph (round 1, 1 vote)"
+0x004cab90,FUN_004cab90,0x00309bc0,CreateMipVertex__FP8sMapGridP8sMapGridii,CreateMipVertex,medium,"call-graph (round 1, 1 vote)"
+0x004cace0,FUN_004cace0,0x00309da0,InterpolateHMapPoints__FP10sHMapPointPP10sHMapPointPiii,InterpolateHMapPoints,medium,"call-graph (round 2, 1 vote)"
+0x004caeb0,FUN_004caeb0,0x00309ff0,CreateMipEdges__9cTerrain2Fv,Terrain2::CreateMipEdges,high,shared-constants: Terrain Edge Mip Data
+0x004cb100,FUN_004cb100,0x0030a2d0,CreateMipEdgeData__8sMapGridFP8sMapGrid,MapGrid::CreateMipEdgeData,medium,"call-graph (round 2, 1 vote)"
+0x004cbb80,FUN_004cbb80,0x0030b3d0,ApplyOffsetHeights__9cTerrain2Fv,Terrain2::ApplyOffsetHeights,high,shared-constants: ModData.hmd; Terrain Mod Data
+0x004cbd10,FUN_004cbd10,0x0030b5f0,GetTerrainHoles__9cTerrain2Fv,Terrain2::GetTerrainHoles,high,shared-constants: 0156ab3a; newholes.tga
+0x004cc300,FUN_004cc300,0x0030beb0,ReadTerrainData__9cTerrain2Fv,Terrain2::ReadTerrainData,high,shared-constants: Mip0 sHMapPoint Data - loaded; MipX sHMapPoint Data - loaded; TerrData.tdf; Terrain Edge Mip Data - loaded
+0x004ce500,FUN_004ce500,0x00325d80,InitialiseObject__10cWaterFallFv,WaterFall::InitialiseObject,high,shared-constants: game data\common\effects\common\textures\smoke1.tga; game data\common\effects\common\textures\waterfall_effects\water_droplet.tga
+0x004ce5f0,FUN_004ce5f0,0x00325ed0,ShutDownObject__10cWaterFallFv,WaterFall::ShutDownObject,medium,"call-graph (round 3, 1 vote)"
+0x004ce640,FUN_004ce640,0x00325f30,FreeParticles__10cWaterFallFv,WaterFall::FreeParticles,medium,"call-graph (round 2, 1 vote)"
+0x004ce6c0,FUN_004ce6c0,0x00325ff0,UpdateObject__10cWaterFallFf,WaterFall::UpdateObject,medium,"call-graph (round 1, 1 vote)"
+0x004ce7a0,FUN_004ce7a0,0x003260f0,FindWaterfallEdges__10cWaterFallFi,WaterFall::FindWaterfallEdges,high,shared-constants: 00000042; 00008042; 77be7f3f
+0x004cef80,FUN_004cef80,0x00326b30,UpdateModel__10cWaterFallFv,WaterFall::UpdateModel,medium,"call-graph (round 2, 1 vote)"
+0x004cf2b0,FUN_004cf2b0,0x00326f00,CreateWaterSplashes__10cWaterFallFv,WaterFall::CreateWaterSplashes,medium,"call-graph (round 2, 1 vote)"
+0x004cf740,FUN_004cf740,0x00327650,UpdateWaterSplashes__10cWaterFallFv,WaterFall::UpdateWaterSplashes,medium,"call-graph (round 2, 1 vote)"
+0x004cf900,FUN_004cf900,0x00327910,CreateWaterDrops__10cWaterFallFv,WaterFall::CreateWaterDrops,medium,"call-graph (round 2, 1 vote)"
+0x004cfb80,FUN_004cfb80,0x00327da0,UpdateWaterDrops__10cWaterFallFv,WaterFall::UpdateWaterDrops,medium,"call-graph (round 2, 1 vote)"
+0x004cfe60,FUN_004cfe60,0x00328ac0,InitialiseObject__11cSteamPointFv,SteamPoint::InitialiseObject,high,shared-constants: Steam point particles; game data\common\effects\common\textures\smoke1.tga
+0x004d18c0,FUN_004d18c0,0x0021bfb0,MakeModel__7cSplineFP6cModel,Spline::MakeModel,high,shared-constants: Game Data\Editor Only\Common\Textures\Arrow.tga
+0x004d4a50,FUN_004d4a50,0x0030eaf0,CreateStaticInformation__20cOcclusionDeterminerFR9cTerrain2,OcclusionDeterminer::CreateStaticInformation,high,"shared-constants: Generating occlusion information, %0.1f%% complete; Generating occlusion information, %0.1f%% complete, %0.0f minutes left; Generating occlusion information, please wait ...; cSourceVertexBuffer"
+0x004d7260,FUN_004d7260,0x002c7500,SetVelocity__13cSplineLinkerFf,SplineLinker::SetVelocity,medium,"call-graph (round 3, 1 vote)"
+0x004d7ff0,CollisionProxy::SetTransform,0x002298f0,Update__16cCollisionObjectFRC6VectorRC6MatrixRCi,CollisionObject::Update,medium,"call-graph (round 3, 1 vote)"
+0x004d8090,CollisionProxy::SetChildTransform,0x00229a10,Update__16cCollisionObjectFRC9scPhysicsRC9scPhysicsRCi,CollisionObject::Update,low,"call-graph (round 4, 1 vote)"
+0x004dfec0,DisplayRenderer::SetAmbientColorFloats,0x00223450,Set__10sPS2SrcColFRC5cRGBA,PS2SrcCol::Set,low,"call-graph (round 4, 1 vote)"
+0x004e63a0,FUN_004e63a0,0x00219b60,InitialiseObject__6cWorldFv,World::InitialiseObject,high,shared-constants: Load Temp Buffer this memory can be reclaimed with double ended memory system
+0x004e6a30,GameObject::RefreshCollisionState,0x00217d90,UpdateCollObjectPosition__7cObjectFv,Object::UpdateCollObjectPosition,low,"call-graph (round 2, 1 vote)"
+0x004e8720,FUN_004e8720,0x002118c0,vizAddMesh__FRC6VectorRC6MatrixRC6Vectori,vizAddMesh,high,shared-constants: visualisation triangle buffer full; visualisation vertex buffer full
+0x004f4d30,FUN_004f4d30,0x00228360,AddTerrainInternal__17ciCollisionSystemFP9cTerrain2,ciCollisionSystem::AddTerrainInternal,high,shared-constants: Creating a new terrain.
+0x004f4ff0,FUN_004f4ff0,0x00228620,GenerateBoundingBoxInternal__17ciCollisionSystemFRP15cCollisionShellPP16cCollisionObjectiPC6VectorPC6Vector,ciCollisionSystem::GenerateBoundingBoxInternal,high,shared-constants: Creating a new Bounding box shell.
+0x004f54a0,BitmapImage::LoadTga,0x00210b70,LoadFile__10cTGABitmapFPCci,TGABitmap::LoadFile,high,shared-constants: '%s' has %d bits per colour map entry (which is bad); '%s' has %d bits per pixel (which is bad); '%s' is not an uncompressed palettised or true colour TGA; BitMap Data TGA::LoadFile
+0x004f6310,InitializePlatformServices,0x00202230,InitialiseEngine__Fv,InitialiseEngine,medium,"call-graph (round 1, 1 vote)"
+0x004f6610,FoyerAnimationMasterCache::Retain,0x002d2410,ActivateAnim__12cAnimHandlerFi,AnimHandler::ActivateAnim,high,shared-constants: ANM Body; ANM Header
+0x004f68c0,FoyerAnimationPlayer::Bind,0x002d1b50,Activate__11cAnimPlayerFP16sAnimLoaderEntryff,AnimPlayer::Activate,medium,"call-graph (round 2, 1 vote)"
+0x004f6df0,FUN_004f6df0,0x003066e0,eInitEditorData__9cTerrain2Fv,Terrain2::eInitEditorData,low,shared-constants: Pre Offset Terrain Height Data
+0x004fa7f0,CollisionChildDefinitions::CreateProxies,0x00336540,AddCollisionObjects__8scChildsFP16cCollisionObjectRi,scChilds::AddCollisionObjects,low,"call-graph (round 5, 1 vote)"
+0x004fa8b0,FUN_004fa8b0,0x00336660,GetPhysics__8scChildsCFi,scChilds::GetPhysics,low,"call-graph (round 4, 1 vote)"
+0x004fb740,SpatialIndexLink::SetFilter,0x002cb2b0,SetGroup__17scPartitionerInfoFRCi,scPartitionerInfo::SetGroup,low,"call-graph (round 4, 1 vote)"
+0x004fb7a0,SpatialIndexLink::Update,0x002cb3d0,Update__17scPartitionerInfoFv,scPartitionerInfo::Update,low,"call-graph (round 4, 1 vote)"
+0x004fd630,FUN_004fd630,0x00371a20,InitialiseObject__10cLightningFv,Lightning::InitialiseObject,high,shared-constants: game data\common\effects\common\textures\flares\big_flare.tga; game data\common\textures\lightning.tga
+0x004fdd30,FUN_004fdd30,0x0036a450,InitialiseObject__4cSeaFv,Sea::InitialiseObject,medium,"call-graph (round 1, 1 vote)"
+0x004fed90,FUN_004fed90,0x0036b910,CreateRequiredGrids__4cSeaFv,Sea::CreateRequiredGrids,high,shared-constants: 00008037; Sea level testing
+0x00500580,FUN_00500580,0x00345c60,InitialiseObject__12cWaterCourseFv,WaterCourse::InitialiseObject,high,shared-constants: Water course grid heights
+0x00501e70,FUN_00501e70,0x002d3c40,VizCubeGeneric__FP6VectorRiPUsRi,VizCubeGeneric,medium,"call-graph (round 1, 1 vote)"
+0x00502000,FUN_00502000,0x002d3e10,VizConeGeneric__FP6VectorRiPUsRi,VizConeGeneric,high,shared-constants: Wrong Number Of Indices.; Wrong Number Of Vertices.
+0x00502180,FUN_00502180,0x002d4050,VizSphereGeneric__FP6VectorRiPUsRi,VizSphereGeneric,high,shared-constants: Too Many Indices in VizSphere.; Wrong Number Of Vertices.
+0x00502340,FUN_00502340,0x002d4330,VizArrowGeneric__FP6VectorRiPUsRi,VizArrowGeneric,high,shared-constants: Wrong Index.
+0x00502550,FUN_00502550,0x002d4630,VizCylinderGeneric__FP6VectorRiPUsRi,VizCylinderGeneric,high,shared-constants: Too Many Indices in VizCylinder.
