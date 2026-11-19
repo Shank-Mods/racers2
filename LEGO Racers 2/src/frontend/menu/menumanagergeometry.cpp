@@ -41,7 +41,7 @@ void MenuManager::SetPanelClipRectangle(const LegoFloat* p_topLeft, const LegoFl
 	}
 }
 
-// STUB: LEGORACERS2 0x00423710
+// FUNCTION: LEGORACERS2 0x00423710
 void MenuManager::SetSecondaryPanelClipRectangle(const LegoFloat* p_topLeft, const LegoFloat* p_bottomRight)
 {
 	for (LegoU32 i = 9; i < 14; ++i) {
@@ -50,7 +50,7 @@ void MenuManager::SetSecondaryPanelClipRectangle(const LegoFloat* p_topLeft, con
 	m_transitionCover->SetClipRectangle(p_topLeft, p_bottomRight);
 	MenuWidgetBase* widget = m_widgets[17];
 	if (widget != NULL && widget->m_state != 0) {
-		widget->m_vtable->m_setClipRectangle(widget, NULL, p_topLeft, p_bottomRight);
+		DecompThiscallVoid(&widget->m_vtable->m_setClipRectangle, widget, p_topLeft, p_bottomRight);
 	}
 }
 

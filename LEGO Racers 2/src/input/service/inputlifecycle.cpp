@@ -25,13 +25,13 @@ void InputDeviceService::Shutdown()
 	m_directInput->Release();
 }
 
-// STUB: LEGORACERS2 0x004af170
+// FUNCTION: LEGORACERS2 0x004af170
 void InputDeviceService::RefreshDevices()
 {
 	for (LegoU32 i = 0; i < m_deviceCount; i++) {
 		InputDeviceRecord* device = m_devices[i];
 		if (device->m_isAvailable) {
-			device->m_vtable->readState(device, NULL, 1);
+			DecompThiscall(&device->m_vtable->readState, device, 1);
 		}
 	}
 }

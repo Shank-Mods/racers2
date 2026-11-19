@@ -15,7 +15,7 @@ struct RendererLoadableResource {
 DECOMP_STATIC_ASSERT(offsetof(RendererLoadableResource, m_flags) == 6);
 } // namespace
 
-// STUB: LEGORACERS2 0x004c14f0
+// FUNCTION: LEGORACERS2 0x004c14f0
 void DisplayRenderer::SetResourceLoadMode(LegoU32 p_mode)
 {
 	m_resourceLoadMode = p_mode;
@@ -23,7 +23,7 @@ void DisplayRenderer::SetResourceLoadMode(LegoU32 p_mode)
 		for (LegoS32 index = 0; index < m_resourceReferenceCount; ++index) {
 			RendererLoadableResource* resource = (RendererLoadableResource*) m_resourceReferences[index].m_resource;
 			if ((resource->m_flags & 2) == 2) {
-				resource->m_vtable->m_load(resource, NULL);
+				DecompThiscall(&resource->m_vtable->m_load, resource);
 			}
 		}
 	}

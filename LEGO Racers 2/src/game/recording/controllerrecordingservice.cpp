@@ -525,7 +525,7 @@ void ControllerRecordingService::Shutdown()
 		((ControllerRecordingMessageQueue*) ((LegoU8*) this + 0x9c))->Shutdown();
 		((ControllerRecordingProviderMap*) ((LegoU8*) this + 0xc0))->Shutdown(peer);
 		((ControllerRecordingObjectMap*) ((LegoU8*) this + 0x70))->Shutdown();
-		m_vtable->m_resetNegotiatedState(this, NULL);
+		DecompThiscall(&m_vtable->m_resetNegotiatedState, this);
 		if (m_deviceAddress != NULL) {
 			((IUnknown*) m_deviceAddress)->Release();
 			m_deviceAddress = NULL;

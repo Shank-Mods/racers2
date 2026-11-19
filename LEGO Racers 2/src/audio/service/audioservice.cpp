@@ -41,11 +41,11 @@ AudioService* GetAudioService(LegoBool32 p_create)
 	return g_audioService;
 }
 
-// STUB: LEGORACERS2 0x004af360
+// FUNCTION: LEGORACERS2 0x004af360
 void DestroyAudioService()
 {
 	if (g_audioService != NULL) {
-		g_audioService->m_vtable->m_deleteObject(g_audioService, NULL, 1);
+		DecompThiscall(&g_audioService->m_vtable->m_deleteObject, g_audioService, 1);
 		g_audioService = NULL;
 	}
 }

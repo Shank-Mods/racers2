@@ -301,13 +301,13 @@ LegoBool32 __fastcall HasActiveTextBoxPauseTarget(GameObject*, void*)
 	return FALSE;
 }
 
-// STUB: LEGORACERS2 0x00438c90
+// FUNCTION: LEGORACERS2 0x00438c90
 void __fastcall ReleaseTextBoxManagerResource(GameObject* p_object, void*)
 {
 	LegoU8* bytes = (LegoU8*) p_object;
 	AudioSourceRecord* resource = *(AudioSourceRecord**) (bytes + 0x70);
 	if (resource != NULL) {
-		resource->m_vtable->m_clearSourceFlag(resource, NULL);
+		DecompThiscallVoid(&resource->m_vtable->m_clearSourceFlag, resource);
 		*(AudioSourceRecord**) (bytes + 0x70) = NULL;
 	}
 	((NestedTextBoxManagerPrefix*) p_object)->m_resourceElapsed = 0.0f;

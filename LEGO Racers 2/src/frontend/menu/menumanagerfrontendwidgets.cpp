@@ -56,13 +56,13 @@ void __fastcall CreateFrontendMenuWidgets(MenuManager* p_manager, void*)
 	AssignFrontendWidget(p_manager, 17, storage == NULL ? NULL : new (storage) MenuTrackSelector, font);
 }
 
-// STUB: LEGORACERS2 0x0041cab0
+// FUNCTION: LEGORACERS2 0x0041cab0
 void __fastcall DestroyFrontendMenuWidgets(MenuManager* p_manager, void*)
 {
 	for (LegoS32 index = 17; index >= 3; --index) {
 		MenuWidgetBase* widget = p_manager->m_widgets[index];
 		if (widget != NULL) {
-			widget->m_vtable->m_unk0x08(widget, NULL);
+			DecompThiscallVoid(&widget->m_vtable->m_unk0x08, widget);
 			widget = p_manager->m_widgets[index];
 			if (widget != NULL) {
 				widget->RestoreBaseDispatch();

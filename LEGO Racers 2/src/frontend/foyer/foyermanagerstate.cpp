@@ -255,7 +255,7 @@ void __fastcall ResetFoyerSceneStateObjects(GameObject* p_state, void*)
 void __fastcall ExitFoyerScene(GameObject* p_manager, void*)
 {
 	StopControllerCdTrack(&g_gameController, NULL);
-	g_inputService->m_vtable->poll(g_inputService, NULL, 0);
+	DecompThiscall(&g_inputService->m_vtable->poll, g_inputService, 0);
 	FoyerManager* manager = (FoyerManager*) p_manager;
 	ApplyFoyerSceneStateMode(manager->m_sceneState, NULL, 1);
 	ResetFoyerSceneStateObjects((GameObject*) g_gameController.m_unk0x88, NULL);

@@ -206,11 +206,11 @@ void __fastcall ConstructGameObjectModelBinding(
 	p_owner->m_unk0x48 = binding;
 }
 
-// STUB: LEGORACERS2 0x004aa530
+// FUNCTION: LEGORACERS2 0x004aa530
 void __fastcall DestroyGameObjectModelBindingForOwner(GameObject* p_owner, void*)
 {
 	GameObjectModelBinding* binding = (GameObjectModelBinding*) p_owner->m_unk0x48;
 	if (binding != NULL) {
-		binding->m_vtable->m_destroy(binding, NULL, 1);
+		DecompThiscall(&binding->m_vtable->m_destroy, binding, 1);
 	}
 }

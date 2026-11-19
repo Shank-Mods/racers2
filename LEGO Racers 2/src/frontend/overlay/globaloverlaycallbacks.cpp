@@ -72,7 +72,7 @@ GameObject* __fastcall GlobalOverlayManagerDestroy(GameObject* p_object, void*, 
 	return p_object;
 }
 
-// STUB: LEGORACERS2 0x004b3370
+// FUNCTION: LEGORACERS2 0x004b3370
 LegoU32 __fastcall GlobalOverlayManagerUpdateRecords(GameObject* p_object, void*, LegoU32 p_argument)
 {
 	GlobalOverlayManager* manager = (GlobalOverlayManager*) p_object;
@@ -82,7 +82,7 @@ LegoU32 __fastcall GlobalOverlayManagerUpdateRecords(GameObject* p_object, void*
 		GlobalOverlayRecord* record = &manager->m_records[index];
 		if ((record->m_flags & 1) != 0) {
 			GlobalOverlayRecordDispatch* dispatch = (GlobalOverlayRecordDispatch*) record->m_vtable;
-			dispatch->m_advanceTextAnimation(record, NULL, delta.m_float);
+			DecompThiscallVoid(&dispatch->m_advanceTextAnimation, record, delta.m_float);
 		}
 	}
 	return 0;

@@ -9,12 +9,12 @@ void JoystickInputDevice::StopAllEffects()
 	}
 }
 
-// STUB: LEGORACERS2 0x004edee0
+// FUNCTION: LEGORACERS2 0x004edee0
 void JoystickInputDevice::EnableForceFeedback(LegoU32 p_enabled)
 {
 	if (p_enabled == 0) {
 		m_forceFeedbackEnabled = FALSE;
-		m_vtable->VTable0x44(this, NULL);
+		DecompThiscallVoid(&m_vtable->VTable0x44, this);
 	}
 	else {
 		m_forceFeedbackEnabled = TRUE;

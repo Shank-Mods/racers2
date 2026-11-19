@@ -28,7 +28,7 @@ void AudioService::Update(LegoU32)
 	ProcessAudioSourceFrames(this, NULL);
 	UpdateAudioDeviceBuffers(this, NULL);
 	UpdateAudioSourceOutputs(this, NULL);
-	g_audioBackend->m_vtable->m_unk0x1c(g_audioBackend, NULL);
+	DecompThiscallVoid(&g_audioBackend->m_vtable->m_unk0x1c, g_audioBackend);
 	if (m_unk0x24ba0 != 0) {
 		PlayNextAudioCommentary(this, NULL);
 	}

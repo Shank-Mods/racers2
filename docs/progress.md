@@ -5,7 +5,7 @@ promoted **213 STUBs** (195 exact, 18 reviewed near matches) and recovered one
 additional exact helper. No game runs were performed for these batches.
 
 Both 465-unit SP5 builds agree on all **2,752 measured scores and statuses**:
-**911 exact functions, 48 reviewed near matches and 1,812 STUB reconstructions**.
+**923 exact functions, 48 reviewed near matches and 1,800 STUB reconstructions**.
 All 619 previously implemented functions retain their raw accuracy or improve.
 Forty-seven complete folded aliases, twelve dispatch inventories per build
 (including 1,321 scene pointers), 307 input-format records and 29 tooling/library
@@ -15,9 +15,9 @@ tests pass. Source STUBs without a separate matched report row remain unimplemen
 and **5,647 bodies**, for console, JSON, HTML and SVG coverage:
 
 ```text
-Implemented:  14.50%  (959 / 6612)
-Accuracy:     99.83%
-Progress:     14.48%
+Implemented:  14.69%  (971 / 6612)
+Accuracy:     99.84%
+Progress:     14.66%
 ```
 
 The inventory includes linked libraries and compiler helpers; external imports
@@ -409,7 +409,7 @@ measure runtime completeness.
 | `0x0041c750` | `CreateCommonMenuWidgets` | 41.92% | Work in progress |
 | `0x0041c810` | `DestroyCommonMenuWidgets` | 80.00% | Work in progress |
 | `0x0041c890` | `CreateFrontendMenuWidgets` | 32.11% | Work in progress |
-| `0x0041cab0` | `DestroyFrontendMenuWidgets` | 90.57% | Work in progress |
+| `0x0041cab0` | `DestroyFrontendMenuWidgets` | 100.00% | Verified exact |
 | `0x0041caf0` | `UpdateSecondaryMenuManager` | 46.04% | Work in progress |
 | `0x0041d100` | `UpdateMenuTransition` | 45.45% | Work in progress |
 | `0x0041d1e0` | `ResetMenuSelectionWidgets` | 41.03% | Work in progress |
@@ -449,7 +449,7 @@ measure runtime completeness.
 | `0x004235a0` | `HighlightMenuOption` | 67.44% | Work in progress |
 | `0x00423640` | `BeginMenuManagerChoice` | 94.55% | Work in progress |
 | `0x004236a0` | `MenuManager::SetPanelClipRectangle` | 77.42% | Work in progress |
-| `0x00423710` | `MenuManager::SetSecondaryPanelClipRectangle` | 93.51% | Work in progress |
+| `0x00423710` | `MenuManager::SetSecondaryPanelClipRectangle` | 100.00% | Verified exact |
 | `0x00423770` | `GetMenuManagerFloatValue` | 18.18% | Work in progress |
 | `0x004237a0` | `GetMenuManagerFloatOption` | 9.09% | Work in progress |
 | `0x004237e0` | `GetMenuManagerWordOption` | 9.09% | Work in progress |
@@ -735,7 +735,7 @@ measure runtime completeness.
 | `0x00438b50` | `SetNestedTextBoxFade` | 8.00% | Work in progress |
 | `0x00438be0` | `HasActiveTextBoxPauseTarget` | 52.63% | Work in progress |
 | `0x00438c40` | `StartNpcTextVoice` | 32.79% | Work in progress |
-| `0x00438c90` | `ReleaseTextBoxManagerResource` | 86.96% | Work in progress |
+| `0x00438c90` | `ReleaseTextBoxManagerResource` | 100.00% | Verified exact |
 | `0x00438cb0` | `UpdateTextBoxVoiceResource` | 38.81% | Work in progress |
 | `0x00438d60` | `SelectTextBoxVoice` | 40.51% | Work in progress |
 | `0x00438e50` | `TextBoxManager::TextBoxManager` | 64.29% | Work in progress |
@@ -756,7 +756,7 @@ measure runtime completeness.
 | `0x0043a410` | `FUN_0043a410` | 100.00% | Verified exact |
 | `0x0043a420` | `FUN_0043a420` | 100.00% | Verified exact |
 | `0x0043a480` | `FoyerManagerUpdate` | 24.83% | Work in progress |
-| `0x0043aa60` | `ExitFoyerScene` | 87.80% | Work in progress |
+| `0x0043aa60` | `ExitFoyerScene` | 90.00% | Work in progress |
 | `0x0043aab0` | `SetFoyerManagerMenuMode` | 0.00% | Work in progress |
 | `0x0043aac0` | `ApplyFoyerSceneOverlay` | 100.00% | Verified exact |
 | `0x0043aaf0` | `ApplyFoyerSceneSelection` | 80.95% | Work in progress |
@@ -1572,7 +1572,7 @@ measure runtime completeness.
 | `0x004aa360` | `SetClipPlanesForFoyerTarget` | 100.00% | Verified exact |
 | `0x004aa3c0` | `SetRenderProjectionRatio` | 100.00% | Verified exact |
 | `0x004aa410` | `ConstructGameObjectModelBinding` | 24.32% | Work in progress |
-| `0x004aa530` | `DestroyGameObjectModelBindingForOwner` | 80.00% | Work in progress |
+| `0x004aa530` | `DestroyGameObjectModelBindingForOwner` | 100.00% | Verified exact |
 | `0x004aa540` | `GameObject::IsVisible` | 42.36% | Work in progress |
 | `0x004aa730` | `IsPointWithinGameObjectView` | 37.84% | Work in progress |
 | `0x004aa790` | `GameObject::DrawChild` | 46.15% | Work in progress |
@@ -1679,12 +1679,12 @@ measure runtime completeness.
 | `0x004af050` | `InputDeviceService::Shutdown` | 91.53% | Work in progress |
 | `0x004af090` | `InputDeviceService::RegisterDevice` | 41.38% | Work in progress |
 | `0x004af130` | `InputDeviceService::AcquireAvailableDevices` | 100.00% | Verified exact |
-| `0x004af170` | `InputDeviceService::RefreshDevices` | 86.27% | Work in progress |
+| `0x004af170` | `InputDeviceService::RefreshDevices` | 100.00% | Verified exact |
 | `0x004af1a0` | `InputDeviceService::FindDeviceByType` | 57.58% | Work in progress |
 | `0x004af1e0` | `InputDeviceRecord::LoadDeviceInfo` | 57.43% | Work in progress |
 | `0x004af2b0` | `GetAudioVectorLength` | 100.00% | Verified exact |
 | `0x004af2f0` | `GetAudioService` | 67.57% | Work in progress |
-| `0x004af360` | `DestroyAudioService` | 82.35% | Work in progress |
+| `0x004af360` | `DestroyAudioService` | 100.00% | Verified exact |
 | `0x004af380` | `AudioService::AudioService` | 81.69% | Work in progress |
 | `0x004af4e0` | `AudioService::Initialize` | 66.23% | Work in progress |
 | `0x004af6c0` | `AudioService::GetQualityMode` | 100.00% | Verified exact |
@@ -1693,7 +1693,7 @@ measure runtime completeness.
 | `0x004af790` | `AudioService::GetVolumes` | 100.00% | Verified exact |
 | `0x004af7b0` | `SetAudioParameters` | 100.00% | Verified exact |
 | `0x004af7e0` | `AudioService::SetMusicEnabled` | 78.26% | Work in progress |
-| `0x004af810` | `AudioService::Update` | 79.31% | Work in progress |
+| `0x004af810` | `AudioService::Update` | 80.70% | Work in progress |
 | `0x004af860` | `UpdateAudioDeviceBuffers` | 64.94% | Work in progress |
 | `0x004af8d0` | `UpdateAudioSourceOutputs` | 40.34% | Work in progress |
 | `0x004af980` | `ProcessAudioSourceFrames` | 17.81% | Work in progress |
@@ -1757,7 +1757,7 @@ measure runtime completeness.
 | `0x004b1520` | `ControllerRecordingService::GetRequestedInputValue` | 100.00% | Verified exact |
 | `0x004b1530` | `ControllerRecordingService::SetRequestedInputValue` | 100.00% | Verified exact |
 | `0x004b1550` | `ControllerRecordingService::Initialize` | 70.55% | Work in progress |
-| `0x004b1700` | `ControllerRecordingService::Shutdown` | 37.13% | Work in progress |
+| `0x004b1700` | `ControllerRecordingService::Shutdown` | 39.76% | Work in progress |
 | `0x004b17e0` | `ControllerRecordingService::AllocateRecord` | 100.00% | Verified exact |
 | `0x004b1810` | `ControllerRecordingService::FindRecordByKey` | 14.29% | Work in progress |
 | `0x004b1850` | `ControllerRecordingService::RemoveRecordByKey` | 41.13% | Work in progress |
@@ -1819,7 +1819,7 @@ measure runtime completeness.
 | `0x004b3090` | `GlobalOverlaySprite::SetClipRectangle` | 100.00% | Verified exact |
 | `0x004b30c0` | `GlobalOverlayManager::GlobalOverlayManager` | 12.86% | Work in progress |
 | `0x004b3330` | `GlobalOverlayManagerDestroy` | 83.33% | Work in progress |
-| `0x004b3370` | `GlobalOverlayManagerUpdateRecords` | 87.80% | Work in progress |
+| `0x004b3370` | `GlobalOverlayManagerUpdateRecords` | 100.00% | Verified exact |
 | `0x004b33b0` | `GlobalOverlayManager::AllocateSprite` | 100.00% | Verified exact |
 | `0x004b33f0` | `GlobalOverlayManager::MoveSprite` | 86.27% | Work in progress |
 | `0x004b3470` | `GlobalOverlayManager::AllocateRecord` | 59.57% | Work in progress |
@@ -1884,7 +1884,7 @@ measure runtime completeness.
 | `0x004b7a60` | `LocalizedStringTable::BuildSortedIndex` | 87.06% | Work in progress |
 | `0x004b7b80` | `InputController::InputController` | 83.33% | Work in progress |
 | `0x004b7c20` | `InputController::~InputController` | 100.00% | Verified exact |
-| `0x004b7c50` | `InputControllerManager::InitializeTiming` | 94.12% | Work in progress |
+| `0x004b7c50` | `InputControllerManager::InitializeTiming` | 100.00% | Verified exact |
 | `0x004b7c70` | `InputControllerManager::ResetRecording` | 28.38% | Work in progress |
 | `0x004b7d40` | `InputControllerManager::Shutdown` | 98.18% | Reviewed near match |
 | `0x004b7d80` | `InputController::SetOwner` | 100.00% | Verified exact |
@@ -2063,7 +2063,7 @@ measure runtime completeness.
 | `0x004c10d0` | `RegisterResourceCallback` | 40.45% | Work in progress |
 | `0x004c1150` | `UnregisterResourceCallback` | 18.02% | Work in progress |
 | `0x004c11e0` | `RendererAuxiliaryResourceRecord::InitializeMaterial` | 22.03% | Work in progress |
-| `0x004c14f0` | `DisplayRenderer::SetResourceLoadMode` | 83.02% | Work in progress |
+| `0x004c14f0` | `DisplayRenderer::SetResourceLoadMode` | 100.00% | Verified exact |
 | `0x004c1650` | `MenuTimeText::MenuTimeText` | 91.67% | Work in progress |
 | `0x004c1680` | `MenuTimeText::FillDigits` | 50.00% | Work in progress |
 | `0x004c16a0` | `MenuTimeText::SetSeconds` | 55.00% | Work in progress |
@@ -2306,7 +2306,7 @@ measure runtime completeness.
 | `0x004df230` | `DisplayRenderer::SetBlendModeOverride` | 100.00% | Verified exact |
 | `0x004df250` | `DisplayRenderer::ClearBlendModeOverride` | 100.00% | Verified exact |
 | `0x004df260` | `DisplayRenderer::DrawGuiRectangle` | 25.51% | Work in progress |
-| `0x004df6b0` | `DisplayRenderer::BeginSpriteBatch` | 93.33% | Work in progress |
+| `0x004df6b0` | `DisplayRenderer::BeginSpriteBatch` | 96.55% | Work in progress |
 | `0x004df6e0` | `DisplayRenderer::DrawSprite` | 75.00% | Work in progress |
 | `0x004df720` | `DisplayRenderer::AllocateSpriteVertices` | 62.50% | Work in progress |
 | `0x004df760` | `FlushSpecularVertexStream` | 100.00% | Verified exact |
@@ -2455,7 +2455,7 @@ measure runtime completeness.
 | `0x004edd20` | `JoystickInputDevice::CountForceFeedbackAxis` | 100.00% | Verified exact |
 | `0x004edd50` | `JoystickInputDevice::ReadState` | 54.72% | Work in progress |
 | `0x004edec0` | `JoystickInputDevice::StopAllEffects` | 100.00% | Verified exact |
-| `0x004edee0` | `JoystickInputDevice::EnableForceFeedback` | 84.21% | Work in progress |
+| `0x004edee0` | `JoystickInputDevice::EnableForceFeedback` | 100.00% | Verified exact |
 | `0x004edf10` | `JoystickInputDevice::GetAxisCount` | 100.00% | Verified exact |
 | `0x004edf20` | `JoystickInputDevice::UpdateAutoRange` | 42.42% | Work in progress |
 | `0x004edfc0` | `JoystickAxis::ExpandRange` | 100.00% | Verified exact |
@@ -2707,8 +2707,8 @@ measure runtime completeness.
 | `0x004fbab0` | `CachedCollisionContact::UpdateContact` | 37.01% | Work in progress |
 | `0x004fbe50` | `ContactCacheController::ResetContacts` | 100.00% | Verified exact |
 | `0x004fbe60` | `ContactCacheController::CollectContacts` | 47.62% | Work in progress |
-| `0x004fbf50` | `ContactCacheController::PrepareContacts` | 90.57% | Work in progress |
-| `0x004fbf90` | `ContactCacheController::UpdateContacts` | 90.57% | Work in progress |
+| `0x004fbf50` | `ContactCacheController::PrepareContacts` | 100.00% | Verified exact |
+| `0x004fbf90` | `ContactCacheController::UpdateContacts` | 100.00% | Verified exact |
 | `0x004fc050` | `ComputeSingleBodyContactImpulse` | 19.05% | Work in progress |
 | `0x004fc1f0` | `ComputeTwoBodyContactImpulse` | 12.16% | Work in progress |
 | `0x004fc4e0` | `ComputePenetrationCorrectionScale` | 48.89% | Work in progress |

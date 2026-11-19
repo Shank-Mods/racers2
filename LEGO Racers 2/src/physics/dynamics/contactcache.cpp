@@ -111,22 +111,22 @@ void ContactCacheController::CollectContacts(CollisionContact* p_contacts, LegoS
 	}
 }
 
-// STUB: LEGORACERS2 0x004fbf50
+// FUNCTION: LEGORACERS2 0x004fbf50
 LegoU32 ContactCacheController::PrepareContacts()
 {
 	for (LegoS32 i = 0; i < m_count; ++i) {
 		const ContactConstraintDispatch* dispatch = (const ContactConstraintDispatch*) m_contacts[i].m_vtable;
-		dispatch->m_prepare(&m_contacts[i], NULL);
+		DecompThiscall(&dispatch->m_prepare, &m_contacts[i]);
 	}
 	return 0;
 }
 
-// STUB: LEGORACERS2 0x004fbf90
+// FUNCTION: LEGORACERS2 0x004fbf90
 LegoU32 ContactCacheController::UpdateContacts()
 {
 	for (LegoS32 i = 0; i < m_count; ++i) {
 		const ContactConstraintDispatch* dispatch = (const ContactConstraintDispatch*) m_contacts[i].m_vtable;
-		dispatch->m_update(&m_contacts[i], NULL);
+		DecompThiscall(&dispatch->m_update, &m_contacts[i]);
 	}
 	return 0;
 }

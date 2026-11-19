@@ -12,13 +12,13 @@ InputControllerManager g_inputControllerManagerStorage;
 // GLOBAL: LEGORACERS2 0x0054a330
 InputControllerManager* g_inputControllerManager = &g_inputControllerManagerStorage;
 
-// STUB: LEGORACERS2 0x004b7c50
+// FUNCTION: LEGORACERS2 0x004b7c50
 void InputControllerManager::InitializeTiming(LegoU32 p_frequency, LegoU32 p_pollMultiplier)
 {
 	m_pollMultiplier = p_pollMultiplier;
 	m_frequency = p_frequency;
 	m_unk0x1c = 0;
-	m_vtable->m_initialize(this, NULL);
+	DecompThiscall(&m_vtable->m_initialize, this);
 }
 
 // STUB: LEGORACERS2 0x004b7c70

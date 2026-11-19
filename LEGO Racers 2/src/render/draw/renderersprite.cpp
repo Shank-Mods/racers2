@@ -24,7 +24,7 @@ static LegoS32 SignedFloatBits(LegoFloat p_value)
 void DisplayRenderer::BeginSpriteBatch(LegoS32 p_textureId, LegoU32 p_blendMode, LegoFloat, LegoFloat)
 {
 	FlushSpecularVertexStream(this, NULL);
-	m_vtable->m_action0xc8(this, NULL, p_blendMode);
+	DecompThiscallVoid(&m_vtable->m_action0xc8, this, p_blendMode);
 	BindMappedTexture(p_textureId);
 }
 
