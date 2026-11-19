@@ -13,6 +13,7 @@ import re
 from inspect_binary import pe_headers, u16, u32
 from setup import ORIGINAL_SHA256
 from toolchain import ROOT
+from originals import configured_original
 
 
 @dataclass(frozen=True)
@@ -129,7 +130,7 @@ def refresh_inventory(export, original, root=ROOT, allow_removals=False):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", type=Path, help="Refresh from a seeded Ghidra discovered-functions.csv export")
-    parser.add_argument("--original", type=Path, default=ROOT.parent / "LEGO Racers 2/LEGO Racers 2.exe")
+    parser.add_argument("--original", type=Path, default=configured_original())
     parser.add_argument("--allow-removals", action="store_true", help="Accept reviewed removals from the existing entry inventory")
     args = parser.parse_args()
     inventory = refresh_inventory(args.refresh, args.original, allow_removals=args.allow_removals) if args.refresh else load_inventory()

@@ -9,6 +9,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 import folded_functions as folded
+import originals
 
 
 def pe_fixture(code):
@@ -41,7 +42,7 @@ class FoldedFunctionTests(unittest.TestCase):
         args = dict(original=self.original, rebuilt=self.rebuilt, link_map=self.link_map,
                     aliases=self.aliases, sizes=self.sizes)
         args.update(overrides)
-        with patch.object(folded, "ORIGINAL_SHA256", hashlib.sha256(self.original).hexdigest()):
+        with patch.dict(originals.SUPPORTED_ORIGINALS, {hashlib.sha256(self.original).hexdigest(): "test"}):
             return folded.verified_aliases(**args)
 
     def test_two_original_bodies_can_share_one_verified_rebuilt_address(self):

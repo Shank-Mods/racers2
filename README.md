@@ -142,8 +142,12 @@ reccmp-datacmp --target LEGORACERS2 --verbose --print-rec-addr
 reccmp-decomplint --target LEGORACERS2 --warnfail "../../LEGO Racers 2"
 ```
 
-The original exe is SHA-256
-`6ed248b0ee8e52669ca93f0a2d7eb4c4c2c7ed477550a5f488bfe029270d854d`.
+The reference (European) exe is SHA-256
+`6ed248b0ee8e52669ca93f0a2d7eb4c4c2c7ed477550a5f488bfe029270d854d`. The North
+American exe (`074899f5e94ecae323f4928b9bfed6d67d7c9414cd625ff506fe3bf4a748f168`)
+is also supported: setup accepts either, the builder points reccmp at a
+generated project file carrying its hash, and the checks use the path chosen
+during setup. See [supported executables](docs/compiler.md#supported-executables).
 
 ## Native Windows CMake build
 

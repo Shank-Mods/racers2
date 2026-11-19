@@ -1,13 +1,12 @@
 """Verify complete, relocation-free folded bodies at linker-map symbols."""
 
 import csv
-import hashlib
 import json
 from pathlib import Path
 import re
 
 from inspect_binary import pe_headers, rva_offset, u32
-from setup import ORIGINAL_SHA256
+from originals import configured_original, require_supported
 
 
 def code_bytes(binary, address, size):
@@ -22,8 +21,7 @@ def code_bytes(binary, address, size):
 
 def verified_aliases(original, rebuilt, link_map, aliases, sizes):
     """Fail closed: no relocation masking, prefix matches or missing symbols."""
-    if hashlib.sha256(original).hexdigest() != ORIGINAL_SHA256:
-        raise ValueError("Unsupported original executable SHA-256")
+    original_sha256 = require_supported(original)
     symbols = {}
     wanted = {alias["symbol"] for alias in aliases}
     for line in link_map.splitlines():
@@ -55,7 +53,7 @@ def verified_aliases(original, rebuilt, link_map, aliases, sizes):
 
 
 def supplement_report(root, build_dir, inventory=None):
-    original = (root.parent / "LEGO Racers 2" / "LEGO Racers 2.exe").read_bytes()
+    original = configured_original().read_bytes()
     rebuilt = (build_dir / "LEGO Racers 2.exe").read_bytes()
     link_map = (build_dir / "legoracers2.map").read_text(encoding="latin-1")
     with (root / "reccmp/folded-functions.csv").open(newline="") as stream:

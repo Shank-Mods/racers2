@@ -3,12 +3,11 @@
 
 import argparse
 import csv
-import hashlib
 from pathlib import Path
 import struct
 
 from check_application_dispatch import map_symbols, read_table
-from setup import ORIGINAL_SHA256
+from originals import configured_original, require_supported
 from toolchain import DEFAULT_BUILD_DIR, ROOT
 
 
@@ -24,8 +23,7 @@ TABLES = {
 
 def verify(original, rebuilt, link_map, inventory, tables=TABLES):
     original_data = original.read_bytes()
-    if hashlib.sha256(original_data).hexdigest() != ORIGINAL_SHA256:
-        raise ValueError("Unsupported original executable SHA-256")
+    original_sha256 = require_supported(original_data)
     rebuilt_data = rebuilt.read_bytes()
     symbols = map_symbols(link_map)
     with inventory.open(newline="", encoding="utf-8") as stream:
@@ -50,7 +48,7 @@ def verify(original, rebuilt, link_map, inventory, tables=TABLES):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--original", type=Path, default=ROOT.parent / "LEGO Racers 2" / "LEGO Racers 2.exe")
+    parser.add_argument("--original", type=Path, default=configured_original())
     parser.add_argument("--build-dir", type=Path, default=DEFAULT_BUILD_DIR)
     args = parser.parse_args()
     try:

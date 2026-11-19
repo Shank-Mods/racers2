@@ -5,6 +5,7 @@ import struct
 from pathlib import Path
 from check_renderer_resource_dispatch import verify
 from toolchain import DEFAULT_BUILD_DIR, ROOT
+from originals import configured_original
 
 TABLES = {
     "base": (0x00531adc, 1, "g_constraintBaseDispatch"),
@@ -17,7 +18,7 @@ def main():
     parser.add_argument("--build-dir", type=Path, default=DEFAULT_BUILD_DIR)
     args = parser.parse_args()
     try:
-        verify(ROOT.parent / "LEGO Racers 2" / "LEGO Racers 2.exe",
+        verify(configured_original(),
                args.build_dir / "LEGO Racers 2.exe", args.build_dir / "legoracers2.map",
                ROOT / "reccmp/constraint-dispatch.csv", TABLES)
     except (KeyError, OSError, ValueError, struct.error) as error:

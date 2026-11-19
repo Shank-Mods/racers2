@@ -35,6 +35,25 @@ The timestamp and version fields are metadata, not independent authenticity
 proof. The hash defines the specific supported executable. Another release or
 patch needs separate inspection and address mappings.
 
+## Supported executables
+
+| Release | SHA-256 | COFF timestamp |
+| --- | --- | --- |
+| Europe (reference) | `6ed248b0ee8e52669ca93f0a2d7eb4c4c2c7ed477550a5f488bfe029270d854d` | 2001-08-13 10:18:04 UTC |
+| North America | `074899f5e94ecae323f4928b9bfed6d67d7c9414cd625ff506fe3bf4a748f168` | 2001-08-13 10:20:09 UTC |
+
+The North American build has the same size, sections, imports, Rich header
+and code layout. Against it, every measured function score, the folded
+bodies, datacmp, the input formats, the extracted resources and every
+dispatch inventory are identical, with one exception: application dispatch
+slot `primary+0x7c` (`0x00534994`) points to a function returning 1
+(`0x00486a70`) instead of 0 (`0x00473140`). Its callers select the
+`BASLUS-20042` instead of `BESLES-50443` save name, a single American English
+language instead of eight European languages, and default language 3 instead
+of 2, so it is a region flag. `tools/originals.py` lists both hashes and this
+expected slot difference; the European build remains the reference for
+addresses, inventories and reports.
+
 ## Rich-header evidence
 
 The Rich marker is at file offset `0x110`. XOR key `0xfd9cd74f` decodes `DanS`

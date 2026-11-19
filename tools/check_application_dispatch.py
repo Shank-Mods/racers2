@@ -7,13 +7,12 @@ ABI bridges and original method bodies retain separate instruction measurements.
 
 import argparse
 import csv
-import hashlib
 from pathlib import Path
 import re
 import struct
 
 from inspect_binary import pe_headers, rva_offset, u32
-from setup import ORIGINAL_SHA256
+from originals import REGION_DISPATCH_TARGETS, configured_original, require_supported
 from toolchain import DEFAULT_BUILD_DIR, ROOT
 
 
@@ -41,8 +40,7 @@ def read_table(binary, address, count=38):
 
 def verify(original, rebuilt, link_map, inventory):
     original_data = original.read_bytes()
-    if hashlib.sha256(original_data).hexdigest() != ORIGINAL_SHA256:
-        raise ValueError("Unsupported original executable SHA-256")
+    original_sha256 = require_supported(original_data)
     rebuilt_data = rebuilt.read_bytes()
     symbols = map_symbols(link_map)
     with inventory.open(encoding="utf-8", newline="") as stream:
@@ -50,6 +48,7 @@ def verify(original, rebuilt, link_map, inventory):
     if [int(row["slot"], 16) for row in rows] != list(range(0, 0x98, 4)):
         raise ValueError("Dispatch inventory must contain exactly 38 ordered slots")
 
+    region_targets = REGION_DISPATCH_TARGETS.get(original_sha256, {})
     failures = []
     for table, address, symbol in (
         ("primary", 0x00534994, "g_applicationPrimaryDispatch"),
@@ -58,7 +57,8 @@ def verify(original, rebuilt, link_map, inventory):
         original_entries = read_table(original_data, address)
         rebuilt_entries = read_table(rebuilt_data, symbols[symbol])
         for index, row in enumerate(rows):
-            if original_entries[index] != int(row[table + "_original"], 16):
+            expected_original = region_targets.get((table, index * 4), int(row[table + "_original"], 16))
+            if original_entries[index] != expected_original:
                 failures.append(f"{table}+0x{index * 4:02x}: retail target disagrees with inventory")
             callback = row[table + "_symbol"]
             expected = symbols[callback]
@@ -70,7 +70,7 @@ def verify(original, rebuilt, link_map, inventory):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--original", type=Path, default=ROOT.parent / "LEGO Racers 2" / "LEGO Racers 2.exe")
+    parser.add_argument("--original", type=Path, default=configured_original())
     parser.add_argument("--build-dir", type=Path, default=DEFAULT_BUILD_DIR)
     args = parser.parse_args()
     try:

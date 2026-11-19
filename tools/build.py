@@ -12,6 +12,7 @@ from toolchain import (
     DEFAULT_BUILD_DIR, DEFAULT_DIRECTX8_CONFIG, DEFAULT_RESOURCES,
     DEFAULT_TOOLCHAIN, ROOT, validate,
 )
+from originals import REFERENCE_SHA256, SUPPORTED_ORIGINALS, configured_original, sha256_of
 from platform_imports import shfolder_library
 
 
@@ -19,6 +20,36 @@ from platform_imports import shfolder_library
 def windows_path(path):
     path = Path(path).resolve()
     return str(path) if os.name == "nt" else "Z:" + str(path).replace("/", "\\")
+
+
+def reccmp_project_dir(build_dir):
+    """Directory holding the reccmp-project.yml that matches the configured original.
+
+    The committed project file names the reference (European) hash. For another
+    supported original, write a copy with that hash and absolute paths into the
+    build directory, so reccmp accepts it without editing tracked files.
+    """
+    original = configured_original()
+    if not original.is_file():
+        return ROOT
+    digest = sha256_of(original.read_bytes())
+    if digest == REFERENCE_SHA256 or digest not in SUPPORTED_ORIGINALS:
+        return ROOT
+    project = build_dir / "reccmp-project"
+    project.mkdir(parents=True, exist_ok=True)
+    lines = []
+    for line in (ROOT / "reccmp-project.yml").read_text(encoding="utf-8").splitlines():
+        line = line.replace(REFERENCE_SHA256, digest)
+        key, sep, value = line.partition("source-root:")
+        if sep:
+            line = key + sep + " " + json.dumps(str(ROOT / value.strip()))
+        elif line.strip().startswith("- ") and line.strip().endswith(".csv"):
+            indent = line[:len(line) - len(line.lstrip())]
+            line = indent + "- " + json.dumps(str(ROOT / line.strip()[2:]))
+        lines.append(line)
+    (project / "reccmp-project.yml").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    shutil.copyfile(ROOT / "reccmp-user.yml", project / "reccmp-user.yml")
+    return project
 
 
 def build(build_dir, toolchain, source_list=None, shfolder_lib=None, directx8_config=None, resources=None):
@@ -109,7 +140,7 @@ def build(build_dir, toolchain, source_list=None, shfolder_lib=None, directx8_co
                         encoding="mbcs" if os.name == "nt" else "utf-8")
     run("LINK.EXE", ["@" + windows_path(response)])
     # Host paths allow Linux reccmp to read Wine-generated artifacts directly.
-    config = ("project: " + json.dumps(str(ROOT)) + "\ntargets:\n  LEGORACERS2:\n    path: "
+    config = ("project: " + json.dumps(str(reccmp_project_dir(build_dir))) + "\ntargets:\n  LEGORACERS2:\n    path: "
               + json.dumps(str(exe)) + "\n    pdb: " + json.dumps(str(pdb)) + "\n")
     (build_dir / "reccmp-build.yml").write_text(config, encoding="utf-8")
     print(f"Built {exe}\nPDB: {pdb}")

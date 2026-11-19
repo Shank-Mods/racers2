@@ -10,6 +10,7 @@ from check_renderer_resource_dispatch import verify
 from check_application_dispatch import map_symbols
 from folded_functions import code_bytes
 from toolchain import DEFAULT_BUILD_DIR, ROOT
+from originals import configured_original
 
 TABLES = {
     'foyer_action_0': (0x0053334c, 4, 'g_foyerSceneActionDispatch0'),
@@ -129,7 +130,7 @@ def verify_constant_callbacks(original, rebuilt, link_map, inventory):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--original", type=Path, default=ROOT.parent / "LEGO Racers 2" / "LEGO Racers 2.exe")
+    parser.add_argument("--original", type=Path, default=configured_original())
     parser.add_argument("--build-dir", type=Path, default=DEFAULT_BUILD_DIR)
     args = parser.parse_args()
     try:

@@ -13,11 +13,12 @@ from dataclasses import dataclass
 from pathlib import Path
 import struct
 import sys
+from originals import configured_original
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_ARCHIVE = ROOT / ".tools/msvc6-sp5/VC98/Lib/LIBCMT.LIB"
-DEFAULT_RETAIL = ROOT.parent / "LEGO Racers 2" / "LEGO Racers 2.exe"
+DEFAULT_RETAIL = configured_original()
 DEFAULT_SIZES = ROOT / "data/ghidra-export/discovered-functions.csv"
 DEFAULT_OUTPUT = ROOT / "data/library-candidates.csv"
 

@@ -9,19 +9,21 @@ import subprocess
 
 from inspect_binary import inspect
 from toolchain import DEFAULT_TOOLCHAIN, ROOT, TOOLCHAIN_COMMIT, TOOLCHAIN_URL, validate
+from originals import REFERENCE_SHA256, SUPPORTED_ORIGINALS, configured_original
 
-ORIGINAL_SHA256 = "6ed248b0ee8e52669ca93f0a2d7eb4c4c2c7ed477550a5f488bfe029270d854d"
+# Reference (European) executable; see originals.py for every supported build.
+ORIGINAL_SHA256 = REFERENCE_SHA256
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--original", type=Path, default=ROOT.parent / "LEGO Racers 2" / "LEGO Racers 2.exe")
+    parser.add_argument("--original", type=Path, default=configured_original())
     parser.add_argument("--fetch-toolchain", action="store_true")
     parser.add_argument("--toolchain", type=Path, default=Path(os.environ.get("MSVC6_ROOT", DEFAULT_TOOLCHAIN)))
     args = parser.parse_args()
     original = args.original.resolve()
     identity = inspect(original)
-    if identity["sha256"] != ORIGINAL_SHA256:
+    if identity["sha256"] not in SUPPORTED_ORIGINALS:
         parser.error(f"Unsupported original SHA-256: {identity['sha256']}. See docs/compiler.md.")
     if identity["machine"] != "0x014c" or not identity["rich"]["checksum_valid"]:
         parser.error("Expected an x86 PE32 with an intact Rich header")
@@ -37,7 +39,7 @@ def main():
     # JSON strings are valid YAML scalars, including Windows paths and apostrophes.
     user = "targets:\n  LEGORACERS2:\n    path: " + json.dumps(str(original)) + "\n"
     (ROOT / "reccmp-user.yml").write_text(user, encoding="utf-8")
-    print(f"Verified original: {original}\nSHA-256: {identity['sha256']}")
+    print(f"Verified original ({SUPPORTED_ORIGINALS[identity['sha256']]}): {original}\nSHA-256: {identity['sha256']}")
     print("Wrote reccmp-user.yml. See README.md for building and comparison.")
 
 

@@ -8,10 +8,11 @@ import struct
 
 from inspect_binary import inspect, pe_headers, rva_offset, u16, u32
 from toolchain import DEFAULT_RESOURCES, ROOT
+from originals import configured_original
 
 
-DEFAULT_ORIGINAL = ROOT.parent / "LEGO Racers 2" / "LEGO Racers 2.exe"
-ORIGINAL_SHA256 = "6ed248b0ee8e52669ca93f0a2d7eb4c4c2c7ed477550a5f488bfe029270d854d"
+DEFAULT_ORIGINAL = configured_original()
+from originals import SUPPORTED_ORIGINALS
 IMAGE_FILE_MACHINE_I386 = 0x014C
 IMAGE_RESOURCE_NAME_IS_STRING = 0x80000000
 IMAGE_RESOURCE_DATA_IS_DIRECTORY = 0x80000000
@@ -150,7 +151,7 @@ def extract(original, output):
         raise ValueError("Output path must not overwrite the original executable")
 
     identity = inspect(original)
-    if identity["sha256"] != ORIGINAL_SHA256:
+    if identity["sha256"] not in SUPPORTED_ORIGINALS:
         raise ValueError(f"Unsupported original SHA-256: {identity['sha256']}")
     if identity["machine"] != f"0x{IMAGE_FILE_MACHINE_I386:04x}":
         raise ValueError(f"Expected an x86 PE32 executable, got machine {identity['machine']}")
