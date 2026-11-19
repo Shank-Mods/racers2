@@ -1144,10 +1144,10 @@ static void __fastcall DestructCarDisplayModelObject(GameObject* p_object, void*
 	p_object->~GameObject();
 }
 
-// STUB: LEGORACERS2 0x004a3de0
-static void __fastcall CarDisplayModelInitialize(GameObject* p_object, void*)
+// FUNCTION: LEGORACERS2 0x004a3de0
+static void __fastcall CarDisplayModelInitialize(GameObject* p_object, void* p_edx)
 {
-	InitializeGameObjectModelBinding((GameObjectModelBinding*) p_object->m_unk0x48, NULL);
+	InitializeGameObjectModelBinding((GameObjectModelBinding*) p_object->m_unk0x48, p_edx);
 	p_object->Initialize();
 }
 

@@ -2253,19 +2253,19 @@ LegoBool32 ControllerRecordingService::PollRequestedInput(LegoU32)
 	return FALSE;
 }
 
-// STUB: LEGORACERS2 0x004f4870
+// FUNCTION: LEGORACERS2 0x004f4870
 void ControllerRecordingProviderAssociations::Initialize()
 {
-	for (LegoU32 index = 0; index < 64; ++index) {
+	for (LegoS32 index = 0; index < 64; ++index) {
 		m_providerKeys[index] = 0;
 		m_active[index] = 0;
 	}
 }
 
-// STUB: LEGORACERS2 0x004f4890
+// FUNCTION: LEGORACERS2 0x004f4890
 LegoU32* ControllerRecordingProviderAssociations::AllocateAssociation()
 {
-	for (LegoU32 index = 0; index < 64; ++index) {
+	for (LegoS32 index = 0; index < 64; ++index) {
 		if (m_active[index] == 0) {
 			m_active[index] = 1;
 			return &m_providerKeys[index];

@@ -5,7 +5,7 @@ promoted **213 STUBs** (195 exact, 18 reviewed near matches) and recovered one
 additional exact helper. No game runs were performed for these batches.
 
 Both 465-unit SP5 builds agree on all **2,721 measured scores and statuses**:
-**786 exact functions, 49 reviewed near matches and 1,886 STUB reconstructions**.
+**802 exact functions, 49 reviewed near matches and 1,870 STUB reconstructions**.
 All 619 previously implemented functions retain their raw accuracy or improve.
 Twenty-eight complete folded aliases, twelve dispatch inventories per build
 (including 1,321 scene pointers), 307 input-format records and 29 tooling/library
@@ -15,9 +15,9 @@ tests pass. Source STUBs without a separate matched report row remain unimplemen
 and **5,647 bodies**, for console, JSON, HTML and SVG coverage:
 
 ```text
-Implemented:  12.63%  (835 / 6612)
-Accuracy:     99.80%
-Progress:     12.60%
+Implemented:  12.87%  (851 / 6612)
+Accuracy:     99.81%
+Progress:     12.85%
 ```
 
 The inventory includes linked libraries and compiler helpers; external imports
@@ -173,9 +173,9 @@ measure runtime completeness.
 | `0x0040afe0` | `GetControllerWorldScore` | 100.00% | Verified exact |
 | `0x0040b000` | `GameControllerSelection::Initialize` | 9.09% | Work in progress |
 | `0x0040b020` | `UnlockAllSecondaryWorlds` | 100.00% | Verified exact |
-| `0x0040b040` | `UnlockAllSecondaryRewards` | 92.59% | Work in progress |
+| `0x0040b040` | `UnlockAllSecondaryRewards` | 100.00% | Verified exact |
 | `0x0040b0a0` | `GameControllerSelection::UnlockWorld` | 50.00% | Work in progress |
-| `0x0040b0d0` | `GameControllerSelection::UnlockTrack` | 94.74% | Work in progress |
+| `0x0040b0d0` | `GameControllerSelection::UnlockTrack` | 100.00% | Verified exact |
 | `0x0040b0f0` | `GameControllerSelection::IsTrackUnlocked` | 96.00% | Reviewed near match |
 | `0x0040b120` | `SetFoyerModeUnlocked` | 15.38% | Work in progress |
 | `0x0040b140` | `IsFoyerModeUnlocked` | 12.50% | Work in progress |
@@ -576,8 +576,8 @@ measure runtime completeness.
 | `0x0042ac90` | `SecondaryManager::PrepareSplash` | 37.58% | Work in progress |
 | `0x0042af30` | `IsRunningFromOpticalMedia` | 100.00% | Verified exact |
 | `0x0042af70` | `SecondaryManagerMediaState::InitializeBindings` | 44.80% | Work in progress |
-| `0x0042b1e0` | `SecondaryManagerMediaState::EnableSlot` | 92.31% | Work in progress |
-| `0x0042b200` | `SecondaryManagerMediaState::IsSlotEnabled` | 94.74% | Work in progress |
+| `0x0042b1e0` | `SecondaryManagerMediaState::EnableSlot` | 100.00% | Verified exact |
+| `0x0042b200` | `SecondaryManagerMediaState::IsSlotEnabled` | 100.00% | Verified exact |
 | `0x0042b220` | `SecondaryManagerMediaState::Refresh` | 50.49% | Work in progress |
 | `0x0042b2b0` | `SecondaryManagerMediaState::GetSlot` | 100.00% | Verified exact |
 | `0x0042b2c0` | `SecondaryManagerMediaState::HasActiveSlot` | 77.42% | Work in progress |
@@ -769,7 +769,7 @@ measure runtime completeness.
 | `0x0043b8a0` | `DestroyGameObjectModelBinding` | 95.65% | Reviewed near match |
 | `0x0043bcb0` | `GetFoyerSceneRandomUnit` | 31.58% | Work in progress |
 | `0x0043c140` | `SetSecondaryBonusObjectState` | 90.32% | Work in progress |
-| `0x0043c190` | `RestoreSecondaryBonusObject` | 85.71% | Work in progress |
+| `0x0043c190` | `RestoreSecondaryBonusObject` | 100.00% | Verified exact |
 | `0x0043c330` | `GetFoyerObjectSelection` | 68.75% | Work in progress |
 | `0x0043ce00` | `ConstructReverbAreaObject` | 56.00% | Work in progress |
 | `0x0043ce60` | `DestroyReverbArea` | 42.86% | Work in progress |
@@ -1219,7 +1219,7 @@ measure runtime completeness.
 | `0x00480300` | `FindFoyerActionAtOrAfter` | 100.00% | Verified exact |
 | `0x00480340` | `StartFoyerControllerRunLoop` | 37.50% | Work in progress |
 | `0x00480400` | `InitializeFoyerSceneAction0` | 7.41% | Work in progress |
-| `0x00480430` | `UpdateFoyerSceneInputAction` | 90.91% | Work in progress |
+| `0x00480430` | `UpdateFoyerSceneInputAction` | 100.00% | Verified exact |
 | `0x00480480` | `InitializeFoyerSceneAction1` | 16.13% | Work in progress |
 | `0x00480540` | `UpdateFoyerSceneTaskSourceAction` | 22.86% | Work in progress |
 | `0x004805d0` | `PrepareFoyerSceneTaskSourceAction` | 35.90% | Work in progress |
@@ -1239,7 +1239,7 @@ measure runtime completeness.
 | `0x00480ae0` | `InitializeFoyerSceneAction5` | 6.45% | Work in progress |
 | `0x00480b20` | `UpdateFoyerScenePositionAction` | 58.06% | Work in progress |
 | `0x00480b50` | `InitializeFoyerSceneAction6` | 6.45% | Work in progress |
-| `0x00480b90` | `UpdateFoyerSceneAttachmentAction` | 90.91% | Work in progress |
+| `0x00480b90` | `UpdateFoyerSceneAttachmentAction` | 100.00% | Verified exact |
 | `0x00480ba0` | `InitializeFoyerSceneAction7` | 12.77% | Work in progress |
 | `0x00480bf0` | `UpdateFoyerSceneTargetOffsetAction` | 93.33% | Work in progress |
 | `0x00480c10` | `InitializeFoyerSceneAction8` | 11.76% | Work in progress |
@@ -1400,7 +1400,7 @@ measure runtime completeness.
 | `0x004a3ca0` | `ShutdownGameManager` | 100.00% | Verified exact |
 | `0x004a3cd0` | `ConstructCarDisplayModelObject` | 23.03% | Work in progress |
 | `0x004a3db0` | `DestructCarDisplayModelObject` | 50.00% | Work in progress |
-| `0x004a3de0` | `CarDisplayModelInitialize` | 94.12% | Work in progress |
+| `0x004a3de0` | `CarDisplayModelInitialize` | 100.00% | Verified exact |
 | `0x004a3ed0` | `GetMemoryHeap` | 56.00% | Work in progress |
 | `0x004a3f20` | `DestroyMemoryHeapAtExit` | 100.00% | Verified exact |
 | `0x004a3f30` | `MemoryHeap::EnterOperation` | 85.71% | Work in progress |
@@ -1676,12 +1676,12 @@ measure runtime completeness.
 | `0x004b0220` | `FindAudioSource` | 26.19% | Work in progress |
 | `0x004b0290` | `ValidateAudioSource` | 70.27% | Work in progress |
 | `0x004b02d0` | `InitializeAudioSources` | 68.97% | Work in progress |
-| `0x004b0320` | `FindAvailableAudioSourceRecord` | 90.91% | Work in progress |
+| `0x004b0320` | `FindAvailableAudioSourceRecord` | 100.00% | Verified exact |
 | `0x004b0340` | `ConstructAudioSourceRecord` | 51.61% | Work in progress |
 | `0x004b0370` | `DeleteBaseAudioSourceRecord` | 100.00% | Verified exact |
 | `0x004b0390` | `DeleteAudioSourceRecord` | 95.65% | Reviewed near match |
 | `0x004b03b0` | `InitializeAudioSourceRecordFields` | 15.25% | Work in progress |
-| `0x004b04c0` | `DisposeAudioSourceRecord` | 93.33% | Work in progress |
+| `0x004b04c0` | `DisposeAudioSourceRecord` | 100.00% | Verified exact |
 | `0x004b04e0` | `ReleaseAudioSourceRecordResources` | 66.67% | Work in progress |
 | `0x004b0500` | `ReleaseAudioSourcePlayback` | 56.52% | Work in progress |
 | `0x004b0550` | `GetAudioSourceRecordIndex` | 100.00% | Verified exact |
@@ -1951,8 +1951,8 @@ measure runtime completeness.
 | `0x004bcea0` | `DestructFoyerModelRenderObject` | 46.15% | Work in progress |
 | `0x004bced0` | `InitializeFoyerModelRenderObject` | 83.33% | Work in progress |
 | `0x004bcef0` | `CarDisplayModelRemove` | 71.43% | Work in progress |
-| `0x004bcf10` | `IntegrateFoyerModelRenderMotion` | 80.00% | Work in progress |
-| `0x004bcf20` | `ApplyFoyerModelRenderForces` | 80.00% | Work in progress |
+| `0x004bcf10` | `IntegrateFoyerModelRenderMotion` | 100.00% | Verified exact |
+| `0x004bcf20` | `ApplyFoyerModelRenderForces` | 100.00% | Verified exact |
 | `0x004bcf30` | `UpdateFoyerModelRenderRegion` | 27.27% | Work in progress |
 | `0x004bcf60` | `DrawFoyerModelRenderObject` | 55.17% | Work in progress |
 | `0x004bd0d0` | `GameObjectFactoryRegistry::Register` | 76.60% | Work in progress |
@@ -2567,8 +2567,8 @@ measure runtime completeness.
 | `0x004f46a0` | `ControllerRecordingService::HasInputFrame` | 18.42% | Work in progress |
 | `0x004f4710` | `ControllerRecordingService::RequestInputFrame` | 59.81% | Work in progress |
 | `0x004f47c0` | `ControllerRecordingService::PollRequestedInput` | 53.33% | Work in progress |
-| `0x004f4870` | `ControllerRecordingProviderAssociations::Initialize` | 88.89% | Work in progress |
-| `0x004f4890` | `ControllerRecordingProviderAssociations::AllocateAssociation` | 91.67% | Work in progress |
+| `0x004f4870` | `ControllerRecordingProviderAssociations::Initialize` | 100.00% | Verified exact |
+| `0x004f4890` | `ControllerRecordingProviderAssociations::AllocateAssociation` | 100.00% | Verified exact |
 | `0x004f48c0` | `ControllerRecordingProviderAssociations::PruneStaleAssociations` | 47.76% | Work in progress |
 | `0x004f4a40` | `InitializeMultimediaTimerService` | 53.01% | Work in progress |
 | `0x004f4ad0` | `ShutdownMultimediaTimerService` | 100.00% | Verified exact |
@@ -2588,7 +2588,7 @@ measure runtime completeness.
 | `0x004f4df0` | `DetachCollisionProxyFromService` | 100.00% | Verified exact |
 | `0x004f4e00` | `AttachCollisionProxyFromService` | 100.00% | Verified exact |
 | `0x004f4e10` | `FreeCollisionResourceData` | 69.23% | Work in progress |
-| `0x004f4e40` | `CollisionServicePrepareQuery` | 94.12% | Work in progress |
+| `0x004f4e40` | `CollisionServicePrepareQuery` | 100.00% | Verified exact |
 | `0x004f4e70` | `CollisionServiceQuerySphere` | 94.74% | Work in progress |
 | `0x004f4e90` | `CollisionServiceQuerySegment` | 94.74% | Work in progress |
 | `0x004f4eb0` | `CollisionServiceSweep` | 22.46% | Work in progress |
@@ -2735,7 +2735,7 @@ measure runtime completeness.
 | `0x005083e0` | `SpatialAxisIndex::InsertSecond` | 4.82% | Work in progress |
 | `0x005084c0` | `SpatialGridCell::Insert` | 100.00% | Verified exact |
 | `0x005084e0` | `SpatialGridCell::Remove` | 100.00% | Verified exact |
-| `0x00508500` | `StaticSpatialGrid::GetCell` | 94.12% | Work in progress |
+| `0x00508500` | `StaticSpatialGrid::GetCell` | 100.00% | Verified exact |
 | `0x00508520` | `CollectGridCollisionCandidates` | 20.31% | Work in progress |
 | `0x00508690` | `StaticSpatialGrid::StaticSpatialGrid` | 69.42% | Work in progress |
 | `0x00508740` | `StaticSpatialGrid::Insert` | 28.26% | Work in progress |

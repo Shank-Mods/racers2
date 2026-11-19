@@ -1589,11 +1589,11 @@ static void __fastcall UnlockAllSecondaryWorlds(GameControllerSelection* p_selec
 	}
 }
 
-// STUB: LEGORACERS2 0x0040b040
+// FUNCTION: LEGORACERS2 0x0040b040
 static void __fastcall UnlockAllSecondaryRewards(GameControllerSelection* p_selection, void*)
 {
-	for (LegoU32 world = 0; world < 5; ++world) {
-		for (LegoU32 reward = 0; reward < 2; ++reward) {
+	for (LegoS32 world = 0; world < 5; ++world) {
+		for (LegoS32 reward = 0; reward < 2; ++reward) {
 			if (!p_selection->HasReward(world, reward)) {
 				p_selection->UnlockReward(world, reward, 0);
 			}
@@ -4381,10 +4381,10 @@ static void __fastcall SetSecondaryBonusObjectState(GameObject* p_object, void*,
 	}
 }
 
-// STUB: LEGORACERS2 0x0043c190
-void __fastcall RestoreSecondaryBonusObject(GameObject* p_object, void*)
+// FUNCTION: LEGORACERS2 0x0043c190
+void __fastcall RestoreSecondaryBonusObject(GameObject* p_object, void* p_edx)
 {
-	SetSecondaryBonusObjectState(p_object, NULL, 0);
+	SetSecondaryBonusObjectState(p_object, p_edx, 0);
 }
 
 // STUB: LEGORACERS2 0x004600a0
