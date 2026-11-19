@@ -167,3 +167,10 @@ static void* __fastcall AllocateCharacterCollisionParticle(CharacterCollisionPar
 	p_manager->m_records[index] = record;
 	return record;
 }
+
+// Retail: mov dword ptr [ecx + 8], 0 ; ret
+// FUNCTION: LEGORACERS2 0x00471180
+void __fastcall FUN_00471180(void* p_this, void*)
+{
+	*(LegoU32*) ((LegoU8*) p_this + 8) = 0;
+}

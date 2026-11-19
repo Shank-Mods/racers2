@@ -1007,6 +1007,13 @@ static void __fastcall ReleaseSecondaryWheelModels(SecondaryCarSelector* p_selec
 	GetMemoryHeap()->Free(p_selector->m_wheelModels);
 }
 
+// Retail: mov eax, dword ptr [ecx + 0x27e0] ; mov ecx, dword ptr [esp + 4] ; mov eax, dword ptr [eax + ecx*4] ; ret 4
+// FUNCTION: LEGORACERS2 0x00467ea0
+LegoU32 __fastcall FUN_00467ea0(void* p_this, void*, LegoS32 p_index)
+{
+	return (*(LegoU32**) ((LegoU8*) p_this + 0x27e0))[p_index];
+}
+
 // STUB: LEGORACERS2 0x00468ee0
 void __fastcall ReleaseSecondaryCarSelector(void* p_object, void*)
 {

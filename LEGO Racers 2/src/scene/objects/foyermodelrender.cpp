@@ -149,6 +149,13 @@ GameObject* __fastcall DestroyFoyerModelRenderObject(GameObject* p_object, void*
 	return p_object;
 }
 
+// Retail: mov eax, dword ptr [esp + 4] ; mov dword ptr [ecx + 0x1c], eax ; ret 4
+// FUNCTION: LEGORACERS2 0x0048b0c0
+void __fastcall FUN_0048b0c0(void* p_this, void*, LegoU32 p_value)
+{
+	*(LegoU32*) ((LegoU8*) p_this + 0x1c) = p_value;
+}
+
 // STUB: LEGORACERS2 0x0048da40
 static GameObject* __fastcall DestroyFoyerLifecycleOwner(PhysicalLifecycleState* p_state, void*, LegoU32 p_flags)
 {

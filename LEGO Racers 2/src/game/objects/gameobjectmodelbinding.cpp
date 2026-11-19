@@ -28,6 +28,17 @@ const GameObjectModelBindingDispatch g_gameObjectModelBindingDispatch = {
 	&UpdateGameObjectModelBinding,
 };
 
+// Retail: mov eax, ecx ; mov dword ptr [eax], 0xffffffff ; mov word ptr [eax + 4], 0xffff ; mov byte ptr [eax + 6], 0xf ; mov byte ptr [eax + 7], 3 ; ret
+// FUNCTION: LEGORACERS2 0x0043b860
+void* __fastcall FUN_0043b860(void* p_this, void*)
+{
+	*(LegoS32*) p_this = -1;
+	*(LegoU16*) ((LegoU8*) p_this + 4) = 0xffff;
+	*((LegoU8*) p_this + 6) = 0x0f;
+	*((LegoU8*) p_this + 7) = 3;
+	return p_this;
+}
+
 // FUNCTION: LEGORACERS2 0x0043b8a0
 GameObjectModelBinding* __fastcall DestroyGameObjectModelBinding(
 	GameObjectModelBinding* p_binding,

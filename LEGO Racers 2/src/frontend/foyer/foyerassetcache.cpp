@@ -175,6 +175,22 @@ static void* LoadTemplateInstance(
 	return *object;
 }
 
+// Retail: mov ecx, dword ptr [ecx + 0x284] ; mov eax, dword ptr [ecx] ; jmp dword ptr [eax + 0x34]
+// FUNCTION: LEGORACERS2 0x004447d0
+LegoU32 __fastcall FUN_004447d0(void* p_this, void* p_edx)
+{
+	void* target = *(void**) ((LegoU8*) p_this + 0x284);
+	return (*(LegoU32(__fastcall**)(void*, void*)) (*(LegoU8**) target + 0x34))(target, p_edx);
+}
+
+// Retail: mov ecx, dword ptr [ecx + 0x288] ; mov eax, dword ptr [ecx] ; jmp dword ptr [eax + 0x34]
+// FUNCTION: LEGORACERS2 0x004447e0
+LegoU32 __fastcall FUN_004447e0(void* p_this, void* p_edx)
+{
+	void* target = *(void**) ((LegoU8*) p_this + 0x288);
+	return (*(LegoU32(__fastcall**)(void*, void*)) (*(LegoU8**) target + 0x34))(target, p_edx);
+}
+
 // STUB: LEGORACERS2 0x00445ce0
 static void InitializeDefaultSizeFoyerTemplate()
 {

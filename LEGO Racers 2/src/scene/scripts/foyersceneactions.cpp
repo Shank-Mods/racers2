@@ -281,6 +281,13 @@ void __fastcall InitializeFoyerSceneAction15(void* p_action, void*, const LegoU3
 	words[5] = p_words[3];
 }
 
+// Retail: mov dword ptr [ecx + 0x184], 3 ; ret
+// FUNCTION: LEGORACERS2 0x004814f0
+void __fastcall FUN_004814f0(void* p_this, void*)
+{
+	*(LegoU32*) ((LegoU8*) p_this + 0x184) = 3;
+}
+
 // STUB: LEGORACERS2 0x004d7460
 void __fastcall UpdateFoyerSceneTargetOscillation(void* p_target, void*)
 {

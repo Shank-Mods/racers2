@@ -4,8 +4,8 @@ Matching work is **paused at the user's request** on 2026-10-20. The latest batc
 promoted **213 STUBs** (195 exact, 18 reviewed near matches) and recovered one
 additional exact helper. No game runs were performed for these batches.
 
-Both 465-unit SP5 builds agree on all **2,721 measured scores and statuses**:
-**852 exact functions, 48 reviewed near matches and 1,823 STUB reconstructions**.
+Both 465-unit SP5 builds agree on all **2,752 measured scores and statuses**:
+**881 exact functions, 48 reviewed near matches and 1,823 STUB reconstructions**.
 All 619 previously implemented functions retain their raw accuracy or improve.
 Twenty-eight complete folded aliases, twelve dispatch inventories per build
 (including 1,321 scene pointers), 307 input-format records and 29 tooling/library
@@ -15,9 +15,9 @@ tests pass. Source STUBs without a separate matched report row remain unimplemen
 and **5,647 bodies**, for console, JSON, HTML and SVG coverage:
 
 ```text
-Implemented:  13.61%  (900 / 6612)
-Accuracy:     99.82%
-Progress:     13.59%
+Implemented:  14.05%  (929 / 6612)
+Accuracy:     99.83%
+Progress:     14.03%
 ```
 
 The inventory includes linked libraries and compiler helpers; external imports
@@ -51,6 +51,7 @@ measure runtime completeness.
 | `0x00403510` | `ReleaseSecondaryCarCollisionStore` | 53.33% | Work in progress |
 | `0x004035d0` | `LoadSecondaryCarCollisionStore` | 53.76% | Work in progress |
 | `0x004037b0` | `AssignCarDisplayModelResource` | 100.00% | Verified exact |
+| `0x004037e0` | `FUN_004037e0` | 100.00% | Verified exact |
 | `0x00403890` | `ConstructCarDisplayNameObject` | 55.17% | Work in progress |
 | `0x00403910` | `IsApplicationDevelopmentMode` | 100.00% | Verified exact |
 | `0x00403930` | `OnApplicationDiagnostic` | 100.00% | Verified exact |
@@ -191,6 +192,7 @@ measure runtime completeness.
 | `0x0040b680` | `ReleaseGamePauseObserver` | 85.71% | Work in progress |
 | `0x0040b6a0` | `UpdateGamePauseObserver` | 66.67% | Work in progress |
 | `0x0040b6f0` | `EnterGamePauseObserver` | 23.94% | Work in progress |
+| `0x0040b840` | `FUN_0040b840` | 100.00% | Verified exact |
 | `0x0040b850` | `LeaveGamePauseObserver` | 75.86% | Work in progress |
 | `0x0040b9c0` | `ConstructRaceManager` | 0.00% | Work in progress |
 | `0x0040e830` | `RestartSecondaryRace` | 8.00% | Work in progress |
@@ -415,7 +417,7 @@ measure runtime completeness.
 | `0x0041dbf0` | `PushMenuManagerActionState` | 6.90% | Work in progress |
 | `0x0041dcc0` | `PopSecondaryMenuActions` | 59.38% | Work in progress |
 | `0x0041dd30` | `PopMenuManagerAction` | 40.00% | Work in progress |
-| `0x0041dd80` | `ResetSecondaryMenuAction` | 89.66% | Work in progress |
+| `0x0041dd80` | `ResetSecondaryMenuAction` | 82.76% | Work in progress |
 | `0x0041ddb0` | `RestoreMenuManagerAction` | 27.03% | Work in progress |
 | `0x0041de40` | `CanMenuCancel` | 100.00% | Verified exact |
 | `0x0041de70` | `BeginMenuTransition` | 80.00% | Work in progress |
@@ -528,7 +530,7 @@ measure runtime completeness.
 | `0x00427970` | `ApplySavedAudioQuality` | 76.92% | Work in progress |
 | `0x004279b0` | `SecondaryManager::BeginStartup` | 69.57% | Work in progress |
 | `0x00427a00` | `SecondaryManager::Update` | 65.70% | Work in progress |
-| `0x00427d90` | `EnterSecondaryManagerMode` | 93.33% | Work in progress |
+| `0x00427d90` | `EnterSecondaryManagerMode` | 88.89% | Work in progress |
 | `0x00427df0` | `SecondaryManager::EnterMainMenu` | 94.74% | Work in progress |
 | `0x00427e40` | `SelectSecondaryManagerChoice` | 93.33% | Work in progress |
 | `0x00427eb0` | `SecondaryManager::UpdateMenuMode` | 42.25% | Work in progress |
@@ -750,6 +752,9 @@ measure runtime completeness.
 | `0x00439b50` | `SetSecondaryObjectEnabled` | 62.07% | Work in progress |
 | `0x0043a2f0` | `FoyerManager::FoyerManager` | 27.91% | Work in progress |
 | `0x0043a390` | `FoyerManagerDestroy` | 72.00% | Work in progress |
+| `0x0043a3c0` | `GameObjectBaseInitialize` | 100.00% | Work in progress |
+| `0x0043a410` | `FUN_0043a410` | 100.00% | Verified exact |
+| `0x0043a420` | `FUN_0043a420` | 100.00% | Verified exact |
 | `0x0043a480` | `FoyerManagerUpdate` | 24.83% | Work in progress |
 | `0x0043aa60` | `ExitFoyerScene` | 87.80% | Work in progress |
 | `0x0043aab0` | `SetFoyerManagerMenuMode` | 0.00% | Work in progress |
@@ -766,6 +771,7 @@ measure runtime completeness.
 | `0x0043b070` | `UpdateFoyerSceneSelection` | 32.32% | Work in progress |
 | `0x0043b1d0` | `InitializeFoyerUnplacedPosition` | 100.00% | Verified exact |
 | `0x0043b1f0` | `SetFoyerSceneParameter` | 31.70% | Work in progress |
+| `0x0043b860` | `FUN_0043b860` | 100.00% | Verified exact |
 | `0x0043b8a0` | `DestroyGameObjectModelBinding` | 95.65% | Reviewed near match |
 | `0x0043bcb0` | `GetFoyerSceneRandomUnit` | 31.58% | Work in progress |
 | `0x0043c140` | `SetSecondaryBonusObjectState` | 90.32% | Work in progress |
@@ -800,17 +806,25 @@ measure runtime completeness.
 | `0x0043dd20` | `ConstructReverbInit` | 26.92% | Work in progress |
 | `0x0043dd60` | `InitializeReverbSettingsObject` | 100.00% | Verified exact |
 | `0x0043dda0` | `RemoveReverbSettingsObject` | 78.79% | Work in progress |
+| `0x0043e500` | `FUN_0043e500` | 100.00% | Verified exact |
+| `0x0043e5b0` | `FUN_0043e5b0` | 100.00% | Verified exact |
 | `0x0043e9e0` | `ApplyCharacterBodyLifecycleForces` | 40.00% | Work in progress |
 | `0x0043f8d0` | `CharacterVisualHeadInstance::CharacterVisualHeadInstance` | 34.04% | Work in progress |
 | `0x0043ff70` | `RefreshCharacterVisualModelFlags` | 100.00% | Verified exact |
+| `0x00440060` | `FUN_00440060` | 100.00% | Verified exact |
 | `0x004403a0` | `GetCharacterCollisionSpeed` | 20.00% | Work in progress |
 | `0x004403d0` | `ReorderCharacterCollisionColor` | 100.00% | Verified exact |
 | `0x004403f0` | `EmitCharacterCollisionDust` | 63.79% | Work in progress |
 | `0x00440720` | `InitializeCarDisplayModelPaths` | 65.12% | Work in progress |
+| `0x004447d0` | `FUN_004447d0` | 100.00% | Verified exact |
+| `0x004447e0` | `FUN_004447e0` | 100.00% | Verified exact |
 | `0x00445ce0` | `InitializeDefaultSizeFoyerTemplate` | 1.87% | Work in progress |
 | `0x00445ee0` | `GetCharacterVisualBodyObjectSize` | 100.00% | Verified exact |
+| `0x00446410` | `FUN_00446410` | 100.00% | Verified exact |
+| `0x004464c0` | `FUN_004464c0` | 100.00% | Verified exact |
 | `0x00447990` | `SetFoyerControllerRunMenu` | 49.12% | Work in progress |
 | `0x00447a00` | `SetFoyerControllerMenuLoop` | 58.82% | Work in progress |
+| `0x00447c50` | `FUN_00447c50` | 100.00% | Verified exact |
 | `0x004487b0` | `SelectControllerSceneRecord` | 0.00% | Work in progress |
 | `0x00449640` | `SetNetworkRacerState` | 6.45% | Work in progress |
 | `0x004496a0` | `ApplyFoyerSceneStateMode` | 39.02% | Work in progress |
@@ -823,6 +837,9 @@ measure runtime completeness.
 | `0x0044a550` | `SetFoyerControllerActive` | 22.22% | Work in progress |
 | `0x0044a870` | `GetControllerTaskTypeForTarget` | 83.61% | Work in progress |
 | `0x0044abd0` | `SetControllerMenuMode` | 0.00% | Work in progress |
+| `0x0044ace0` | `FUN_0044ace0` | 100.00% | Verified exact |
+| `0x0044ad00` | `FUN_0044ad00` | 100.00% | Verified exact |
+| `0x0044ad30` | `FUN_0044ad30` | 100.00% | Verified exact |
 | `0x0044b3b0` | `DeleteConstraint` | 78.26% | Work in progress |
 | `0x0044cd00` | `BodypartManagerInitialize` | 8.00% | Work in progress |
 | `0x0044d870` | `BodypartManager::GetHeadModelPath` | 52.00% | Work in progress |
@@ -1024,7 +1041,7 @@ measure runtime completeness.
 | `0x004608d0` | `HideSecondarySpriteSet` | 100.00% | Verified exact |
 | `0x00460900` | `ReleaseSecondarySpriteSet` | 38.96% | Work in progress |
 | `0x00460970` | `FindSecondarySprite` | 100.00% | Verified exact |
-| `0x004609e0` | `ConstructSecondarySelectionGrid` | 87.27% | Work in progress |
+| `0x004609e0` | `ConstructSecondarySelectionGrid` | 83.64% | Work in progress |
 | `0x00460a50` | `DestroySecondarySelectionGrid` | 40.00% | Work in progress |
 | `0x00460a60` | `InitializeSecondarySelectionGrid` | 78.43% | Work in progress |
 | `0x00460b10` | `DefineSecondarySelectionCategory` | 86.21% | Work in progress |
@@ -1048,7 +1065,7 @@ measure runtime completeness.
 | `0x00463880` | `LoadSecondarySelectionLabel` | 28.57% | Work in progress |
 | `0x00463900` | `ReleaseSecondarySelectionLabel` | 100.00% | Verified exact |
 | `0x004639a0` | `SetSecondarySelectionLabelFont` | 100.00% | Verified exact |
-| `0x00463ec0` | `ConstructSecondaryCharacterSelection` | 88.00% | Work in progress |
+| `0x00463ec0` | `ConstructSecondaryCharacterSelection` | 84.00% | Work in progress |
 | `0x00463f20` | `ReleaseSecondaryObject70` | 70.59% | Work in progress |
 | `0x00463f40` | `LoadSecondaryCharacterSelector` | 50.15% | Work in progress |
 | `0x00464240` | `UpdateSecondaryCharacterSelection` | 0.95% | Work in progress |
@@ -1069,13 +1086,14 @@ measure runtime completeness.
 | `0x00467520` | `InitializeSecondaryBuilderGridDimensions` | 100.00% | Verified exact |
 | `0x00467550` | `InitializeSecondaryBuilderCellDimensions` | 100.00% | Verified exact |
 | `0x00467760` | `InitializeCharacterSelectionPositionOffset` | 100.00% | Verified exact |
-| `0x00467af0` | `ConstructSecondaryCarSelection` | 66.67% | Work in progress |
+| `0x00467af0` | `ConstructSecondaryCarSelection` | 63.49% | Work in progress |
 | `0x00467b80` | `ReleaseSecondaryObject6c` | 70.59% | Work in progress |
 | `0x00467ba0` | `LoadSecondaryCarSelector` | 42.47% | Work in progress |
 | `0x00467da0` | `GetSecondaryBrickBuilderSize` | 100.00% | Verified exact |
 | `0x00467db0` | `DestroySecondaryBrickBuilder` | 100.00% | Verified exact |
 | `0x00467de0` | `LoadSecondaryWheelModels` | 76.92% | Work in progress |
 | `0x00467e50` | `ReleaseSecondaryWheelModels` | 50.00% | Work in progress |
+| `0x00467ea0` | `FUN_00467ea0` | 100.00% | Verified exact |
 | `0x00467ff0` | `BeginSecondaryCarSelection` | 0.79% | Work in progress |
 | `0x00468350` | `UpdateSecondaryCarSelection` | 0.53% | Work in progress |
 | `0x00468e30` | `FinishSecondaryCarSelection` | 3.64% | Work in progress |
@@ -1100,6 +1118,7 @@ measure runtime completeness.
 | `0x00470ba0` | `IsCharacterCollisionParticleActive` | 100.00% | Verified exact |
 | `0x00470bb0` | `RemoveCharacterCollisionParticle` | 97.96% | Reviewed near match |
 | `0x00470c00` | `AllocateCharacterCollisionParticle` | 88.00% | Work in progress |
+| `0x00471180` | `FUN_00471180` | 100.00% | Verified exact |
 | `0x00473b10` | `DestroyFoyerModelRenderObject` | 95.65% | Reviewed near match |
 | `0x00475b80` | `SetControllerBodyInputEnabled` | 48.28% | Work in progress |
 | `0x004766c0` | `AddCharacterFootstepTrail` | 15.48% | Work in progress |
@@ -1254,6 +1273,8 @@ measure runtime completeness.
 | `0x00480f40` | `InitializeFoyerSceneAction11` | 7.41% | Work in progress |
 | `0x00480f90` | `InitializeFoyerSceneAction19` | 11.76% | Work in progress |
 | `0x00480fd0` | `InitializeFoyerSceneAction15` | 6.45% | Work in progress |
+| `0x004814f0` | `FUN_004814f0` | 100.00% | Verified exact |
+| `0x0048b0c0` | `FUN_0048b0c0` | 100.00% | Verified exact |
 | `0x0048da40` | `DestroyFoyerLifecycleOwner` | 0.00% | Work in progress |
 | `0x0048e510` | `KillSphereSupervisorAllocationSize` | 100.00% | Verified exact |
 | `0x00490130` | `FindActiveControllerTaskTarget` | 39.13% | Work in progress |
@@ -1312,6 +1333,7 @@ measure runtime completeness.
 | `0x00495390` | `PruneNetworkPayloadKeys` | 47.76% | Work in progress |
 | `0x004954a0` | `FoyerManagerGetObjectSize` | 100.00% | Verified exact |
 | `0x00496120` | `GetLifecycleParent` | 100.00% | Verified exact |
+| `0x00496130` | `FUN_00496130` | 100.00% | Verified exact |
 | `0x00497280` | `RequestSecondaryNetworkExit` | 0.00% | Work in progress |
 | `0x00498270` | `GetSecondaryWorldRacerCount` | 100.00% | Verified exact |
 | `0x00499500` | `PlayMpegMovie` | 35.04% | Work in progress |
@@ -1322,7 +1344,7 @@ measure runtime completeness.
 | `0x00499d30` | `MovieTextureRenderer::DoRenderSample` | 7.32% | Work in progress |
 | `0x0049a1e0` | `IsMoviePlaybackIncomplete` | 61.11% | Work in progress |
 | `0x0049a210` | `ClearMovieTextures` | 24.49% | Work in progress |
-| `0x0049a390` | `GetMoviePlayer` | 92.31% | Work in progress |
+| `0x0049a390` | `GetMoviePlayer` | 84.62% | Work in progress |
 | `0x0049a3d0` | `MoviePlayerStaticDestructor` | 100.00% | Verified exact |
 | `0x0049a3e0` | `MoviePlayerPlay` | 41.38% | Work in progress |
 | `0x0049a610` | `Application::Application` | 100.00% | Verified exact |
@@ -1343,6 +1365,7 @@ measure runtime completeness.
 | `0x0049b4d0` | `?RemoveControllerSceneStackObjects@@YIXPAUControllerSceneStack@?%Z:\home\ilya\work\lr2_decomp\racers2\LEGO Racers 2\include\game/objects/gamemanager.h354913112@@PAX@Z` | 33.33% | Work in progress |
 | `0x0049b5d0` | `Application::LoadDisplayConfig` | 66.67% | Work in progress |
 | `0x0049b780` | `Application::SaveDisplayConfig` | 94.48% | Work in progress |
+| `0x0049c460` | `FUN_0049c460` | 100.00% | Verified exact |
 | `0x004a2130` | `CharBuffer24::CharBuffer24(char const *)` | 100.00% | Verified exact |
 | `0x004a2170` | `CharBuffer24::CharBuffer24(void)` | 100.00% | Verified exact |
 | `0x004a21b0` | `WinFile::WinFile` | 100.00% | Verified exact |
@@ -1846,6 +1869,7 @@ measure runtime completeness.
 | `0x004b5460` | `KillSphereSupervisor::KillSphereSupervisor` | 61.54% | Work in progress |
 | `0x004b5490` | `KillSphereSupervisor::Initialize` | 92.31% | Work in progress |
 | `0x004b54c0` | `KillSphereSupervisor::Remove` | 77.42% | Work in progress |
+| `0x004b60c0` | `FUN_004b60c0` | 100.00% | Verified exact |
 | `0x004b7550` | `LocalizedStringTable::LocalizedStringTable` | 100.00% | Verified exact |
 | `0x004b75c0` | `LocalizedStringTable::Load` | 58.40% | Work in progress |
 | `0x004b7740` | `LocalizedStringTable::Release` | 63.64% | Work in progress |
@@ -1946,6 +1970,7 @@ measure runtime completeness.
 | `0x004bb990` | `ClearGamePauseObserver` | 100.00% | Verified exact |
 | `0x004bb9a0` | `SetGamePauseObserverMode` | 100.00% | Verified exact |
 | `0x004bb9b0` | `AdvancePauseOverlays` | 72.73% | Work in progress |
+| `0x004bc580` | `FUN_004bc580` | 100.00% | Verified exact |
 | `0x004bcd80` | `CarDisplayModelTargetDestroy` | 0.00% | Work in progress |
 | `0x004bce10` | `ConstructFoyerModelRenderObject` | 17.98% | Work in progress |
 | `0x004bcea0` | `DestructFoyerModelRenderObject` | 46.15% | Work in progress |
@@ -2181,6 +2206,7 @@ measure runtime completeness.
 | `0x004d6c00` | `InitializeGameTemplateInstance` | 27.65% | Work in progress |
 | `0x004d6e30` | `UpdateGameTemplateInstance` | 96.30% | Reviewed near match |
 | `0x004d6e60` | `UpdateGameTemplateInstancePath` | 26.58% | Work in progress |
+| `0x004d7260` | `SetSplineLinkerVelocity` | 100.00% | Verified exact |
 | `0x004d7270` | `SetFoyerSceneActionParameters` | 27.40% | Work in progress |
 | `0x004d7300` | `ClearFoyerSceneActionParameters` | 44.44% | Work in progress |
 | `0x004d7360` | `CreateGameTemplateInstance` | 47.37% | Work in progress |
@@ -2538,7 +2564,7 @@ measure runtime completeness.
 | `0x004f3100` | `ControllerRecordingService::HandleDirectPlayMessage` | 45.26% | Work in progress |
 | `0x004f3550` | `ControllerRecordingService::ProcessSpecialInputCommand` | 53.99% | Work in progress |
 | `0x004f3620` | `ControllerRecordingService::RecordPeerState` | 94.34% | Work in progress |
-| `0x004f3670` | `ControllerRecordingService::ProcessValue` | 50.35% | Work in progress |
+| `0x004f3670` | `ControllerRecordingService::ProcessValue` | 49.65% | Work in progress |
 | `0x004f37d0` | `ControllerRecordingService::GetProviderKeyValue` | 100.00% | Verified exact |
 | `0x004f37f0` | `ControllerRecordingService::RemoveProviderKey` | 100.00% | Verified exact |
 | `0x004f3820` | `ControllerRecordingObjectMap::Initialize` | 19.63% | Work in progress |
@@ -2591,7 +2617,7 @@ measure runtime completeness.
 | `0x004f4e40` | `CollisionServicePrepareQuery` | 100.00% | Verified exact |
 | `0x004f4e70` | `CollisionServiceQuerySphere` | 94.74% | Work in progress |
 | `0x004f4e90` | `CollisionServiceQuerySegment` | 94.74% | Work in progress |
-| `0x004f4eb0` | `CollisionServiceSweep` | 24.60% | Work in progress |
+| `0x004f4eb0` | `CollisionServiceSweep` | 22.46% | Work in progress |
 | `0x004f50e0` | `CollisionModelTransform::ResetIdentity` | 31.58% | Work in progress |
 | `0x004f5140` | `SpatialLinkRegistry::SpatialLinkRegistry` | 100.00% | Verified exact |
 | `0x004f5160` | `SpatialLinkRegistry::Insert` | 80.00% | Work in progress |
@@ -2628,6 +2654,7 @@ measure runtime completeness.
 | `0x004f68a0` | `FoyerAnimationPlayer::~FoyerAnimationPlayer` | 53.33% | Work in progress |
 | `0x004f68c0` | `FoyerAnimationPlayer::Bind` | 100.00% | Verified exact |
 | `0x004f68f0` | `FoyerAnimationPlayer::Update` | 15.44% | Work in progress |
+| `0x004f6dc0` | `FUN_004f6dc0` | 100.00% | Verified exact |
 | `0x004f8470` | `IntersectTerrainTriangle` | 18.18% | Work in progress |
 | `0x004f88f0` | `TraverseTerrainGridRay` | 25.47% | Work in progress |
 | `0x004f8ab0` | `ClipTerrainGridSegment` | 33.21% | Work in progress |
@@ -2713,6 +2740,8 @@ measure runtime completeness.
 | `0x00507740` | `SpatialLinkRegistry::RemoveNode` | 88.00% | Work in progress |
 | `0x00507770` | `SpatialLinkRegistry::GetNodeIndex` | 100.00% | Verified exact |
 | `0x00507780` | `SpatialLinkRegistry::GetNodeValue` | 100.00% | Verified exact |
+| `0x005077b0` | `FUN_005077b0` | 100.00% | Verified exact |
+| `0x005078b0` | `FUN_005078b0` | 100.00% | Verified exact |
 | `0x005078c0` | `SpatialPairList::Initialize` | 75.56% | Work in progress |
 | `0x00507910` | `SpatialPairList::AddPair` | 13.02% | Work in progress |
 | `0x00507a00` | `SpatialPairList::CanPair` | 36.07% | Work in progress |
@@ -2720,6 +2749,7 @@ measure runtime completeness.
 | `0x00507be0` | `SpatialAxisIndex::InitializeFirst` | 100.00% | Verified exact |
 | `0x00507ca0` | `SpatialAxisIndex::Remove` | 100.00% | Verified exact |
 | `0x00507cb0` | `SpatialAxisIndex::InitializeSecond` | 100.00% | Verified exact |
+| `0x00507d00` | `FUN_00507d00` | 100.00% | Verified exact |
 | `0x00507d10` | `DynamicSpatialIndex::DynamicSpatialIndex` | 100.00% | Verified exact |
 | `0x00507d60` | `DynamicSpatialIndex::ResetQuery` | 89.47% | Work in progress |
 | `0x00507dc0` | `IntersectCollisionCandidateArrays` | 20.59% | Work in progress |
@@ -2733,6 +2763,7 @@ measure runtime completeness.
 | `0x00508290` | `CollectXAxisCandidates` | 8.33% | Work in progress |
 | `0x00508330` | `SpatialAxisIndex::InsertFirst` | 4.82% | Work in progress |
 | `0x005083e0` | `SpatialAxisIndex::InsertSecond` | 4.82% | Work in progress |
+| `0x005084b0` | `SpatialGridCell::Initialize` | 40.00% | Work in progress |
 | `0x005084c0` | `SpatialGridCell::Insert` | 100.00% | Verified exact |
 | `0x005084e0` | `SpatialGridCell::Remove` | 100.00% | Verified exact |
 | `0x00508500` | `StaticSpatialGrid::GetCell` | 100.00% | Verified exact |

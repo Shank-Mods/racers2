@@ -148,3 +148,12 @@ void* SpatialLinkRegistry::GetNodeValue(LegoS32 p_index)
 {
 	return m_allocator->GetNodeValue(p_index);
 }
+
+// Retail: mov eax, ecx ; mov word ptr [eax + 2], 0 ; mov word ptr [eax], 0 ; ret
+// FUNCTION: LEGORACERS2 0x005077b0
+void* __fastcall FUN_005077b0(void* p_this, void*)
+{
+	*(LegoU16*) ((LegoU8*) p_this + 2) = 0;
+	*(LegoU16*) p_this = 0;
+	return p_this;
+}

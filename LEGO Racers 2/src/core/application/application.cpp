@@ -107,3 +107,10 @@ void Application::SaveDisplayConfig()
 static void OnSavedDisplayConfigExit()
 {
 }
+
+// Retail: mov dword ptr [ecx + 0x68], 0 ; ret
+// FUNCTION: LEGORACERS2 0x0049c460
+void __fastcall FUN_0049c460(void* p_this, void*)
+{
+	*(LegoU32*) ((LegoU8*) p_this + 0x68) = 0;
+}

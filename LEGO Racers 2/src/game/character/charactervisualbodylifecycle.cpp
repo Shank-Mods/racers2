@@ -99,6 +99,20 @@ const FoyerTemplateInstanceDispatch g_characterVisualBodyDispatch = {
 	&GetCharacterVisualBodyObjectSize
 };
 
+// Retail: mov dword ptr [ecx + 0xdc], 9 ; ret
+// FUNCTION: LEGORACERS2 0x0043e500
+void __fastcall FUN_0043e500(void* p_this, void*)
+{
+	*(LegoU32*) ((LegoU8*) p_this + 0xdc) = 9;
+}
+
+// Retail: mov dword ptr [ecx + 0xdc], 0xa ; ret
+// FUNCTION: LEGORACERS2 0x0043e5b0
+void __fastcall FUN_0043e5b0(void* p_this, void*)
+{
+	*(LegoU32*) ((LegoU8*) p_this + 0xdc) = 10;
+}
+
 // STUB: LEGORACERS2 0x0043e9e0
 static LegoU32 __fastcall ApplyCharacterBodyLifecycleForces(PhysicalLifecycleState* p_state, void*)
 {
@@ -127,6 +141,20 @@ static LegoU32* __fastcall ReorderCharacterCollisionColor(LegoU32* p_output, voi
 static LegoU32 __fastcall GetCharacterVisualBodyObjectSize(GameObject*, void*)
 {
 	return 0x3a0;
+}
+
+// Retail: mov dword ptr [ecx + 0xdc], 6 ; ret
+// FUNCTION: LEGORACERS2 0x00446410
+void __fastcall FUN_00446410(void* p_this, void*)
+{
+	*(LegoU32*) ((LegoU8*) p_this + 0xdc) = 6;
+}
+
+// Retail: mov dword ptr [ecx + 0xdc], 7 ; ret
+// FUNCTION: LEGORACERS2 0x004464c0
+void __fastcall FUN_004464c0(void* p_this, void*)
+{
+	*(LegoU32*) ((LegoU8*) p_this + 0xdc) = 7;
 }
 
 // STUB: LEGORACERS2 0x00451640

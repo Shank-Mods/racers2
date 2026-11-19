@@ -230,3 +230,10 @@ void FoyerAnimationPlayer::Update(LegoFloat p_step, LegoU32 p_updateQuaternions)
 		}
 	}
 }
+
+// Retail: mov dword ptr [ecx + 0x14], 0 ; ret
+// FUNCTION: LEGORACERS2 0x004f6dc0
+void __fastcall FUN_004f6dc0(void* p_this, void*)
+{
+	*(LegoU32*) ((LegoU8*) p_this + 0x14) = 0;
+}

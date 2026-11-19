@@ -30,6 +30,14 @@ void __fastcall ApplyFoyerSceneActionParameters(
 	}
 }
 
+// PS2 symbol: cSplineLinker::SetVelocity(float).
+// Retail: mov eax, dword ptr [esp + 4] ; mov dword ptr [ecx + 0x94], eax ; ret 4
+// FUNCTION: LEGORACERS2 0x004d7260
+void __fastcall SetSplineLinkerVelocity(void* p_this, void*, LegoFloat p_velocity)
+{
+	*(LegoFloat*) ((LegoU8*) p_this + 0x94) = p_velocity;
+}
+
 // STUB: LEGORACERS2 0x004d7270
 void __fastcall SetFoyerSceneActionParameters(
 	void* p_transition,

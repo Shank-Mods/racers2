@@ -138,6 +138,20 @@ void __fastcall FoyerManagerInitialize(GameObject* p_object, void*)
 	p_object->GameObject::Initialize();
 }
 
+// Retail: mov eax, dword ptr [esp + 4] ; mov edx, dword ptr [eax + 0x68] ; mov dword ptr [ecx + edx*4 + 0x68], eax ; ret 4
+// FUNCTION: LEGORACERS2 0x0043a410
+void __fastcall FUN_0043a410(void* p_this, void*, void* p_entry)
+{
+	*(void**) ((LegoU8*) p_this + *(LegoS32*) ((LegoU8*) p_entry + 0x68) * 4 + 0x68) = p_entry;
+}
+
+// Retail: mov eax, dword ptr [esp + 4] ; mov edx, dword ptr [eax + 0x68] ; mov dword ptr [ecx + edx*4 + 0x68], 0 ; ret 4
+// FUNCTION: LEGORACERS2 0x0043a420
+void __fastcall FUN_0043a420(void* p_this, void*, void* p_entry)
+{
+	*(void**) ((LegoU8*) p_this + *(LegoS32*) ((LegoU8*) p_entry + 0x68) * 4 + 0x68) = NULL;
+}
+
 // STUB: LEGORACERS2 0x0043a480
 LegoU32 __fastcall FoyerManagerUpdate(GameObject* p_object, void*, LegoFloat p_elapsedSeconds)
 {

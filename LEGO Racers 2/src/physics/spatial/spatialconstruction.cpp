@@ -5,6 +5,13 @@
 extern const SpatialAxisDispatch g_spatialXAxisDispatch;
 extern const SpatialAxisDispatch g_spatialZAxisDispatch;
 
+// Retail: mov eax, dword ptr [ecx] ; ret
+// FUNCTION: LEGORACERS2 0x005078b0
+LegoU32 __fastcall FUN_005078b0(void* p_this, void*)
+{
+	return *(LegoU32*) p_this;
+}
+
 // STUB: LEGORACERS2 0x005078c0
 SpatialPairList* SpatialPairList::Initialize(LegoU32 p_capacity, SpatialLinkRegistry* p_registry)
 {
@@ -35,6 +42,13 @@ SpatialAxisIndex* SpatialAxisIndex::InitializeSecond(SpatialLinkRegistry* p_regi
 	m_vtable = &g_spatialZAxisDispatch;
 	m_registry = p_registry;
 	return this;
+}
+
+// Retail: mov eax, dword ptr [esp + 4] ; mov ecx, dword ptr [eax] ; mov eax, dword ptr [ecx + 8] ; ret 4
+// FUNCTION: LEGORACERS2 0x00507d00
+LegoU32 __fastcall FUN_00507d00(void*, void*, void** p_object)
+{
+	return *(LegoU32*) ((LegoU8*) *p_object + 8);
 }
 
 // FUNCTION: LEGORACERS2 0x00507d10

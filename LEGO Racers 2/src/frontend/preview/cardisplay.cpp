@@ -418,6 +418,13 @@ static void __fastcall AssignCarDisplayModelResource(
 	}
 }
 
+// Retail: mov eax, dword ptr [ecx + 0x48] ; mov eax, dword ptr [eax + 8] ; ret
+// FUNCTION: LEGORACERS2 0x004037e0
+LegoU32 __fastcall FUN_004037e0(void* p_this, void*)
+{
+	return *(LegoU32*) (*(LegoU8**) ((LegoU8*) p_this + 0x48) + 8);
+}
+
 // STUB: LEGORACERS2 0x00403890
 static CarDisplayNameObject* __fastcall ConstructCarDisplayNameObject(
 	CarDisplayNameObject* p_object,
@@ -1182,6 +1189,13 @@ void __fastcall CarDisplayLifecycleCopyTargetData(void* p_target, void*, LegoU32
 	GetRecord getRecord = *(GetRecord*) ((const LegoU8*) *(void**) g_carDisplayIndexedRecordOwner + 0x50);
 	const LegoU32* record = getRecord(g_carDisplayIndexedRecordOwner, NULL, index);
 	memcpy(p_output, record, 5 * sizeof(LegoU32));
+}
+
+// Retail: mov eax, dword ptr [esp + 4] ; mov edx, dword ptr [eax + 0xb8] ; mov dword ptr [ecx + edx*4 + 0x68], eax ; ret 4
+// FUNCTION: LEGORACERS2 0x004bc580
+void __fastcall FUN_004bc580(void* p_this, void*, void* p_entry)
+{
+	*(void**) ((LegoU8*) p_this + *(LegoS32*) ((LegoU8*) p_entry + 0xb8) * 4 + 0x68) = p_entry;
 }
 
 // STUB: LEGORACERS2 0x004bcd80

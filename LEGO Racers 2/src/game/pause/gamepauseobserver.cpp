@@ -128,6 +128,14 @@ static void __fastcall EnterGamePauseObserver(GamePauseObserver* p_observer, voi
 	((ReverbManager*) g_gameController.m_reverbManager)->DisableOutput();
 	g_inputControllerManager->m_unk0x68 = 0;
 }
+// Retail: mov eax, ecx ; mov dword ptr [eax], 0 ; ret
+// FUNCTION: LEGORACERS2 0x0040b840
+void* __fastcall FUN_0040b840(void* p_this, void*)
+{
+	*(LegoU32*) p_this = 0;
+	return p_this;
+}
+
 // STUB: LEGORACERS2 0x0040b850
 static void __fastcall LeaveGamePauseObserver(GamePauseObserver* p_observer, void*)
 {

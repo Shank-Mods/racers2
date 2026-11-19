@@ -123,6 +123,13 @@ PhysicalLifecycleState* __fastcall GetLifecycleParent(PhysicalLifecycleState* p_
 	return p_state->m_parent;
 }
 
+// Retail: mov eax, dword ptr [ecx + 0x64] ; ret
+// FUNCTION: LEGORACERS2 0x00496130
+LegoU32 __fastcall FUN_00496130(void* p_this, void*)
+{
+	return *(LegoU32*) ((LegoU8*) p_this + 0x64);
+}
+
 // STUB: LEGORACERS2 0x004a6020
 void SetPhysicalLifecycleStep(LegoFloat p_step)
 {

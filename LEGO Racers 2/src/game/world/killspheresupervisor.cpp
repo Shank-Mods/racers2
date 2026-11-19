@@ -86,3 +86,10 @@ static void __fastcall RemoveKillSphereSupervisor(GameObject* p_object, void*)
 {
 	((KillSphereSupervisor*) p_object)->Remove();
 }
+
+// Retail: mov eax, dword ptr [esp + 4] ; mov edx, dword ptr [eax + 0x5c] ; mov dword ptr [ecx + edx*4 + 0x58], eax ; ret 4
+// FUNCTION: LEGORACERS2 0x004b60c0
+void __fastcall FUN_004b60c0(void* p_this, void*, void* p_entry)
+{
+	*(void**) ((LegoU8*) p_this + *(LegoS32*) ((LegoU8*) p_entry + 0x5c) * 4 + 0x58) = p_entry;
+}

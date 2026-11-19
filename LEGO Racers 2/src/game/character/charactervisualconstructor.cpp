@@ -327,6 +327,13 @@ struct CharacterVisualBodyInstance : FoyerTemplateInstance {
 };
 DECOMP_SIZE_ASSERT(CharacterVisualBodyInstance, 0x3a0);
 
+// Retail: mov eax, dword ptr [ecx + 0x190] ; ret
+// FUNCTION: LEGORACERS2 0x00440060
+LegoU32 __fastcall FUN_00440060(void* p_this, void*)
+{
+	return *(LegoU32*) ((LegoU8*) p_this + 0x190);
+}
+
 // STUB: LEGORACERS2 0x0044e420
 void CharacterVisualTemplate::Initialize(
 	LegoU32 p_field34,

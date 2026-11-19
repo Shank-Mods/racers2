@@ -88,6 +88,13 @@ void __fastcall SetFoyerControllerMenuLoop(GameObject* p_controller, void*)
 	);
 }
 
+// Retail: mov eax, dword ptr [esp + 4] ; mov dword ptr [ecx + 0x1fc], eax ; ret 4
+// FUNCTION: LEGORACERS2 0x00447c50
+void __fastcall FUN_00447c50(void* p_this, void*, LegoU32 p_value)
+{
+	*(LegoU32*) ((LegoU8*) p_this + 0x1fc) = p_value;
+}
+
 // STUB: LEGORACERS2 0x004496d0
 void __fastcall ApplyFoyerControllerSceneAction(
 	GameObject* p_controller,

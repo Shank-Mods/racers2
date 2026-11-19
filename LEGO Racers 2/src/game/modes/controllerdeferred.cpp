@@ -95,6 +95,28 @@ void __fastcall SetControllerMenuMode(void*, void*, LegoU32)
 {
 	UnfinishedControllerFunction(0x0044abd0);
 }
+// Retail: mov eax, dword ptr [esp + 4] ; mov edx, dword ptr [eax] ; mov dword ptr [ecx + 0x1c4], edx ; mov eax, dword ptr [eax + 4] ; mov dword ptr [ecx + 0x1c8], eax ; ret 4
+// FUNCTION: LEGORACERS2 0x0044ace0
+void __fastcall FUN_0044ace0(void* p_this, void*, const LegoU32* p_pair)
+{
+	*(LegoU32*) ((LegoU8*) p_this + 0x1c4) = p_pair[0];
+	*(LegoU32*) ((LegoU8*) p_this + 0x1c8) = p_pair[1];
+}
+
+// Retail: mov eax, dword ptr [esp + 4] ; mov dword ptr [ecx + 0x1cc], eax ; ret 4
+// FUNCTION: LEGORACERS2 0x0044ad00
+void __fastcall FUN_0044ad00(void* p_this, void*, LegoS32 p_value)
+{
+	*(LegoS32*) ((LegoU8*) p_this + 0x1cc) = p_value;
+}
+
+// Retail: mov dword ptr [ecx + 0x1cc], 0xffffffff ; ret
+// FUNCTION: LEGORACERS2 0x0044ad30
+void __fastcall FUN_0044ad30(void* p_this, void*)
+{
+	*(LegoS32*) ((LegoU8*) p_this + 0x1cc) = -1;
+}
+
 // STUB: LEGORACERS2 0x0049ae10
 void* __fastcall ConstructControllerModeMenu(void*, void*, void*)
 {
